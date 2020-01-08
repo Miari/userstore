@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Web 1</title>
+</head>
+<body>
+    <#if message == 1>
+        <h2> User was added</h2>
+        <#else>
+            <h2>User was not added. Most probably you try to create User with non-unique ID</h2>
+    </#if>
+    <p><a href="/users">View User's list</a></p>
+</body>
+</html>
