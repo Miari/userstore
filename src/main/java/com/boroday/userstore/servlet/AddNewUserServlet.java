@@ -21,8 +21,8 @@ public class AddNewUserServlet extends HttpServlet {
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response) throws IOException {
 
-        String s = new String(Files.readAllBytes(Paths.get("src" + File.separator + "main"  + File.separator + "resources"  + File.separator + "templates" + File.separator + "adduser.html")));
-        response.getWriter().write(s);
+        String generatedPage = new String(Files.readAllBytes(Paths.get("src" + File.separator + "main"  + File.separator + "resources"  + File.separator + "templates" + File.separator + "adduser.html")));
+        response.getWriter().write(generatedPage);
 
         response.setContentType("text/html;charset=utf-8");
         response.setStatus(HttpServletResponse.SC_OK);
