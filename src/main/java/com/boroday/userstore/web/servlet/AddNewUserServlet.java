@@ -1,7 +1,7 @@
-package com.boroday.userstore.servlet;
+package com.boroday.userstore.web.servlet;
 
-import com.boroday.userstore.database.ExecuteQuery;
-import com.boroday.userstore.templater.PageGenerator;
+import com.boroday.userstore.service.UserService;
+import com.boroday.userstore.web.templater.PageGenerator;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -10,7 +10,6 @@ import java.io.File;
 import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Paths;
-import java.sql.SQLException;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -32,11 +31,11 @@ public class AddNewUserServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request,
                        HttpServletResponse response) throws IOException {
-
+        UserService userService = new UserService();
         int resultOfInsert = 0;
         try {
-            resultOfInsert = ExecuteQuery.insertUser(request);
-        } catch (SQLException e) {
+            resultOfInsert = userService.addNewUser(request);
+        } catch (Exception e) {
             e.printStackTrace();
         }
         response.setContentType("text/html;charset=utf-8");
@@ -46,7 +45,6 @@ public class AddNewUserServlet extends HttpServlet {
         } else {
             response.setStatus(HttpServletResponse.SC_OK);
         }
-        System.out.println(resultOfInsert);
 
         Map<String, Object> pageVariables = new HashMap<>();
         pageVariables.put("message", resultOfInsert == 1 ? 1 : 0);

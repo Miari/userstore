@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <title>Web 1</title>
+</head>
+<body>
+<h2>Edit user:</h2>
+<form action="/users/edit" method="POST">
+    <#if user?has_content>
+        <p>User id: ${user.id}</p>
+    </#if>
+<p>${user.salary}</p>
+    <p>ID: <input type="number" name="id" disabled value="${user.id}"/></p>
+    <p>First Name: <input type="text" name="firstName" value="${user.firstName}"/></p>
+    <p>Last Name: <input type="text" name="lastName" value="${user.lastName}"/></p>
+    <p>Salary: <input type="text" name="salary" <#if (user.salary)??> value="${user.salary}"</#if>/></p>
+    <p>Birthday: <input type="date" name="dateOfBirth" <#if (user.dateOfBirth)??> value="${user.dateOfBirth}"</#if>/></p>
+    <p><input type="submit" value="Edit"></p>
+</form>
+</body>
+</html>

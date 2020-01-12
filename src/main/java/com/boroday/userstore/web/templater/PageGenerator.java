@@ -1,4 +1,4 @@
-package com.boroday.userstore.templater;
+package com.boroday.userstore.web.templater;
 
 import freemarker.template.Configuration;
 import freemarker.template.Template;
