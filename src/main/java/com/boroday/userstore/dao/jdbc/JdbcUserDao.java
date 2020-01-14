@@ -101,7 +101,7 @@ public class JdbcUserDao {
         } else {
             update_user += "?, dateOfBirth = ? where id = ?";
         }
-        System.out.println("here "+update_user);
+
         try (
                 Connection connection = getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(update_user)
