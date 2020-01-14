@@ -7,11 +7,8 @@ import com.boroday.userstore.web.templater.PageGenerator;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
-import java.util.Enumeration;
+import java.sql.Date;
 import java.util.HashMap;
 import java.util.Map;
 
@@ -23,8 +20,7 @@ public class EditUserServlet extends HttpServlet {
         Map<String, Object> pageVariables = new HashMap<>();
         UserService userService = new UserService();
 
-        Enumeration<String> listOfParameters = request.getParameterNames();
-        String userId = listOfParameters.nextElement();
+        String userId = request.getParameter("id");
         User userForEdit = userService.getUserById(userId);
         pageVariables.put("user", userForEdit);
         response.getWriter().println(PageGenerator.instance().getPage("edituser.html", pageVariables));
@@ -39,7 +35,21 @@ public class EditUserServlet extends HttpServlet {
         UserService userService = new UserService();
         int resultOfUpdate = 0;
         try {
-            resultOfUpdate = userService.updateUser(request);
+            User user = new User();
+            user.setId(Integer.parseInt(request.getParameter("id")));
+            user.setFirstName(request.getParameter("firstName"));
+            user.setLastName(request.getParameter("lastName"));
+
+            String salary = request.getParameter("salary");
+            if (!salary.isEmpty()) {
+                user.setSalary(Double.parseDouble(request.getParameter("salary")));
+            }
+
+            String dateOfBirth = request.getParameter("dateOfBirth");
+            if (!dateOfBirth.isEmpty()) {
+                user.setDateOfBirth((Date.valueOf(request.getParameter("dateOfBirth"))).toLocalDate());
+            }
+            resultOfUpdate = userService.updateUser(user);
         } catch (Exception e) {
             e.printStackTrace();
         }
