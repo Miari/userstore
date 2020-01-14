@@ -19,8 +19,8 @@ public class Starter {
         context.addServlet(new ServletHolder(allUsersServlet), "/users");
         context.addServlet(new ServletHolder(addNewUserServlet), "/users/add");
         context.addServlet(new ServletHolder(allUsersServlet), "/users/remove");
-        context.addServlet(new ServletHolder(editUserServlet), "/users/edit");//?id=*");
-        context.addServlet(new ServletHolder(searchUserServlet), "/users/search");//?searchText=*");
+        context.addServlet(new ServletHolder(editUserServlet), "/users/edit");
+        context.addServlet(new ServletHolder(searchUserServlet), "/users/search");
 
         Server server = new Server(8080);
         server.setHandler(context);
