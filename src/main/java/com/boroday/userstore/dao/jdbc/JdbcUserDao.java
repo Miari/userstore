@@ -127,7 +127,7 @@ public class JdbcUserDao {
         return countOfUpdatedUsers;
     }
 
-    public List<User> searchUser(String text) { //todo
+    public List<User> searchUser(String text) {
 
         List<User> listOfUsers = new ArrayList<>();
         try (
