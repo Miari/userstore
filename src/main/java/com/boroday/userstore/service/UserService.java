@@ -7,35 +7,29 @@ import java.util.List;
 
 public class UserService {
 
-    private JdbcUserDao jdbcUserDao;
+    private JdbcUserDao jdbcUserDao = new JdbcUserDao();
 
     public List<User> getAll() {
-        jdbcUserDao = new JdbcUserDao();
         return jdbcUserDao.getAll();
     }
 
-    public int addNewUser(User user) {
-        jdbcUserDao = new JdbcUserDao();
+    public int add(User user) {
         return jdbcUserDao.addNewUser(user);
     }
 
-    public int removeUser(String userId) {
-        jdbcUserDao = new JdbcUserDao();
+    public int remove(String userId) {
         return jdbcUserDao.removeUser(Integer.parseInt(userId));
     }
 
-    public User getUserById(String userId) {
-        jdbcUserDao = new JdbcUserDao();
+    public User getById(String userId) {
         return jdbcUserDao.getUserById(Integer.parseInt(userId));
     }
 
-    public int updateUser(User user) {
-        jdbcUserDao = new JdbcUserDao();
+    public int update(User user) {
         return jdbcUserDao.updateUser(user);
     }
 
-    public List<User> searchUser(String text) {
-        jdbcUserDao = new JdbcUserDao();
+    public List<User> search(String text) {
         return jdbcUserDao.searchUser(text);
     }
 }

@@ -17,12 +17,13 @@ import java.util.Map;
 
 public class AddNewUserServlet extends HttpServlet {
 
+    private PageGenerator pageGenerator = PageGenerator.instance();
 
     @Override
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response) throws IOException {
 
-        String generatedPage = new String(Files.readAllBytes(Paths.get("src" + File.separator + "main" + File.separator + "resources" + File.separator + "templates" + File.separator + "adduser.html")));
+        String generatedPage = pageGenerator.getPage("adduser.html");
         response.getWriter().write(generatedPage);
 
         response.setContentType("text/html;charset=utf-8");
@@ -50,7 +51,7 @@ public class AddNewUserServlet extends HttpServlet {
                 user.setDateOfBirth((Date.valueOf(request.getParameter("dateOfBirth"))).toLocalDate());
             }
 
-            resultOfInsert = userService.addNewUser(user);
+            resultOfInsert = userService.add(user);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -63,8 +64,10 @@ public class AddNewUserServlet extends HttpServlet {
         }
 
         Map<String, Object> pageVariables = new HashMap<>();
-        pageVariables.put("message", resultOfInsert == 1 ? 1 : 0);
 
-        response.getWriter().println(PageGenerator.instance().getPage("addeduser.html", pageVariables));
+        pageVariables.put("users", userService.getAll());
+        pageVariables.put("addedUser", resultOfInsert == 1 ? 1 : 0);
+        String page = pageGenerator.getPage("users.html", pageVariables);
+        response.getWriter().write(page);
     }
 }

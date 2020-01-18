@@ -11,7 +11,7 @@ import java.io.Writer;
 import java.util.Map;
 
 public class PageGenerator {
-    private static final String HTML_DIR = "src" + File.separator + "main"  + File.separator + "resources"  + File.separator + "templates";
+    private static final String HTML_DIR = "src" + File.separator + "main" + File.separator + "resources" + File.separator + "templates";
 
     private static PageGenerator pageGenerator;
     private final Configuration cfg;
@@ -31,6 +31,10 @@ public class PageGenerator {
             throw new RuntimeException(e);
         }
         return stream.toString();
+    }
+
+    public String getPage(String filename) {
+        return getPage(filename, null);
     }
 
     private PageGenerator() {

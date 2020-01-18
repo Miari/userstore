@@ -1,6 +1,4 @@
 package com.boroday.userstore.dao.jdbc;
-
-import com.boroday.userstore.dao.jdbc.JdbcUserDao;
 import com.boroday.userstore.entity.User;
 import org.junit.Test;
 
@@ -14,14 +12,13 @@ import static junit.framework.TestCase.assertNotNull;
 
 public class JdbcUserDaoITest {
 
-    JdbcUserDao jdbcUserDao;
+    JdbcUserDao jdbcUserDao = new JdbcUserDao();
 
     @Test
-    public void testGetAll(){
-        jdbcUserDao = new JdbcUserDao();
+    public void testGetAll() {
         List<User> users = jdbcUserDao.getAll();
         assertFalse(users.isEmpty());
-        for (User user: users){
+        for (User user : users) {
             assertNotNull(user.getId());
             assertNotNull(user.getFirstName());
             assertNotNull(user.getLastName());
@@ -29,49 +26,44 @@ public class JdbcUserDaoITest {
     }
 
     @Test
-    public void testAddNewUser(){
-        jdbcUserDao = new JdbcUserDao();
+    public void testAddNewUser() {
         User user = new User();
-        user.setFirstName("Jannet");
-        user.setLastName("Yappel");
+        user.setFirstName("Michael");
+        user.setLastName("Kanda");
         int countOfUsers = jdbcUserDao.addNewUser(user);
         assertEquals(1, countOfUsers);
     }
 
     @Test
-    public void testRemoveUser(){
-        jdbcUserDao = new JdbcUserDao();
+    public void testRemoveUser() {
         int countOfUsers = jdbcUserDao.removeUser(22);
         assertEquals(1, countOfUsers);
     }
 
     @Test
-    public void testGetUserById(){
-        jdbcUserDao = new JdbcUserDao();
-        User user = jdbcUserDao.getUserById(12);
+    public void testGetUserById() {
+        User user = jdbcUserDao.getUserById(2);
         assertEquals("Michael1", user.getFirstName());
         assertEquals("Hay1", user.getLastName());
-        assertEquals(12, user.getId());
+        assertEquals(15, user.getId());
         assertEquals(null, user.getSalary());
         assertEquals(LocalDate.of(1992, Month.APRIL, 15), user.getDateOfBirth());
     }
 
     @Test
-    public void testUpdateUser(){
-        jdbcUserDao = new JdbcUserDao();
+    public void testUpdateUser() {
         User user = new User();
-        user.setId(12);
-        user.setFirstName("Michael1");
-        user.setLastName("Hay1");
+        user.setId(15);
+        user.setFirstName("Sonja");
+        user.setLastName("Morr");
         user.setSalary(null);
-        user.setDateOfBirth(LocalDate.of(1992, Month.APRIL, 15));
+        user.setDateOfBirth(null);
         int countOfUsers = jdbcUserDao.updateUser(user);
         assertEquals(1, countOfUsers);
     }
 
     @Test
     public void testSearchUser() {
-        jdbcUserDao = new JdbcUserDao();
         List<User> list = jdbcUserDao.searchUser("om");
         assertEquals(1, list.size());
     }

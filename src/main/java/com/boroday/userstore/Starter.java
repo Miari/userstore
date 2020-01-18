@@ -1,11 +1,15 @@
 package com.boroday.userstore;
-import com.boroday.userstore.web.servlet.AddNewUserServlet;
-import com.boroday.userstore.web.servlet.AllUsersServlet;
-import com.boroday.userstore.web.servlet.EditUserServlet;
-import com.boroday.userstore.web.servlet.SearchUserServlet;
+
+import com.boroday.userstore.web.servlet.*;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
+
+import java.io.File;
+import java.nio.charset.StandardCharsets;
+import java.nio.file.Files;
+import java.nio.file.Paths;
+import java.util.List;
 
 public class Starter {
     public static void main(String[] args) throws Exception {
@@ -14,15 +18,18 @@ public class Starter {
         AddNewUserServlet addNewUserServlet = new AddNewUserServlet();
         EditUserServlet editUserServlet = new EditUserServlet();
         SearchUserServlet searchUserServlet = new SearchUserServlet();
+        RemoveUserServlet removeUserServlet = new RemoveUserServlet();
 
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.addServlet(new ServletHolder(allUsersServlet), "/users");
         context.addServlet(new ServletHolder(addNewUserServlet), "/users/add");
-        context.addServlet(new ServletHolder(allUsersServlet), "/users/remove");
+        context.addServlet(new ServletHolder(removeUserServlet), "/users/remove");
         context.addServlet(new ServletHolder(editUserServlet), "/users/edit");
         context.addServlet(new ServletHolder(searchUserServlet), "/users/search");
 
-        Server server = new Server(8080);
+        List<String> lines = Files.readAllLines(Paths.get("src" + File.separator + "main" + File.separator + "resources" + File.separator + "applicationProperties"), StandardCharsets.UTF_8);
+
+        Server server = new Server(Integer.parseInt(lines.get(1)));
         server.setHandler(context);
 
         server.start();

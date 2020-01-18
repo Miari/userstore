@@ -3,17 +3,17 @@ package com.boroday.userstore.entity;
 import java.time.LocalDate;
 
 public class User {
-    private int id;
+    private long id;
     private String firstName;
     private String lastName;
     private Double salary;
     private LocalDate dateOfBirth;
 
-    public int getId() {
+    public long getId() {
         return id;
     }
 
-    public void setId(int id) {
+    public void setId(long id) {
         this.id = id;
     }
 
@@ -49,7 +49,7 @@ public class User {
         this.dateOfBirth = dateOfBirth;
     }
 
-    public String toString(){
+    public String toString() {
         return "UserID = " + id + "; FirstName = " + firstName + "; LastName = " + lastName + "; Salary = " + salary + "; DateOfBirth = " + dateOfBirth + ".";
     }
 }

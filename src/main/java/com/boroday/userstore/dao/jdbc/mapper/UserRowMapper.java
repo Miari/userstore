@@ -8,16 +8,23 @@ import java.sql.SQLException;
 
 public class UserRowMapper {
 
-    public User mapRow (ResultSet resultSet) throws SQLException {
+    public User mapRow(ResultSet resultSet) throws SQLException {
         User user = new User();
-        user.setId(resultSet.getInt("id"));
+        user.setId(resultSet.getLong("id"));
         user.setFirstName(resultSet.getString("firstName"));
         user.setLastName(resultSet.getString("lastName"));
-        user.setSalary(resultSet.getDouble("salary"));
-        Date date = resultSet.getDate("dateOfBirth");
-            if (date != null) {
-                user.setDateOfBirth(date.toLocalDate());
-            }
+
+
+        Double salary = resultSet.getDouble("salary");
+        if (salary != null) {
+            user.setSalary(salary);
+        }
+
+        Date dateOfBirth = resultSet.getDate("dateOfBirth");
+        if (dateOfBirth != null) {
+            user.setDateOfBirth(dateOfBirth.toLocalDate());
+        }
+
         return user;
     }
 }

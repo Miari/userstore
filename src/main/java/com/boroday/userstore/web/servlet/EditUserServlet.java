@@ -13,17 +13,23 @@ import java.util.HashMap;
 import java.util.Map;
 
 public class EditUserServlet extends HttpServlet {
+
+    private UserService userService = new UserService();
+
     @Override
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response) throws IOException {
 
         Map<String, Object> pageVariables = new HashMap<>();
-        UserService userService = new UserService();
 
         String userId = request.getParameter("id");
-        User userForEdit = userService.getUserById(userId);
+        User userForEdit = userService.getById(userId);
         pageVariables.put("user", userForEdit);
-        response.getWriter().println(PageGenerator.instance().getPage("edituser.html", pageVariables));
+
+
+        PageGenerator pageGenerator = PageGenerator.instance();
+        String page = pageGenerator.getPage("edituser.html", pageVariables);
+        response.getWriter().write(page);
 
         response.setContentType("text/html;charset=utf-8");
         response.setStatus(HttpServletResponse.SC_OK);
@@ -32,7 +38,7 @@ public class EditUserServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request,
                        HttpServletResponse response) throws IOException {
-        UserService userService = new UserService();
+
         int resultOfUpdate = 0;
         try {
             User user = new User();
@@ -49,7 +55,7 @@ public class EditUserServlet extends HttpServlet {
             if (!dateOfBirth.isEmpty()) {
                 user.setDateOfBirth((Date.valueOf(request.getParameter("dateOfBirth"))).toLocalDate());
             }
-            resultOfUpdate = userService.updateUser(user);
+            resultOfUpdate = userService.update(user);
         } catch (Exception e) {
             e.printStackTrace();
         }
@@ -65,6 +71,8 @@ public class EditUserServlet extends HttpServlet {
         pageVariables.put("users", userService.getAll());
         pageVariables.put("editedUser", resultOfUpdate == 1 ? 1 : 0);
 
-        response.getWriter().println(PageGenerator.instance().getPage("users.html", pageVariables));
+        PageGenerator pageGenerator = PageGenerator.instance();
+        String page = pageGenerator.getPage("users.html", pageVariables);
+        response.getWriter().write(page);
     }
 }

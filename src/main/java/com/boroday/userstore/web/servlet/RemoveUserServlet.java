@@ -1,6 +1,5 @@
 package com.boroday.userstore.web.servlet;
 
-import com.boroday.userstore.entity.User;
 import com.boroday.userstore.service.UserService;
 import com.boroday.userstore.web.templater.PageGenerator;
 
@@ -9,21 +8,20 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
-public class SearchUserServlet extends HttpServlet {
-    @Override
-    public void doGet(HttpServletRequest request,
-                      HttpServletResponse response) throws IOException {
+public class RemoveUserServlet extends HttpServlet {
 
+    @Override
+    public void doPost(HttpServletRequest request,
+                       HttpServletResponse response) throws IOException {
         Map<String, Object> pageVariables = new HashMap<>();
         UserService userService = new UserService();
 
-        String searchText = request.getParameter("searchText");
-        List<User> foundUsers = userService.search(searchText);
-        pageVariables.put("users", foundUsers);
-        pageVariables.put("foundUsers", foundUsers.size());
+        String userId = request.getParameter("id");
+        int removedUser = userService.remove(userId);
+        pageVariables.put("users", userService.getAll());
+        pageVariables.put("removedUser", removedUser);
 
         PageGenerator pageGenerator = PageGenerator.instance();
         String page = pageGenerator.getPage("users.html", pageVariables);

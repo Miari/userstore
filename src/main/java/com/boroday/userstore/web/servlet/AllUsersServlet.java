@@ -20,27 +20,13 @@ public class AllUsersServlet extends HttpServlet {
         //pageVariables.put("users", createMockList());
         pageVariables.put("users", userService.getAll());
 
-        response.getWriter().println(PageGenerator.instance().getPage("users.html", pageVariables));
-        response.setContentType("text/html;charset=utf-8");
-        response.setStatus(HttpServletResponse.SC_OK);
-
-    }
-
-    @Override
-    public void doPost(HttpServletRequest request,
-                       HttpServletResponse response) throws IOException {
-        Map<String, Object> pageVariables = new HashMap<>();
-        UserService userService = new UserService();
-
-        String userId = request.getParameter("id");
-        int removedUser = userService.removeUser(userId);
-        pageVariables.put("users", userService.getAll());
-        pageVariables.put("removedUser", removedUser);
-
-        response.getWriter().println(PageGenerator.instance().getPage("users.html", pageVariables));
+        PageGenerator pageGenerator = PageGenerator.instance();
+        String page = pageGenerator.getPage("users.html", pageVariables);
+        response.getWriter().write(page);
         response.setContentType("text/html;charset=utf-8");
         response.setStatus(HttpServletResponse.SC_OK);
     }
+
 
 
     /*private List<User> createMockList() {
