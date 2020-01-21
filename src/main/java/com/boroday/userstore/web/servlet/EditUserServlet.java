@@ -9,12 +9,14 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.sql.Date;
+import java.sql.Timestamp;
 import java.util.HashMap;
 import java.util.Map;
 
 public class EditUserServlet extends HttpServlet {
 
     private UserService userService = new UserService();
+    private static final String USERS_PAGE = "/users";
 
     @Override
     public void doGet(HttpServletRequest request,
@@ -38,41 +40,19 @@ public class EditUserServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request,
                        HttpServletResponse response) throws IOException {
-
-        int resultOfUpdate = 0;
         try {
             User user = new User();
             user.setId(Integer.parseInt(request.getParameter("id")));
             user.setFirstName(request.getParameter("firstName"));
             user.setLastName(request.getParameter("lastName"));
-
-            String salary = request.getParameter("salary");
-            if (!salary.isEmpty()) {
-                user.setSalary(Double.parseDouble(request.getParameter("salary")));
-            }
-
-            String dateOfBirth = request.getParameter("dateOfBirth");
-            if (!dateOfBirth.isEmpty()) {
-                user.setDateOfBirth((Date.valueOf(request.getParameter("dateOfBirth"))).toLocalDate());
-            }
-            resultOfUpdate = userService.update(user);
+            user.setSalary(Double.parseDouble(request.getParameter("salary")));
+            Date date = Date.valueOf(request.getParameter("dateOfBirth"));
+            Timestamp timestamp = new Timestamp(date.getTime());
+            user.setDateOfBirth(timestamp.toLocalDateTime().toLocalDate());
+            userService.update(user);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        response.setContentType("text/html;charset=utf-8");
-
-        if (resultOfUpdate == 0) {
-            response.setStatus(HttpServletResponse.SC_FORBIDDEN);
-        } else {
-            response.setStatus(HttpServletResponse.SC_OK);
-        }
-
-        Map<String, Object> pageVariables = new HashMap<>();
-        pageVariables.put("users", userService.getAll());
-        pageVariables.put("editedUser", resultOfUpdate == 1 ? 1 : 0);
-
-        PageGenerator pageGenerator = PageGenerator.instance();
-        String page = pageGenerator.getPage("users.html", pageVariables);
-        response.getWriter().write(page);
+        response.sendRedirect(USERS_PAGE);
     }
 }

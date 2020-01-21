@@ -7,10 +7,7 @@
 <body>
 <#if users?has_content>
     <table border="1" cellpadding="7">
-        <#if removedUser?has_content><h3>${removedUser} User was deleted</h3></#if>
-        <#if editedUser?has_content><h3>${editedUser} User was updated</h3></#if>
         <#if foundUsers?has_content><h3>${foundUsers} Users were found</h3></#if>
-        <#if addedUser?has_content><h3>${addedUser} User was added</h3></#if>
         <caption><h2>Users</h2></caption>
         <tr>
             <th>ID</th>

@@ -13,20 +13,20 @@ public class UserService {
         return jdbcUserDao.getAll();
     }
 
-    public int add(User user) {
-        return jdbcUserDao.addNewUser(user);
+    public void add(User user) {
+        jdbcUserDao.addNewUser(user);
     }
 
-    public int remove(String userId) {
-        return jdbcUserDao.removeUser(Integer.parseInt(userId));
+    public void remove(String userId) {
+        jdbcUserDao.removeUser(Integer.parseInt(userId));
     }
 
     public User getById(String userId) {
         return jdbcUserDao.getUserById(Integer.parseInt(userId));
     }
 
-    public int update(User user) {
-        return jdbcUserDao.updateUser(user);
+    public void update(User user) {
+        jdbcUserDao.updateUser(user);
     }
 
     public List<User> search(String text) {

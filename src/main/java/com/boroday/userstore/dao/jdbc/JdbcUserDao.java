@@ -14,7 +14,7 @@ public class JdbcUserDao {
     private static final String ADD_NEW_USER = "insert into users (firstName, lastName, salary, dateOfBirth) values (?,?,?,?)";
     private static final String REMOVE_USER = "delete from users where id = ?";
     private static final String SELECT_USER_BY_ID = "select id, firstName, lastName, salary, dateOfBirth from users where id = ?";
-    private String update_user = "update users set firstName = ?, lastName = ?, salary = ";
+    private static final String UPDATE_USER = "update users set firstName = ?, lastName = ?, salary = ?, dateOfBirth = ? where id = ?";
     private static final String SEARCH_USER = "select id, firstName, lastName, salary, dateOfBirth from users where lower(firstName) like lower(?) or lower(lastName) like lower (?) order by id";
     private static final UserRowMapper USER_ROW_MAPPER = new UserRowMapper();
 
@@ -30,50 +30,36 @@ public class JdbcUserDao {
                 listOfUsers.add(user);
             }
         } catch (SQLException ex) {
-            throw new RuntimeException("Connection to database is not available. It is not possible to show all users with query: " + GET_ALL_USERS, ex);
+            throw new RuntimeException("Connection to database is not available. It is not possible to show all users", ex);
         }
 
         return listOfUsers;
     }
 
-    public int addNewUser(User user) {
-        int countOfInsertedUsers;
+    public void addNewUser(User user) {
         try (
                 Connection connection = ConnectionFactory.getConnection();
-                PreparedStatement preparedStatement = connection.prepareStatement(ADD_NEW_USER)
-        ) {
+                PreparedStatement preparedStatement = connection.prepareStatement(ADD_NEW_USER)) {
             preparedStatement.setString(1, user.getFirstName());
             preparedStatement.setString(2, user.getLastName());
-            if (user.getSalary() != null) {
-                preparedStatement.setDouble(3, user.getSalary());
-            } else {
-                preparedStatement.setObject(3, null);
-            }
-            if (user.getDateOfBirth() != null) {
-                preparedStatement.setDate(4, Date.valueOf(user.getDateOfBirth()));
-            } else {
-                preparedStatement.setNull(4, Types.DATE);
-            }
-
-            countOfInsertedUsers = preparedStatement.executeUpdate();
+            preparedStatement.setDouble(3, user.getSalary());
+            preparedStatement.setDate(4, Date.valueOf(user.getDateOfBirth()));
+            preparedStatement.executeUpdate();
         } catch (SQLException ex) {
-            throw new RuntimeException("Connection to database is not available. It is not possible to add user with query: " + ADD_NEW_USER, ex);
+            throw new RuntimeException("Connection to database is not available. It is not possible to add new user", ex);
         }
-        return countOfInsertedUsers;
     }
 
-    public int removeUser(long userId) {
-        int countOfRemovedUsers;
+    public void removeUser(long userId) {
         try (
                 Connection connection = ConnectionFactory.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(REMOVE_USER)
         ) {
             preparedStatement.setLong(1, userId);
-            countOfRemovedUsers = preparedStatement.executeUpdate();
+            preparedStatement.executeUpdate();
         } catch (SQLException ex) {
-            throw new RuntimeException("Connection to database is not available. It is not possible to remove user with query: " + REMOVE_USER, ex);
+            throw new RuntimeException("Connection to database is not available. It is not possible to remove user with ID " + userId, ex);
         }
-        return countOfRemovedUsers;
     }
 
     public User getUserById(long userId) {
@@ -89,44 +75,25 @@ public class JdbcUserDao {
             }
             resultSet.close();
         } catch (SQLException ex) {
-            throw new RuntimeException("Connection to database is not available. It is not possible to get user by ID with query: " + SELECT_USER_BY_ID, ex);
+            throw new RuntimeException("Connection to database is not available. It is not possible to get user by ID " + userId, ex);
         }
         return user;
     }
 
-    public int updateUser(User user) {
-        int countOfUpdatedUsers;
-        int numberOfParameter = 4;
-        if (user.getSalary() == null) {
-            update_user += "null, dateOfBirth = ? where id = ?";
-            numberOfParameter = 3;
-        } else {
-            update_user += "?, dateOfBirth = ? where id = ?";
-        }
-
+    public void updateUser(User user) {
         try (
                 Connection connection = ConnectionFactory.getConnection();
-                PreparedStatement preparedStatement = connection.prepareStatement(update_user)
+                PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_USER)
         ) {
             preparedStatement.setString(1, user.getFirstName());
             preparedStatement.setString(2, user.getLastName());
-
-            if (user.getSalary() != null) {
-                preparedStatement.setDouble(3, user.getSalary());
-            }
-
-            if (user.getDateOfBirth() != null) {
-                preparedStatement.setDate(numberOfParameter, Date.valueOf(user.getDateOfBirth()));
-            } else {
-                preparedStatement.setNull(numberOfParameter, Types.DATE);
-            }
-            preparedStatement.setLong(numberOfParameter + 1, user.getId());
-
-            countOfUpdatedUsers = preparedStatement.executeUpdate();
+            preparedStatement.setDouble(3, user.getSalary());
+            preparedStatement.setDate(4, Date.valueOf(user.getDateOfBirth()));
+            preparedStatement.setLong(5, user.getId());
+            preparedStatement.executeUpdate();
         } catch (SQLException ex) {
-            throw new RuntimeException("Connection to database is not available. It is not possible to update user with query: " + update_user, ex);
+            throw new RuntimeException("Connection to database is not available. It is not possible to update user with ID " + user.getId(), ex);
         }
-        return countOfUpdatedUsers;
     }
 
     public List<User> searchUser(String text) {
@@ -146,7 +113,7 @@ public class JdbcUserDao {
             resultSet.close();
         } catch (
                 SQLException ex) {
-            throw new RuntimeException("Connection to database is not available . It is not possible to search users by text " + text + " with query: " + SEARCH_USER, ex);
+            throw new RuntimeException("Connection to database is not available . It is not possible to search users by text " + text, ex);
         }
         return listOfUsers;
     }

@@ -7,17 +7,14 @@ import com.boroday.userstore.web.templater.PageGenerator;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-import java.io.File;
 import java.io.IOException;
-import java.nio.file.Files;
-import java.nio.file.Paths;
 import java.sql.Date;
-import java.util.HashMap;
-import java.util.Map;
+import java.sql.Timestamp;
 
 public class AddNewUserServlet extends HttpServlet {
 
     private PageGenerator pageGenerator = PageGenerator.instance();
+    private static final String USERS_PAGE = "/users";
 
     @Override
     public void doGet(HttpServletRequest request,
@@ -35,39 +32,18 @@ public class AddNewUserServlet extends HttpServlet {
     public void doPost(HttpServletRequest request,
                        HttpServletResponse response) throws IOException {
         UserService userService = new UserService();
-        int resultOfInsert = 0;
         try {
             User user = new User();
             user.setFirstName(request.getParameter("firstName"));
             user.setLastName(request.getParameter("lastName"));
-
-            String salary = request.getParameter("salary");
-            if (!salary.isEmpty()) {
-                user.setSalary(Double.parseDouble(request.getParameter("salary")));
-            }
-
-            String dateOfBirth = request.getParameter("dateOfBirth");
-            if (!dateOfBirth.isEmpty()) {
-                user.setDateOfBirth((Date.valueOf(request.getParameter("dateOfBirth"))).toLocalDate());
-            }
-
-            resultOfInsert = userService.add(user);
+            user.setSalary(Double.parseDouble(request.getParameter("salary")));
+            Date date = Date.valueOf(request.getParameter("dateOfBirth"));
+            Timestamp timestamp = new Timestamp(date.getTime());
+            user.setDateOfBirth(timestamp.toLocalDateTime().toLocalDate());
+            userService.add(user);
         } catch (Exception e) {
             e.printStackTrace();
         }
-        response.setContentType("text/html;charset=utf-8");
-
-        if (resultOfInsert == 0) {
-            response.setStatus(HttpServletResponse.SC_FORBIDDEN);
-        } else {
-            response.setStatus(HttpServletResponse.SC_OK);
-        }
-
-        Map<String, Object> pageVariables = new HashMap<>();
-
-        pageVariables.put("users", userService.getAll());
-        pageVariables.put("addedUser", resultOfInsert == 1 ? 1 : 0);
-        String page = pageGenerator.getPage("users.html", pageVariables);
-        response.getWriter().write(page);
+        response.sendRedirect(USERS_PAGE);
     }
 }

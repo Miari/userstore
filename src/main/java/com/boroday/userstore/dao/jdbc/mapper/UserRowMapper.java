@@ -2,9 +2,9 @@ package com.boroday.userstore.dao.jdbc.mapper;
 
 import com.boroday.userstore.entity.User;
 
-import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 
 public class UserRowMapper {
 
@@ -13,17 +13,10 @@ public class UserRowMapper {
         user.setId(resultSet.getLong("id"));
         user.setFirstName(resultSet.getString("firstName"));
         user.setLastName(resultSet.getString("lastName"));
+        user.setSalary(resultSet.getDouble("salary"));
 
-
-        Double salary = resultSet.getDouble("salary");
-        if (salary != null) {
-            user.setSalary(salary);
-        }
-
-        Date dateOfBirth = resultSet.getDate("dateOfBirth");
-        if (dateOfBirth != null) {
-            user.setDateOfBirth(dateOfBirth.toLocalDate());
-        }
+        Timestamp dateOfBirth = resultSet.getTimestamp("dateOfBirth");
+        user.setDateOfBirth(dateOfBirth.toLocalDateTime().toLocalDate());
 
         return user;
     }

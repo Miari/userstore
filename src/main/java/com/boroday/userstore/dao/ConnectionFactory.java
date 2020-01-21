@@ -19,12 +19,11 @@ public class ConnectionFactory {
         try {
             List<String> lines = Files.readAllLines(Paths.get("src" + File.separator + "main" + File.separator + "resources" + File.separator + "applicationProperties"), StandardCharsets.UTF_8);
             host = lines.get(2);
-            username  = lines.get(3);
+            username = lines.get(3);
             password = lines.get(4);
         } catch (IOException ex) {
             throw new RuntimeException("ApplicationProperties file could not be read", ex);
         }
-
         try {
             return DriverManager.getConnection(host, username, password);
         } catch (SQLException ex) {

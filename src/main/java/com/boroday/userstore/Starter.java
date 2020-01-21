@@ -29,7 +29,8 @@ public class Starter {
 
         List<String> lines = Files.readAllLines(Paths.get("src" + File.separator + "main" + File.separator + "resources" + File.separator + "applicationProperties"), StandardCharsets.UTF_8);
 
-        Server server = new Server(Integer.parseInt(lines.get(1)));
+        int port = Integer.parseInt(lines.get(1));
+        Server server = new Server(port);
         server.setHandler(context);
 
         server.start();
