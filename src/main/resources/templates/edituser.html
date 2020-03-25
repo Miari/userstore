@@ -8,13 +8,13 @@
 <h2>Edit user:</h2>
 <form action="/users/edit" method="POST">
     <#if user?has_content>
-        <p>ID: <input type="number" name="id" value="${user.id}" readonly/></p>
-        <p>First Name: <input type="text" required name="firstName" value="${user.firstName}"/></p>
-        <p>Last Name: <input type="text" required name="lastName" value="${user.lastName}"/></p>
-        <p>Salary: <input type="text" required name="salary" <#if (user.salary)??> value="${user.salary}"</#if>/></p>
-        <p>Birthday: <input type="date" required name="dateOfBirth" <#if (user.dateOfBirth)??> value="${user.dateOfBirth}"</#if>/></p>
-        <p><input type="submit" value="Edit"></p>
-    </#if>
+    <p>ID: <input type="number" name="id" value="${user.id}" readonly/></p>
+    <p>First Name: <input type="text" required name="firstName" value="${user.firstName}"/></p>
+    <p>Last Name: <input type="text" required name="lastName" value="${user.lastName}"/></p>
+    <p>Salary: <input type="text" required name="salary" <#if (user.salary)??> value="${user.salary}"</#if>/></p>
+    <p>Birthday: <input type="date" required name="dateOfBirth" <#if (user.dateOfBirth)??> value="${user.dateOfBirth}"</#if>/></p>
+    <p><input type="submit" value="Edit"></p>
+</#if>
 </form>
 </body>
 </html>

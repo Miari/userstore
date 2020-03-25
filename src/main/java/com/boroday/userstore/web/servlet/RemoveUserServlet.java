@@ -1,5 +1,6 @@
 package com.boroday.userstore.web.servlet;
 
+import com.boroday.userstore.ServiceLocator;
 import com.boroday.userstore.service.UserService;
 
 import javax.servlet.http.HttpServlet;
@@ -15,8 +16,8 @@ public class RemoveUserServlet extends HttpServlet {
     public void doPost(HttpServletRequest request,
                        HttpServletResponse response) throws IOException {
 
-        UserService userService = new UserService();
         String userId = request.getParameter("id");
+        UserService userService = ServiceLocator.getService(UserService.class);
         userService.remove(userId);
         response.sendRedirect(USERS_PAGE);
     }

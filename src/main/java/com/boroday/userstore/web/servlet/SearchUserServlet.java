@@ -1,5 +1,6 @@
 package com.boroday.userstore.web.servlet;
 
+import com.boroday.userstore.ServiceLocator;
 import com.boroday.userstore.entity.User;
 import com.boroday.userstore.service.UserService;
 import com.boroday.userstore.web.templater.PageGenerator;
@@ -18,7 +19,7 @@ public class SearchUserServlet extends HttpServlet {
                       HttpServletResponse response) throws IOException {
 
         Map<String, Object> pageVariables = new HashMap<>();
-        UserService userService = new UserService();
+        UserService userService = ServiceLocator.getService(UserService.class);
 
         String searchText = request.getParameter("searchText");
         List<User> foundUsers = userService.search(searchText);

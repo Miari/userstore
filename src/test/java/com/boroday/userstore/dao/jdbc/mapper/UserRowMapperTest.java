@@ -6,6 +6,7 @@ import org.junit.Test;
 import java.sql.Date;
 import java.sql.ResultSet;
 import java.sql.SQLException;
+import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.time.Month;
 
@@ -20,14 +21,17 @@ public class UserRowMapperTest {
     public void testMapRow() throws SQLException {
         UserRowMapper userRowMapper = new UserRowMapper();
         ResultSet mockResultSet = mock(ResultSet.class);
-        when(mockResultSet.getInt("id")).thenReturn(1);
+        when(mockResultSet.getLong("id")).thenReturn((long) 1);
         when(mockResultSet.getString("firstName")).thenReturn("Lena");
         when(mockResultSet.getString("lastName")).thenReturn("Strim");
         when(mockResultSet.getDouble("salary")).thenReturn(1500.00);
 
         LocalDate localDate = LocalDate.of(2000, Month.MAY, 21);
         Date date = Date.valueOf(localDate);
-        when(mockResultSet.getDate("dateOfBirth")).thenReturn(date);
+
+        Timestamp timestamp = new Timestamp(date.getTime());
+        when(mockResultSet.getTimestamp("dateOfBirth")).thenReturn(timestamp);
+
         User testUser = userRowMapper.mapRow(mockResultSet);
 
         assertNotNull(testUser);

@@ -4,6 +4,7 @@ import com.boroday.userstore.dao.jdbc.mapper.UserRowMapper;
 import com.boroday.userstore.dao.ConnectionFactory;
 import com.boroday.userstore.entity.User;
 
+import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -18,10 +19,16 @@ public class JdbcUserDao {
     private static final String SEARCH_USER = "select id, firstName, lastName, salary, dateOfBirth from users where lower(firstName) like lower(?) or lower(lastName) like lower (?) order by id";
     private static final UserRowMapper USER_ROW_MAPPER = new UserRowMapper();
 
+    private DataSource dataSource;
+
+    public JdbcUserDao(DataSource dataSource) {
+        this.dataSource = dataSource;
+    }
+
     public List<User> getAll() {
         List<User> listOfUsers = new ArrayList<>();
         try (
-                Connection connection = ConnectionFactory.getConnection();
+                Connection connection = dataSource.getConnection();
                 Statement statement = connection.createStatement();
                 ResultSet resultSet = statement.executeQuery(GET_ALL_USERS)
         ) {
@@ -38,7 +45,7 @@ public class JdbcUserDao {
 
     public void addNewUser(User user) {
         try (
-                Connection connection = ConnectionFactory.getConnection();
+                Connection connection = dataSource.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(ADD_NEW_USER)) {
             preparedStatement.setString(1, user.getFirstName());
             preparedStatement.setString(2, user.getLastName());
@@ -52,7 +59,7 @@ public class JdbcUserDao {
 
     public void removeUser(long userId) {
         try (
-                Connection connection = ConnectionFactory.getConnection();
+                Connection connection = dataSource.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(REMOVE_USER)
         ) {
             preparedStatement.setLong(1, userId);
@@ -65,7 +72,7 @@ public class JdbcUserDao {
     public User getUserById(long userId) {
         User user = new User();
         try (
-                Connection connection = ConnectionFactory.getConnection();
+                Connection connection = dataSource.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_ID)
         ) {
             preparedStatement.setLong(1, userId);
@@ -82,7 +89,7 @@ public class JdbcUserDao {
 
     public void updateUser(User user) {
         try (
-                Connection connection = ConnectionFactory.getConnection();
+                Connection connection = dataSource.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(UPDATE_USER)
         ) {
             preparedStatement.setString(1, user.getFirstName());
@@ -100,7 +107,7 @@ public class JdbcUserDao {
 
         List<User> listOfUsers = new ArrayList<>();
         try (
-                Connection connection = ConnectionFactory.getConnection();
+                Connection connection = dataSource.getConnection();
                 PreparedStatement preparedStatement = connection.prepareStatement(SEARCH_USER)
         ) {
             preparedStatement.setString(1, "%" + text + "%");

@@ -6,43 +6,43 @@
 </head>
 <body>
 <#if users?has_content>
-    <table border="1" cellpadding="7">
-        <#if foundUsers?has_content><h3>${foundUsers} Users were found</h3></#if>
-        <caption><h2>Users</h2></caption>
-        <tr>
-            <th>ID</th>
-            <th>FirstName</th>
-            <th>SecondName</th>
-            <th>Salary</th>
-            <th>Birthday</th>
-            <th>Actions</th>
-        </tr>
-        <#list users as user>
-            <tr>
-                <td>${user.id}</td>
-                <td>${user.firstName}</td>
-                <td>${user.lastName}</td>
-                <td><#if (user.salary)??>${user.salary}</#if></td>
-                <td><#if (user.dateOfBirth)??>${user.dateOfBirth}</#if></td>
-                <td>
-                    <form action="/users/edit" method="GET">
-                        <button type="submit" value="${user.id}" name="id">Edit</button>
-                    </form>
-                    <form action="/users/remove" method="POST">
-                        <button type="submit" value="${user.id}" name="id">Delete</button>
-                    </form>
-                </td>
-            </tr>
-        </#list>
-    </table>
+<table border="1" cellpadding="7">
+    <#if foundUsers?has_content><h3>${foundUsers} Users were found</h3></#if>
+<caption><h2>Users</h2></caption>
+<tr>
+    <th>ID</th>
+    <th>FirstName</th>
+    <th>SecondName</th>
+    <th>Salary</th>
+    <th>Birthday</th>
+    <th>Actions</th>
+</tr>
+<#list users as user>
+<tr>
+    <td>${user.id}</td>
+    <td>${user.firstName}</td>
+    <td>${user.lastName}</td>
+    <td><#if (user.salary)??>${user.salary}</#if></td>
+    <td><#if (user.dateOfBirth)??>${user.dateOfBirth}</#if></td>
+    <td>
+        <form action="/users/edit" method="GET">
+            <button type="submit" value="${user.id}" name="id">Edit</button>
+        </form>
+        <form action="/users/remove" method="POST">
+            <button type="submit" value="${user.id}" name="id">Delete</button>
+        </form>
+    </td>
+</tr>
+</#list>
+</table>
 <br>
 
-    <form action="/users/search" method="GET">
-        <input type="text" placeholder="Search text" name="searchText">
-        <input type="submit" value="Search">
-    </form>
-    <#else>
-        <h2>There are no Users in database</h2>
+<form action="/users/search" method="GET">
+    <input type="text" placeholder="Search text" name="searchText">
+    <input type="submit" value="Search">
+</form>
+<#else>
+<h2>There are no Users in database</h2>
 </#if>
 <#if foundUsers?has_content>
 <form action="/users" method="GET">

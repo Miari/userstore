@@ -1,5 +1,0 @@
-Instructions. String1: port; String2: host for db; String3: username for db; String4: password for db
-8080
-jdbc:postgresql://localhost:5432/userstore
-postgres
-12345

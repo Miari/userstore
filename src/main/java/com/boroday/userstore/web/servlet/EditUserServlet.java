@@ -1,5 +1,6 @@
 package com.boroday.userstore.web.servlet;
 
+import com.boroday.userstore.ServiceLocator;
 import com.boroday.userstore.entity.User;
 import com.boroday.userstore.service.UserService;
 import com.boroday.userstore.web.templater.PageGenerator;
@@ -15,7 +16,7 @@ import java.util.Map;
 
 public class EditUserServlet extends HttpServlet {
 
-    private UserService userService = new UserService();
+    private UserService userService = ServiceLocator.getService(UserService.class);
     private static final String USERS_PAGE = "/users";
 
     @Override

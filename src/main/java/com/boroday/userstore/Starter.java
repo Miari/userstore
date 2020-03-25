@@ -1,10 +1,12 @@
 package com.boroday.userstore;
 
+import com.boroday.userstore.util.PropertiesReader;
 import com.boroday.userstore.web.servlet.*;
 import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 
+import javax.sql.DataSource;
 import java.io.File;
 import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
@@ -27,9 +29,9 @@ public class Starter {
         context.addServlet(new ServletHolder(editUserServlet), "/users/edit");
         context.addServlet(new ServletHolder(searchUserServlet), "/users/search");
 
-        List<String> lines = Files.readAllLines(Paths.get("src" + File.separator + "main" + File.separator + "resources" + File.separator + "applicationProperties"), StandardCharsets.UTF_8);
+        PropertiesReader propertiesReader = ServiceLocator.getService(PropertiesReader.class);
+        int port = propertiesReader.getPropertyInt("server.port");
 
-        int port = Integer.parseInt(lines.get(1));
         Server server = new Server(port);
         server.setHandler(context);
 

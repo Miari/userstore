@@ -7,7 +7,11 @@ import java.util.List;
 
 public class UserService {
 
-    private JdbcUserDao jdbcUserDao = new JdbcUserDao();
+    private JdbcUserDao jdbcUserDao;
+
+    public UserService(JdbcUserDao jdbcUserDao) {
+        this.jdbcUserDao = jdbcUserDao;
+    }
 
     public List<User> getAll() {
         return jdbcUserDao.getAll();

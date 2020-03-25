@@ -1,5 +1,6 @@
 package com.boroday.userstore.web.servlet;
 
+import com.boroday.userstore.ServiceLocator;
 import com.boroday.userstore.entity.User;
 import com.boroday.userstore.service.UserService;
 import com.boroday.userstore.web.templater.PageGenerator;
@@ -31,7 +32,7 @@ public class AddNewUserServlet extends HttpServlet {
     @Override
     public void doPost(HttpServletRequest request,
                        HttpServletResponse response) throws IOException {
-        UserService userService = new UserService();
+
         try {
             User user = new User();
             user.setFirstName(request.getParameter("firstName"));
@@ -40,6 +41,7 @@ public class AddNewUserServlet extends HttpServlet {
             Date date = Date.valueOf(request.getParameter("dateOfBirth"));
             Timestamp timestamp = new Timestamp(date.getTime());
             user.setDateOfBirth(timestamp.toLocalDateTime().toLocalDate());
+            UserService userService = ServiceLocator.getService(UserService.class);
             userService.add(user);
         } catch (Exception e) {
             e.printStackTrace();
