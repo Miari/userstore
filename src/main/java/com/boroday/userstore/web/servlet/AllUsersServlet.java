@@ -2,7 +2,10 @@ package com.boroday.userstore.web.servlet;
 
 import com.boroday.userstore.ServiceLocator;
 import com.boroday.userstore.service.UserService;
+import com.boroday.userstore.service.impl.DefaultUserService;
 import com.boroday.userstore.web.templater.PageGenerator;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -12,10 +15,12 @@ import java.util.*;
 
 public class AllUsersServlet extends HttpServlet {
 
+    private final Logger log = LoggerFactory.getLogger(getClass());
 
     @Override
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response) throws IOException {
+        log.info("Page for getting all users is requested");
         Map<String, Object> pageVariables = new HashMap<>();
         UserService userService = ServiceLocator.getService(UserService.class);
 

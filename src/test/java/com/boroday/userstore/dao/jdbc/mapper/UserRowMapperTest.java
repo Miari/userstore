@@ -1,7 +1,7 @@
 package com.boroday.userstore.dao.jdbc.mapper;
 
 import com.boroday.userstore.entity.User;
-import org.junit.Test;
+import org.junit.jupiter.api.Test;
 
 import java.sql.Date;
 import java.sql.ResultSet;
@@ -10,8 +10,8 @@ import java.sql.Timestamp;
 import java.time.LocalDate;
 import java.time.Month;
 
-import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertNotNull;
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.mockito.Mockito.mock;
 import static org.mockito.Mockito.when;
 

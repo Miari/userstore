@@ -1,8 +1,10 @@
 package com.boroday.userstore;
 
 import com.boroday.userstore.dao.ConnectionFactory;
+import com.boroday.userstore.dao.UserDao;
 import com.boroday.userstore.dao.jdbc.JdbcUserDao;
 import com.boroday.userstore.service.UserService;
+import com.boroday.userstore.service.impl.DefaultUserService;
 import com.boroday.userstore.util.PropertiesReader;
 
 import javax.sql.DataSource;
@@ -21,10 +23,10 @@ public class ServiceLocator {
         Properties properties = propertiesReader.getProperties();
         DataSource dataSource = ConnectionFactory.getDataSource(properties);
 
-        JdbcUserDao jdbcUserDao = new JdbcUserDao(dataSource);
-        register(JdbcUserDao.class, jdbcUserDao);
+        UserDao userDao = new JdbcUserDao(dataSource);
+        register(UserDao.class, userDao);
 
-        UserService userService = new UserService(jdbcUserDao);
+        UserService userService = new DefaultUserService(userDao);
         register(UserService.class, userService);
     }
 
