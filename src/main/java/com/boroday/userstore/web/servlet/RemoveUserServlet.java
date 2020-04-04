@@ -2,7 +2,6 @@ package com.boroday.userstore.web.servlet;
 
 import com.boroday.userstore.ServiceLocator;
 import com.boroday.userstore.service.UserService;
-import com.boroday.userstore.service.impl.DefaultUserService;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

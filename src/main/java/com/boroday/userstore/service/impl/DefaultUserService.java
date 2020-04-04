@@ -1,7 +1,6 @@
 package com.boroday.userstore.service.impl;
 
 import com.boroday.userstore.dao.UserDao;
-import com.boroday.userstore.dao.jdbc.JdbcUserDao;
 import com.boroday.userstore.entity.User;
 import com.boroday.userstore.service.UserService;
 

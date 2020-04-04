@@ -3,7 +3,6 @@ package com.boroday.userstore.web.servlet;
 import com.boroday.userstore.ServiceLocator;
 import com.boroday.userstore.entity.User;
 import com.boroday.userstore.service.UserService;
-import com.boroday.userstore.service.impl.DefaultUserService;
 import com.boroday.userstore.web.templater.PageGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;

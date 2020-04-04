@@ -2,7 +2,6 @@ package com.boroday.userstore.web.servlet;
 
 import com.boroday.userstore.ServiceLocator;
 import com.boroday.userstore.service.UserService;
-import com.boroday.userstore.service.impl.DefaultUserService;
 import com.boroday.userstore.web.templater.PageGenerator;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -33,7 +32,6 @@ public class AllUsersServlet extends HttpServlet {
         response.setContentType("text/html;charset=utf-8");
         response.setStatus(HttpServletResponse.SC_OK);
     }
-
 
 
     /*private List<User> createMockList() {

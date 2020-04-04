@@ -27,4 +27,8 @@ public class TestDataSource {
             RunScript.execute(connection, fileReader);
         }
     }
+
+    public void cleanup() throws IOException, SQLException {
+        runScriptFromFile("db/cleanup/cleanup.sql");
+    }
 }

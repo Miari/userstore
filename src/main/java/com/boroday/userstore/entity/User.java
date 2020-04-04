@@ -52,4 +52,19 @@ public class User {
     public String toString() {
         return "UserID = " + id + "; FirstName = " + firstName + "; LastName = " + lastName + "; Salary = " + salary + "; DateOfBirth = " + dateOfBirth + ".";
     }
+
+    public boolean equals(Object user) {
+        if (this == user) {
+            return true;
+        }
+        if (user == null || getClass() != user.getClass()) {
+            return false;
+        }
+        User newUser = (User) user;
+        return id == newUser.id &&
+                firstName.equals(newUser.firstName) &&
+                lastName.equals(newUser.lastName) &&
+                salary.equals(newUser.salary) &&
+                dateOfBirth.equals(newUser.dateOfBirth);
+    }
 }
