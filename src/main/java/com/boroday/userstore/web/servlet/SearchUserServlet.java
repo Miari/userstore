@@ -1,11 +1,9 @@
 package com.boroday.userstore.web.servlet;
 
-import com.boroday.userstore.ServiceLocator;
 import com.boroday.userstore.entity.User;
 import com.boroday.userstore.service.UserService;
 import com.boroday.userstore.web.templater.PageGenerator;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -15,9 +13,14 @@ import java.util.HashMap;
 import java.util.List;
 import java.util.Map;
 
+@Slf4j
 public class SearchUserServlet extends HttpServlet {
 
-    private final Logger log = LoggerFactory.getLogger(getClass());
+    private UserService userService;
+
+    public SearchUserServlet(UserService userService) {
+        this.userService = userService;
+    }
 
     @Override
     public void doGet(HttpServletRequest request,
@@ -25,7 +28,6 @@ public class SearchUserServlet extends HttpServlet {
 
 
         Map<String, Object> pageVariables = new HashMap<>();
-        UserService userService = ServiceLocator.getService(UserService.class);
 
         String searchText = request.getParameter("searchText");
         log.info("Request to search users by text: {}", searchText);

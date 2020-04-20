@@ -1,25 +1,22 @@
 package com.boroday.userstore.util;
 
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 import java.io.IOException;
 import java.io.InputStream;
 import java.util.Properties;
 
+@Slf4j
 public class PropertiesReader {
 
-    private String path;
     private Properties properties;
-    private final Logger log = LoggerFactory.getLogger(getClass());
 
     public PropertiesReader(String path) {
-        this.path = path;
-        properties = readProperties();
+        properties = readProperties(path);
     }
 
     public Properties getProperties() {
-        return properties;
+        return new Properties(properties); // TODO объясни, пожалуйста, почему return properties было плохо и зачем каждый раз создавать новый объект
     }
 
     public Integer getPropertyInt(String propertyName) {
@@ -27,11 +24,10 @@ public class PropertiesReader {
         return property == null ? null : Integer.valueOf(property);
     }
 
-    private Properties readProperties() {
+    private Properties readProperties(String path) {
         log.info("Trying to get properties");
         Properties properties = new Properties();
-        try {
-            InputStream resourceInputStream = PropertiesReader.class.getClassLoader().getResourceAsStream(path);//todo clarify getClassLoader()
+        try (InputStream resourceInputStream = PropertiesReader.class.getClassLoader().getResourceAsStream(path);) {
             if (resourceInputStream == null) {
                 log.error("Property file is not found by the path {}", path);
                 throw new IllegalArgumentException("No properties by the path " + path);

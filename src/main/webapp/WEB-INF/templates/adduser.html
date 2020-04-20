@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <title>Add User</title>
+</head>
+<body>
+    <div class="wrapper">
+    <#include "/src/main/webapp/WEB-INF/templates/header.html">
+        <div class="content">
+        <h2 class="centralize">Add user:</h2>
+        <form action="/users/add" method="POST" class="adduser centralize">
+            <p><input class="general-input" type="text" name="login" required placeholder="Login"/></p>
+            <p><input class="general-input" type="password" name="password" required placeholder="Password"/></p>
+            <p><input class="general-input" type="text" name="firstName" placeholder="First Name" required/></p>
+            <p><input class="general-input" type="text" name="lastName" placeholder="Last Name" required/></p>
+            <p><input class="general-input" type="number" name="salary" placeholder="Salary" required/></p>
+            <p><input class="general-input" type="date" name="dateOfBirth" placeholder="Date of birth" required/></p>
+            <p><input class="submit" type="submit" value="Add"></p>
+        </form>
+        </div>
+    <#include "/src/main/webapp/WEB-INF/templates/footer.html">
+    </div>
+</body>
+</html>

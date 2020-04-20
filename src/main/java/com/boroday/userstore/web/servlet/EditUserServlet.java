@@ -1,11 +1,9 @@
 package com.boroday.userstore.web.servlet;
 
-import com.boroday.userstore.ServiceLocator;
 import com.boroday.userstore.entity.User;
-import com.boroday.userstore.service.impl.DefaultUserService;
+import com.boroday.userstore.service.UserService;
 import com.boroday.userstore.web.templater.PageGenerator;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,11 +14,15 @@ import java.sql.Timestamp;
 import java.util.HashMap;
 import java.util.Map;
 
+@Slf4j
 public class EditUserServlet extends HttpServlet {
 
-    private DefaultUserService userService = ServiceLocator.getService(DefaultUserService.class);
+    private UserService userService;
     private static final String USERS_PAGE = "/users";
-    private final Logger log = LoggerFactory.getLogger(getClass());
+
+    public EditUserServlet(UserService userService) {
+        this.userService = userService;
+    }
 
     @Override
     public void doGet(HttpServletRequest request,
@@ -29,16 +31,24 @@ public class EditUserServlet extends HttpServlet {
         Map<String, Object> pageVariables = new HashMap<>();
 
         String userId = request.getParameter("id");
-        User userForEdit = userService.getById(userId);
-        pageVariables.put("user", userForEdit);
 
+        try {
+            Long userIdLong = Long.parseLong(userId);
+            User userForEdit = userService.getById(userIdLong);
+            pageVariables.put("user", userForEdit);
 
-        PageGenerator pageGenerator = PageGenerator.instance();
-        String page = pageGenerator.getPage("edituser.html", pageVariables);
-        response.getWriter().write(page);
+            PageGenerator pageGenerator = PageGenerator.instance();
+            String page = pageGenerator.getPage("edituser.html", pageVariables);
+            response.getWriter().write(page);
 
-        response.setContentType("text/html;charset=utf-8");
-        response.setStatus(HttpServletResponse.SC_OK);
+            response.setContentType("text/html;charset=utf-8");
+            response.setStatus(HttpServletResponse.SC_OK);
+        } catch (NumberFormatException e) {
+            log.error("Format of id is incorrect");
+            e.printStackTrace();
+            response.getWriter().println("Status code (400) ID must be a number");
+            response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+        }
     }
 
     @Override
@@ -48,7 +58,9 @@ public class EditUserServlet extends HttpServlet {
             String userId = request.getParameter("id");
             log.info("Request to edit user with id {}", userId);
             User user = new User();
-            user.setId(Integer.parseInt(userId));
+            user.setId(Long.parseLong(userId));
+            user.setLogin(request.getParameter("login"));
+            user.setPassword(request.getParameter("password"));
             user.setFirstName(request.getParameter("firstName"));
             user.setLastName(request.getParameter("lastName"));
             user.setSalary(Double.parseDouble(request.getParameter("salary")));

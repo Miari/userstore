@@ -9,9 +9,11 @@ public interface UserService {
 
     void add(User user);
 
-    void remove(String userId);
+    void remove(long userId); //todo change to long
 
-    User getById(String userId);
+    User getById(long userId);
+
+    User getByLogin(String userLogin, String userPassword);
 
     void update(User user);
 

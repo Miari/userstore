@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css" />
+    <title>Users Store</title>
+</head>
+<body>
+    <div class="wrapper">
+    <#include "/src/main/webapp/WEB-INF/templates/header.html">
+        <div class="content">
+        <#if users?has_content>
+            <table class="centralize users">
+                <#if foundUsers?has_content><h3 class="centralize">${foundUsers} Users were found</h3></#if>
+                <caption><h2>Users</h2></caption>
+                <tr>
+                    <th>ID</th>
+                    <th>Login</th>
+                    <th>FirstName</th>
+                    <th>SecondName</th>
+                    <th>Salary</th>
+                    <th>Birthday</th>
+                    <th>Actions</th>
+                </tr>
+                <#list users as user>
+                <tr>
+                    <td>${user.id}</td>
+                    <td>${user.login}</td>
+                    <td>${user.firstName}</td>
+                    <td>${user.lastName}</td>
+                    <td><#if (user.salary)??>${user.salary}</#if></td>
+                    <td><#if (user.dateOfBirth)??>${user.dateOfBirth}</#if></td>
+                    <td>
+                        <form action="/users/edit" method="GET">
+                            <button type="submit" value="${user.id}" name="id" class="submit-small">Edit</button>
+                        </form>
+                        <form action="/users/remove" method="POST">
+                            <button type="submit" value="${user.id}" name="id" class="submit-small">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+                </#list>
+            </table>
+            <br>
+            <div class="centralize">
+                <form action="/users/search" method="GET">
+                    <input type="text" placeholder="Search text" name="searchText" class="general-input">
+                    <input type="submit" value="Search" class="submit">
+                </form>
+        <#else>
+            <h2>There are no Users in database</h2>
+        </#if>
+        <#if foundUsers?has_content>
+            <form action="/users" method="GET">
+                <input type="submit" value="Show all users" class="submit">
+            </form>
+            <br>
+        </#if>
+        </div>
+    </div>
+    <#include "/src/main/webapp/WEB-INF/templates/footer.html">
+</div>
+</body>
+</html>

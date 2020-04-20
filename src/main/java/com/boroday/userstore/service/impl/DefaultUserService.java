@@ -22,12 +22,16 @@ public class DefaultUserService implements UserService {
         userDao.addNewUser(user);
     }
 
-    public void remove(String userId) {
-        userDao.removeUser(Integer.parseInt(userId));
+    public void remove(long userId) {
+        userDao.removeUser(userId);
     }
 
-    public User getById(String userId) {
-        return userDao.getUserById(Integer.parseInt(userId));
+    public User getById(long userId) {
+        return userDao.getUserById(userId);
+    }
+
+    public User getByLogin(String userLogin, String userPassword) {
+        return userDao.getUserByLogin(userLogin, userPassword);
     }
 
     public void update(User user) {

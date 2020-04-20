@@ -1,10 +1,8 @@
 package com.boroday.userstore.web.servlet;
 
-import com.boroday.userstore.ServiceLocator;
 import com.boroday.userstore.service.UserService;
 import com.boroday.userstore.web.templater.PageGenerator;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
+import lombok.extern.slf4j.Slf4j;
 
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -12,16 +10,20 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.*;
 
+@Slf4j
 public class AllUsersServlet extends HttpServlet {
 
-    private final Logger log = LoggerFactory.getLogger(getClass());
+    private UserService userService;
+
+    public AllUsersServlet(UserService userService) {
+        this.userService = userService;
+    }
 
     @Override
     public void doGet(HttpServletRequest request,
                       HttpServletResponse response) throws IOException {
         log.info("Page for getting all users is requested");
         Map<String, Object> pageVariables = new HashMap<>();
-        UserService userService = ServiceLocator.getService(UserService.class);
 
         //pageVariables.put("users", createMockList());
         pageVariables.put("users", userService.getAll());
@@ -32,7 +34,6 @@ public class AllUsersServlet extends HttpServlet {
         response.setContentType("text/html;charset=utf-8");
         response.setStatus(HttpServletResponse.SC_OK);
     }
-
 
     /*private List<User> createMockList() {
         List<User> usersList = new ArrayList<>();
