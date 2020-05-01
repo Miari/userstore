@@ -8,19 +8,25 @@
 <body>
 <div class="wrapper">
     <div class="content">
-        <h2 class="centralize">Welcome to User Store!</h2>
-        <div class="centralize signin">
+        <div class="header">
+            Welcome to User Store!
+        </div>
+        <div class="form">
             <form action="/signin" method="POST">
-                <div>
-                    <input type="text" required name="login" placeholder="Login"  class="general-input"/>
+                <div class="form__content">
+                    <div class="form__field field">
+                        <input type="text" required name="login" placeholder="Login"/>
+                    </div>
+                    <div class="form__field field">
+                        <input type="password" required name="password" placeholder="Password"/>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Signin">
+                    </div>
                 </div>
-                <div>
-                    <input type="password" required name="password" placeholder="Password" class="general-input"/>
-                </div>
-                <input type="submit" value="Signin" class="submit">
             </form>
         </div>
-        <#if message?has_content><div class="centralize"><p class="error">${message}</p></div></#if>
+        <#if message?has_content><div class="error"><p>${message}</p></div></#if>
     </div>
     <#include "/src/main/webapp/WEB-INF/templates/footer.html">
 </div>

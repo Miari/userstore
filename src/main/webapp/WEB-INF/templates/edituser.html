@@ -9,42 +9,48 @@
     <div class="wrapper">
     <#include "/src/main/webapp/WEB-INF/templates/header.html">
         <div class="content">
-        <h2 class="centralize">Edit user:</h2>
-        <form class="centralize edituser" action="/users/edit" method="POST">
+            <div class="header">
+                Edit user
+            </div>
             <#if user?has_content>
-            <p>
-                <label for="id">ID:</label>
-                <input class="general-input" type="number" name="id" id="id" value="${user.id}" readonly/>
-            </p>
-            <p>
-                <label for="login">Login:</label>
-                <input class="general-input" type="text" name="login" id="login" required value="${user.login}"/>
-            </p>
-            <p>
-                <label for="password">Password:</label>
-                <input class="general-input" type="password" name="password" id="password" required value="${user.password}"/>
-            </p>
-            <p>
-                <label for="firstName">First Name:</label>
-                <input class="general-input" type="text" required name="firstName" id="firstName" value="${user.firstName}"/>
-            </p>
-            <p>
-                <label for="lastName">Last Name:</label>
-                <input class="general-input" type="text" required name="lastName" id="lastName" value="${user.lastName}"/>
-            </p>
-            <p>
-                <label for="salary">Salary:</label>
-                <input class="general-input" type="text" required name="salary" id="salary" <#if (user.salary)??> value="${user.salary}"</#if>/>
-            </p>
-            <p>
-                <label for="dateOfBirth">Birthday:</label>
-                <input class="general-input" type="date" required name="dateOfBirth" id="dateOfBirth" <#if (user.dateOfBirth)??> value="${user.dateOfBirth}"</#if>/>
-            </p>
-            <p>
-                <input class="submit" type="submit" value="Edit">
-            </p>
+            <div class="edit_form">
+                <form action="/users/edit" method="POST">
+                    <div class="edit_form__content form__content">
+                        <div class="edit_field field">
+                            <label for="id">ID:</label>
+                            <input type="number" name="id" id="id" value="${user.id}" readonly/>
+                        </div>
+                        <div class="edit_field field">
+                            <label for="login">Login:</label>
+                            <input type="text" name="login" id="login" required value="${user.login}"/>
+                        </div>
+                        <div class="edit_field field">
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password" required value="${user.password}"/>
+                        </div>
+                        <div class="edit_field field">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" required name="firstName" id="firstName" value="${user.firstName}"/>
+                        </div>
+                        <div class="edit_field field">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" required name="lastName" id="lastName" value="${user.lastName}"/>
+                        </div>
+                        <div class="edit_field field">
+                            <label for="salary">Salary:</label>
+                            <input type="text" required name="salary" id="salary" <#if (user.salary)??> value="${user.salary}"</#if>/>
+                        </div>
+                        <div class="edit_field field">
+                            <label for="dateOfBirth">Birthday:</label>
+                            <input class="general-input" type="date" required name="dateOfBirth" id="dateOfBirth" <#if (user.dateOfBirth)??> value="${user.dateOfBirth}"</#if>/>
+                        </div>
+                        <div class="button">
+                            <input class="submit" type="submit" value="Edit">
+                        </div>
+                    </div>
+                </form>
+            </div>
             </#if>
-        </form>
         </div>
     <#include "/src/main/webapp/WEB-INF/templates/footer.html">
     </div>

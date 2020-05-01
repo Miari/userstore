@@ -13,13 +13,13 @@ import java.util.List;
 @Slf4j
 public class JdbcUserDao implements UserDao {
 
-    private static final String GET_ALL_USERS = "select id, login, firstName, lastName, salary, dateOfBirth, password from users order by id";
-    private static final String ADD_NEW_USER = "insert into users (firstName, lastName, salary, dateOfBirth, login, password) values (?,?,?,?,?,?)";
-    private static final String REMOVE_USER = "delete from users where id = ?";
-    private static final String SELECT_USER_BY_ID = "select id, login, password, firstName, lastName, salary, dateOfBirth from users where id = ?";
-    private static final String SELECT_USER_BY_LOGIN = "select id, login, password, firstName, lastName, salary, dateOfBirth from users where login like ?";
-    private static final String UPDATE_USER = "update users set firstName = ?, lastName = ?, salary = ?, dateOfBirth = ?, login = ?, password = ? where id = ?";
-    private static final String SEARCH_USER = "select id, firstName, lastName, salary, dateOfBirth, login, password from users where lower(firstName) like lower(?) or lower(lastName) like lower (?) or lower(login) like lower(?) order by id";
+    private static final String GET_ALL_USERS = "select id, login, firstName, lastName, salary, dateOfBirth, password from Users order by id";
+    private static final String ADD_NEW_USER = "insert into Users (firstName, lastName, salary, dateOfBirth, login, password) values (?,?,?,?,?,?)";
+    private static final String REMOVE_USER = "delete from Users where id = ?";
+    private static final String SELECT_USER_BY_ID = "select id, login, password, firstName, lastName, salary, dateOfBirth from Users where id = ?";
+    private static final String SELECT_USER_BY_LOGIN = "select id, login, password, firstName, lastName, salary, dateOfBirth from Users where login like ?";
+    private static final String UPDATE_USER = "update Users set firstName = ?, lastName = ?, salary = ?, dateOfBirth = ?, login = ?, password = ? where id = ?";
+    private static final String SEARCH_USER = "select id, firstName, lastName, salary, dateOfBirth, login, password from Users where lower(firstName) like lower(?) or lower(lastName) like lower (?) or lower(login) like lower(?) order by id";
     private static final UserRowMapper USER_ROW_MAPPER = new UserRowMapper();
 
     private DataSource dataSource;

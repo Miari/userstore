@@ -5,10 +5,10 @@ ALTER TABLE Users
 ADD password VARCHAR(50)
 AFTER login;
 
-UPDATE users
+UPDATE Users
 SET login='ama', password='123'
 where id=1;
-UPDATE users
+UPDATE Users
 SET login='pav', password='456'
 where id=2;
 
