@@ -16,7 +16,7 @@ public class PropertiesReader {
     }
 
     public Properties getProperties() {
-        return new Properties(properties); // TODO объясни, пожалуйста, почему return properties было плохо и зачем каждый раз создавать новый объект
+        return new Properties(properties);
     }
 
     public Integer getPropertyInt(String propertyName) {
