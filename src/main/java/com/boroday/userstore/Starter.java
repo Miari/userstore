@@ -58,6 +58,8 @@ public class Starter {
         //context.addServlet(new ServletHolder(new GetStaticResourcesServlet()), "/");
 
         //PropertiesReader propertiesReader = ServiceLocator.getService(PropertiesReader.class);
+
+
         int port = propertiesReader.getPropertyInt("server.port");
 
         Server server = new Server(port);
