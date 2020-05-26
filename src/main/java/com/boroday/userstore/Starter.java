@@ -32,7 +32,6 @@ public class Starter {
         EditUserServlet editUserServlet = new EditUserServlet(userService);
         SearchUserServlet searchUserServlet = new SearchUserServlet(userService);
         RemoveUserServlet removeUserServlet = new RemoveUserServlet(userService);
-        DefaultServlet defaultServlet = new DefaultServlet();
 
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.addServlet(new ServletHolder(allUsersServlet), "/users");
@@ -43,6 +42,7 @@ public class Starter {
         context.addServlet(new ServletHolder(editUserServlet), "/users/edit");
         context.addServlet(new ServletHolder(searchUserServlet), "/users/search");
 
+        DefaultServlet defaultServlet = new DefaultServlet();
         ServletHolder servletHolder = new ServletHolder("default", defaultServlet);
         servletHolder.setInitParameter("resourceBase", "./src/main/resources/");
         context.addServlet(servletHolder, "/");

@@ -12,7 +12,7 @@ import java.util.Map;
 
 public class PageGenerator {
 
-    private static final String HTML_DIR = Paths.get("src", "main", "webapp", "WEB-INF", "templates").toString();//+ "src/main/webapp/WEB-INF/templates";
+    private static final String HTML_DIR = Paths.get("WEB-INF", "templates").toString();//+ "src/main/webapp/WEB-INF/templates";
 
     private static PageGenerator pageGenerator;
     private final Configuration configuration;
@@ -23,7 +23,7 @@ public class PageGenerator {
         return pageGenerator;
     }
 
-    public String getPage(String filename, Map<String, Object> data) { // todo тебе здесть что-то не понравилось, я не поняла что. Посмотри, плиз, еще раз
+    public String getPage(String filename, Map<String, Object> data) {
 
         Writer stream = new StringWriter();
         try {

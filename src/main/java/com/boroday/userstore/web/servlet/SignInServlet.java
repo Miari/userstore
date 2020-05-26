@@ -11,6 +11,7 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 @Slf4j
 public class SignInServlet extends HttpServlet {
@@ -41,6 +42,7 @@ public class SignInServlet extends HttpServlet {
         String userPassword = request.getParameter("password");
 
         User userToLogin = userService.getByLogin(userLogin, userPassword);
+        //Optional<User> userToLogin1 = Optional.ofNullable(userService.getByLogin(userLogin, userPassword));
 
         if (userToLogin != null) {
             log.debug("User with login {} is authorized", userLogin);
