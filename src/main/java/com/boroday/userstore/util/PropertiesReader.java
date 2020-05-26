@@ -20,6 +20,9 @@ public class PropertiesReader {
         String port = System.getenv("PORT"); // I am in production and port should be overriden
         if (port != null) {
             properties.setProperty("server.port", port);
+            properties.setProperty("jdbc.url", System.getenv("JDBC_DATABASE_URL"));
+            properties.setProperty("jdbc.user", System.getenv("JDBC_DATABASE_USERNAME"));
+            properties.setProperty("jdbc.password", System.getenv("JDBC_DATABASE_PASSWORD"));
         }
     }
 
