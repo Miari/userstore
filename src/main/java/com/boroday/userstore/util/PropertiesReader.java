@@ -13,6 +13,14 @@ public class PropertiesReader {
 
     public PropertiesReader(String path) {
         properties = readProperties(path);
+        mergeWithProductionProperties(properties);
+    }
+
+    private void mergeWithProductionProperties(Properties properties) {
+        String port = System.getenv("PORT");
+        if (port != null) {
+            properties.setProperty("server.port", port);
+        }
     }
 
     public Properties getProperties() {
