@@ -17,9 +17,9 @@ public class PropertiesReader {
     }
 
     private void mergeWithProductionProperties(Properties properties) {
-        String port = System.getenv("PORT");
-        if (port != null) {
-            properties.setProperty("server.port", port);
+        String environment = System.getenv("env");
+        if ("production".equalsIgnoreCase(environment)) {
+            properties.setProperty("server.port", System.getenv("PORT"));
             properties.setProperty("jdbc.url", System.getenv("JDBC_DATABASE_URL"));
             properties.setProperty("jdbc.user", System.getenv("JDBC_DATABASE_USERNAME"));
             properties.setProperty("jdbc.password", System.getenv("JDBC_DATABASE_PASSWORD"));
