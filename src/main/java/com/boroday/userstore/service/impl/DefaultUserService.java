@@ -5,6 +5,7 @@ import com.boroday.userstore.entity.User;
 import com.boroday.userstore.service.UserService;
 
 import java.util.List;
+import java.util.Optional;
 
 public class DefaultUserService implements UserService {
 
@@ -26,11 +27,11 @@ public class DefaultUserService implements UserService {
         userDao.removeUser(userId);
     }
 
-    public User getById(long userId) {
+    public Optional<User> getById(long userId) {
         return userDao.getUserById(userId);
     }
 
-    public User getByLogin(String userLogin, String userPassword) {
+    public Optional<User> getByLogin(String userLogin, String userPassword) {
         return userDao.getUserByLogin(userLogin, userPassword);
     }
 

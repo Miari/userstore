@@ -13,6 +13,7 @@ import java.sql.Date;
 import java.sql.Timestamp;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Optional;
 
 @Slf4j
 public class EditUserServlet extends HttpServlet {
@@ -34,15 +35,22 @@ public class EditUserServlet extends HttpServlet {
 
         try {
             Long userIdLong = Long.parseLong(userId);
-            User userForEdit = userService.getById(userIdLong);
-            pageVariables.put("user", userForEdit);
+            Optional<User> userForEdit = userService.getById(userIdLong);
+            if (userForEdit.isPresent()) {
+                pageVariables.put("user", userForEdit.get());
 
-            PageGenerator pageGenerator = PageGenerator.instance();
-            String page = pageGenerator.getPage("edituser.html", pageVariables);
-            response.getWriter().write(page);
+                PageGenerator pageGenerator = PageGenerator.instance();
+                String page = pageGenerator.getPage("edituser.html", pageVariables);
+                response.getWriter().write(page);
 
-            response.setContentType("text/html;charset=utf-8");
-            response.setStatus(HttpServletResponse.SC_OK);
+                response.setContentType("text/html;charset=utf-8");
+                response.setStatus(HttpServletResponse.SC_OK);
+            }
+            else {
+                log.error("ID {} doesn't exist", userId);
+                response.getWriter().println("ID " + userId + " doesn't exit");
+                response.setStatus(HttpServletResponse.SC_BAD_REQUEST);
+            }
         } catch (NumberFormatException e) {
             log.error("Format of id is incorrect");
             e.printStackTrace();

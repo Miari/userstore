@@ -9,6 +9,7 @@ import javax.sql.DataSource;
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Optional;
 
 
 @Slf4j
@@ -40,7 +41,6 @@ public class JdbcUserDao implements UserDao {
                 User user = USER_ROW_MAPPER.mapRow(resultSet);
                 listOfUsers.add(user);
             }
-
             log.debug("{} users were get from DB", listOfUsers.size());
             return listOfUsers;
         } catch (SQLException ex) {
@@ -85,7 +85,7 @@ public class JdbcUserDao implements UserDao {
         }
     }
 
-    public User getUserById(long userId) {
+    public Optional<User> getUserById(long userId) {
         log.info("Start to get user from DB by id");
         try (Connection connection = dataSource.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_ID)) {
@@ -93,14 +93,15 @@ public class JdbcUserDao implements UserDao {
             preparedStatement.setLong(1, userId);
 
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                User user = null;
                 if (resultSet.next()) {
-                    User user = USER_ROW_MAPPER.mapRow(resultSet);
+                    user = USER_ROW_MAPPER.mapRow(resultSet);
                     log.debug("User with id {} was got", userId);
-                    return user;
                 } else {
                     log.info("User with id {} does not exist in DB", userId);
-                    return null;
                 }
+                Optional<User> optionalUser = Optional.ofNullable(user);
+                return optionalUser;
             }
         } catch (SQLException ex) {
             log.error("Not possible to get user by id {}", userId, ex);
@@ -108,26 +109,27 @@ public class JdbcUserDao implements UserDao {
         }
     }
 
-    public User getUserByLogin(String userLogin, String userPassword) {
+    public Optional<User> getUserByLogin(String userLogin, String userPassword) {
         log.info("Start to get user from DB by login");
         try (Connection connection = dataSource.getConnection();
              PreparedStatement preparedStatement = connection.prepareStatement(SELECT_USER_BY_LOGIN)) {
             preparedStatement.setString(1, userLogin);
 
             try (ResultSet resultSet = preparedStatement.executeQuery()) {
+                User user = null;
                 if (resultSet.next()) {
-                    User user = USER_ROW_MAPPER.mapRow(resultSet);
+                    user = USER_ROW_MAPPER.mapRow(resultSet);
                     if (user.getPassword().equals(userPassword)) {
                         log.debug("User with login {} was got", userLogin);
-                        return user;
                     } else {
+                        user = null;
                         log.info("Password for User with login {} is incorrect", userLogin);
-                        return null;
                     }
                 } else {
                     log.info("There is no User with login {} in DB", userLogin);
-                    return null;
                 }
+                Optional<User> optionalUser = Optional.ofNullable(user);
+                return optionalUser;
             }
         } catch (SQLException ex) {
             log.error("Not possible to get user by login {}", userLogin, ex);

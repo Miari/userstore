@@ -13,6 +13,7 @@ import java.sql.SQLException;
 import java.time.LocalDate;
 import java.util.LinkedList;
 import java.util.List;
+import java.util.Optional;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -89,14 +90,14 @@ public class JdbcUserDaoITest {
         userDao.addNewUser(newUser);
 
         //then
-        assertEquals(newUser, userDao.getUserById(3));
+        assertEquals(newUser, userDao.getUserById(3).get());
     }
 
     @Test
     public void testRemoveUser() {
         //prepare
         UserDao userDao = new JdbcUserDao(jdbcDataSource);
-        User savedUser = userDao.getUserById(2);
+        Optional<User> savedUser = userDao.getUserById(2);
 
         //when
         userDao.removeUser(2);
@@ -104,7 +105,7 @@ public class JdbcUserDaoITest {
         //then
         List<User> users = userDao.getAll();
         assertEquals(1, users.size());
-        assertNotEquals(users.get(0), savedUser);
+        assertNotEquals(users.get(0), savedUser.get());
     }
 
     @Test
@@ -113,7 +114,7 @@ public class JdbcUserDaoITest {
         UserDao userDao = new JdbcUserDao(jdbcDataSource);
 
         //then
-        assertEquals(secondUser, userDao.getUserById(2));
+        assertEquals(secondUser, userDao.getUserById(2).get());
     }
 
     @Test
@@ -122,7 +123,7 @@ public class JdbcUserDaoITest {
         UserDao userDao = new JdbcUserDao(jdbcDataSource);
 
         //then
-        assertEquals(secondUser, userDao.getUserByLogin("pav", "456"));
+        assertEquals(secondUser, userDao.getUserByLogin("pav", "456").get());
     }
 
     @Test
@@ -131,7 +132,7 @@ public class JdbcUserDaoITest {
         UserDao userDao = new JdbcUserDao(jdbcDataSource);
 
         //then
-        assertNull(userDao.getUserByLogin("pav1", "456"));
+        assertTrue(userDao.getUserByLogin("pav1", "456").isEmpty());
     }
 
     @Test
@@ -140,7 +141,7 @@ public class JdbcUserDaoITest {
         UserDao userDao = new JdbcUserDao(jdbcDataSource);
 
         //then
-        assertNull(userDao.getUserByLogin("pav", "457"));
+        assertTrue(userDao.getUserByLogin("pav", "457").isEmpty());
     }
 
     @Test
@@ -161,7 +162,7 @@ public class JdbcUserDaoITest {
         userDao.updateUser(updatedUser);
 
         //then
-        assertEquals(updatedUser, userDao.getUserById(1));
+        assertEquals(updatedUser, userDao.getUserById(1).get());
     }
 
     @Test
@@ -174,6 +175,6 @@ public class JdbcUserDaoITest {
 
         //then
         assertEquals(1, users.size());
-        assertEquals(userDao.getUserById(1), users.get(0));
+        assertEquals(userDao.getUserById(1).get(), users.get(0));
     }
 }

@@ -3,13 +3,14 @@ package com.boroday.userstore.dao;
 import com.boroday.userstore.entity.User;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface UserDao {
     List<User> getAll();
     void addNewUser(User user);
     void removeUser(long userId);
-    User getUserById(long userId);
-    User getUserByLogin(String userLogin, String userPassword);
+    Optional<User> getUserById(long userId);
+    Optional<User> getUserByLogin(String userLogin, String userPassword);
     void updateUser(User user);
     List<User> searchUser(String text);
 }

@@ -3,6 +3,7 @@ package com.boroday.userstore.service;
 import com.boroday.userstore.entity.User;
 
 import java.util.List;
+import java.util.Optional;
 
 public interface UserService {
     List<User> getAll();
@@ -11,9 +12,9 @@ public interface UserService {
 
     void remove(long userId); //todo change to long
 
-    User getById(long userId);
+    Optional<User> getById(long userId);
 
-    User getByLogin(String userLogin, String userPassword);
+    Optional<User> getByLogin(String userLogin, String userPassword);
 
     void update(User user);
 

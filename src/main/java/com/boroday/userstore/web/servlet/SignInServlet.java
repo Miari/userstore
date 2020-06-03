@@ -41,10 +41,10 @@ public class SignInServlet extends HttpServlet {
         String userLogin = request.getParameter("login");
         String userPassword = request.getParameter("password");
 
-        User userToLogin = userService.getByLogin(userLogin, userPassword);
-        //Optional<User> userToLogin1 = Optional.ofNullable(userService.getByLogin(userLogin, userPassword));
+        Optional<User> userToLogin = userService.getByLogin(userLogin, userPassword);
 
-        if (userToLogin != null) {
+
+        if (userToLogin.isPresent()) {
             log.debug("User with login {} is authorized", userLogin);
             response.sendRedirect(USERS_PAGE);
         } else {
