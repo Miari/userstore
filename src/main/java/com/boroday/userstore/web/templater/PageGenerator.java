@@ -13,7 +13,7 @@ import java.util.Map;
 
 public class PageGenerator {
 
-    private static final String HTML_DIR = Paths.get("templates").toString();
+    //private static final String HTML_DIR = Paths.get("templates").toString();
 
     private static PageGenerator pageGenerator;
     private final Configuration configuration;

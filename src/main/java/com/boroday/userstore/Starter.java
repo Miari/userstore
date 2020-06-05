@@ -14,6 +14,8 @@ import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
 
 import javax.sql.DataSource;
+import java.net.URI;
+import java.net.URL;
 import java.util.Map;
 import java.util.Properties;
 import java.util.Set;
@@ -40,7 +42,19 @@ public class Starter {
         SearchUserServlet searchUserServlet = new SearchUserServlet(userService);
         RemoveUserServlet removeUserServlet = new RemoveUserServlet(userService);
 
+        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();//Starter.class.getClassLoader();
+        URL resourceLink = classLoader.getResource("assets/css/style.css");
+
+        if (resourceLink == null)
+        {
+            throw new RuntimeException("Unable to find resource directory");
+        }
+        URI webRootUri = resourceLink.toURI().resolve("./").normalize();
+
+
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
+        //context.setContextPath("/");
+        //context.setBaseResource(Resource.newResource(webRootUri));
         context.addServlet(new ServletHolder(allUsersServlet), "/users");
         context.addServlet(new ServletHolder(signInServlet), "/signin");
         context.addServlet(new ServletHolder(signOutServlet), "/signout");
@@ -50,14 +64,11 @@ public class Starter {
         context.addServlet(new ServletHolder(searchUserServlet), "/users/search");
 
         DefaultServlet defaultServlet = new DefaultServlet();
+
         ServletHolder servletHolder = new ServletHolder("default", defaultServlet);
-        servletHolder.setInitParameter("resourceBase", "./src/main/resources/");
+        servletHolder.setInitParameter("resourceBase", webRootUri.toString());
         context.addServlet(servletHolder, "/");
 
-        //changed to DefaultServlet
-        //context.addServlet(new ServletHolder(new GetStaticResourcesServlet()), "/");
-
-        //PropertiesReader propertiesReader = ServiceLocator.getService(PropertiesReader.class);
         int port = propertiesReader.getPropertyInt("server.port");
 
         Server server = new Server(port);
