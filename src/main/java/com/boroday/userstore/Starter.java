@@ -12,11 +12,13 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.DefaultServlet;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
+import org.eclipse.jetty.util.resource.Resource;
 
 import javax.sql.DataSource;
 import java.net.URI;
 import java.net.URL;
 import java.util.Map;
+import java.util.Optional;
 import java.util.Properties;
 import java.util.Set;
 
@@ -42,15 +44,9 @@ public class Starter {
         SearchUserServlet searchUserServlet = new SearchUserServlet(userService);
         RemoveUserServlet removeUserServlet = new RemoveUserServlet(userService);
 
-        ClassLoader classLoader = Thread.currentThread().getContextClassLoader();//Starter.class.getClassLoader();
-        URL resourceLink = classLoader.getResource("assets/css/style.css");
-
-        if (resourceLink == null)
-        {
-            throw new RuntimeException("Unable to find resource directory");
-        }
-        URI webRootUri = resourceLink.toURI().resolve("./").normalize();
-
+        ClassLoader classLoader = Starter.class.getClassLoader();//Thread.currentThread().getContextClassLoader();
+        URL resourceLink = Optional.ofNullable(classLoader.getResource("assets/css/"))
+                .orElseThrow(()->new RuntimeException("Unable to find resource directory"));
 
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         //context.setContextPath("/");
@@ -64,9 +60,8 @@ public class Starter {
         context.addServlet(new ServletHolder(searchUserServlet), "/users/search");
 
         DefaultServlet defaultServlet = new DefaultServlet();
-
         ServletHolder servletHolder = new ServletHolder("default", defaultServlet);
-        servletHolder.setInitParameter("resourceBase", webRootUri.toString());
+        servletHolder.setInitParameter("resourceBase", String.valueOf(resourceLink));
         context.addServlet(servletHolder, "/");
 
         int port = propertiesReader.getPropertyInt("server.port");
@@ -89,7 +84,7 @@ public class Starter {
 
     public static void printEnvironmentVariables() {
         log.info("Environment variables START");
-        Map <String, String> properties = System.getenv();
+        Map<String, String> properties = System.getenv();
         Set<Map.Entry<String, String>> entries = properties.entrySet();
         for (Map.Entry<String, String> entry : entries) {
             log.info(entry.getKey() + " = " + entry.getValue());
