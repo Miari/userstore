@@ -1,5 +1,7 @@
 package com.boroday.userstore;
 
+import com.boroday.ioc.context.ApplicationContext;
+import com.boroday.ioc.context.ClassPathApplicationContext;
 import com.boroday.userstore.dao.DataSourceFactory;
 import com.boroday.userstore.dao.UserDao;
 import com.boroday.userstore.dao.jdbc.JdbcUserDao;
@@ -17,6 +19,8 @@ import java.util.Properties;
 
 public class Starter {
     public static void main(String[] args) throws Exception {
+
+        ApplicationContext applicationContext = new ClassPathApplicationContext(new String[]{"jdbcUserDao-context.xml", "defaultUserService-context.xml", "servlet-context.xml"});
 
         PropertiesReader propertiesReader = new PropertiesReader("application.properties");
         Properties properties = propertiesReader.getProperties();
