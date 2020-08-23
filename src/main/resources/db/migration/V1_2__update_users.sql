@@ -1,9 +1,7 @@
 ALTER TABLE Users
-ADD login VARCHAR(50)
-AFTER id;
+ADD login VARCHAR(50);
 ALTER TABLE Users
-ADD password VARCHAR(50)
-AFTER login;
+ADD password VARCHAR(50);
 
 UPDATE Users
 SET login='ama', password='123'
@@ -15,7 +13,7 @@ where id=2;
 ALTER TABLE Users
 ADD CONSTRAINT login_unique UNIQUE (login);
 ALTER TABLE Users
-MODIFY login VARCHAR(50) NOT NULL;
+ALTER COLUMN login SET NOT NULL;
 ALTER TABLE Users
-MODIFY password VARCHAR(50) NOT NULL;
+ALTER COLUMN password SET NOT NULL;
 

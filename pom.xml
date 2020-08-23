@@ -17,18 +17,18 @@
         <maven-surefire-plugin.version>2.22.2</maven-surefire-plugin.version>
 
         <!--Web-Server-->
-        <jetty.version>9.2.19.v20160908</jetty.version>
-        <jetty-server.version>9.4.25.v20191220</jetty-server.version>
-        <jetty-webapp.version>9.4.25.v20191220</jetty-webapp.version>
+        <jetty.version>9.4.25.v20191220</jetty.version>
 
         <!--DB-->
-        <db.user>root</db.user>
-        <db.password>12345</db.password>
-        <db.url>jdbc:mysql://localhost:3306/userstore</db.url>
+        <db.user>postgres</db.user>
+        <db.password>root</db.password>
+        <!--<db.url>jdbc:mysql://localhost:3306/userstore?serverTimezone=UTC</db.url>-->
+        <db.url>jdbc:postgresql://localhost:5432/userstore</db.url>
 
-        <flywaydb.version>6.2.1</flywaydb.version>
-        <flyway-core.version>6.3.2</flyway-core.version>
+        <flyway.version>6.3.2</flyway.version>
+
         <commons-dbcp.version>1.2.2</commons-dbcp.version>
+        <postgres.version>42.2.12</postgres.version>
         <mysql-connector-java.version>8.0.18</mysql-connector-java.version>
         <h2.version>1.4.200</h2.version>
 
@@ -47,6 +47,19 @@
         <plugins>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <version>3.2.0</version>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>
+                            <mainClass>com.boroday.userstore.Starter</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
                 <version>${maven-compiler-plugin.version}</version>
                 <configuration>
@@ -59,7 +72,7 @@
             <plugin>
                 <groupId>org.flywaydb</groupId>
                 <artifactId>flyway-maven-plugin</artifactId>
-                <version>${flywaydb.version}</version>
+                <version>${flyway.version}</version>
                 <configuration>
                     <user>${db.user}</user>
                     <password>${db.password}</password>
@@ -71,31 +84,51 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>${maven-surefire-plugin.version}</version>
             </plugin>
+
+            <plugin>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <version>2.4</version>
+                <configuration>
+                    <descriptorRefs>
+                        <descriptorRef>jar-with-dependencies</descriptorRef>
+                    </descriptorRefs>
+                    <archive>
+                        <manifest>
+                            <mainClass>com.boroday.userstore.Starter</mainClass>
+                        </manifest>
+                    </archive>
+                </configuration>
+                <executions>
+                    <execution>
+                        <id>make-assembly</id>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                    </execution>
+                </executions>
+            </plugin>
         </plugins>
     </build>
 
     <dependencies>
-        <dependency>
-            <groupId>org.example</groupId>
-            <artifactId>ioc</artifactId>
-            <version>1.0-SNAPSHOT</version>
-        </dependency>
 
         <!-- db -->
         <dependency>
             <groupId>org.flywaydb</groupId>
             <artifactId>flyway-core</artifactId>
-            <version>${flyway-core.version}</version>
+            <version>${flyway.version}</version>
         </dependency>
         <dependency>
             <groupId>commons-dbcp</groupId>
             <artifactId>commons-dbcp</artifactId>
             <version>${commons-dbcp.version}</version>
         </dependency>
+        <!-- https://mvnrepository.com/artifact/org.postgresql/postgresql -->
         <dependency>
-            <groupId>mysql</groupId>
-            <artifactId>mysql-connector-java</artifactId>
-            <version>${mysql-connector-java.version}</version>
+            <groupId>org.postgresql</groupId>
+            <artifactId>postgresql</artifactId>
+            <version>${postgres.version}</version>
         </dependency>
 
         <!-- freemarker -->
@@ -109,12 +142,12 @@
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-server</artifactId>
-            <version>${jetty-server.version}</version>
+            <version>${jetty.version}</version>
         </dependency>
         <dependency>
             <groupId>org.eclipse.jetty</groupId>
             <artifactId>jetty-webapp</artifactId>
-            <version>${jetty-webapp.version}</version>
+            <version>${jetty.version}</version>
         </dependency>
 
         <!-- Logging -->
@@ -149,6 +182,14 @@
             <groupId>org.projectlombok</groupId>
             <artifactId>lombok</artifactId>
             <version>1.18.12</version>
+            <scope>provided</scope>
+        </dependency>
+
+        <!-- https://mvnrepository.com/artifact/javax.servlet/servlet-api -->
+        <dependency>
+            <groupId>javax.servlet</groupId>
+            <artifactId>servlet-api</artifactId>
+            <version>2.5</version>
             <scope>provided</scope>
         </dependency>
     </dependencies>

@@ -1,5 +1,6 @@
 package com.boroday.userstore.web.templater;
 
+import freemarker.cache.ClassTemplateLoader;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
@@ -12,7 +13,7 @@ import java.util.Map;
 
 public class PageGenerator {
 
-    private static final String HTML_DIR = Paths.get("src", "main", "webapp", "WEB-INF", "templates").toString();//+ "src/main/webapp/WEB-INF/templates";
+    private static final String HTML_DIR = Paths.get("templates").toString();//+ "src/main/webapp/WEB-INF/templates";
 
     private static PageGenerator pageGenerator;
     private final Configuration configuration;
@@ -23,11 +24,11 @@ public class PageGenerator {
         return pageGenerator;
     }
 
-    public String getPage(String filename, Map<String, Object> data) { // todo тебе здесть что-то не понравилось, я не поняла что. Посмотри, плиз, еще раз
-
+    public String getPage(String filename, Map<String, Object> data) {
         Writer stream = new StringWriter();
         try {
-            Template template = configuration.getTemplate(Paths.get(HTML_DIR, filename).toString());
+
+            Template template = configuration.getTemplate("/templates/" + filename);
             template.process(data, stream);
         } catch (IOException | TemplateException e) {
             throw new RuntimeException(e);
@@ -41,5 +42,7 @@ public class PageGenerator {
 
     private PageGenerator() {
         configuration = new Configuration();
+        configuration.setClassForTemplateLoading(getClass(), "/");
+
     }
 }

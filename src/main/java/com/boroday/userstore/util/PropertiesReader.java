@@ -13,10 +13,21 @@ public class PropertiesReader {
 
     public PropertiesReader(String path) {
         properties = readProperties(path);
+        mergeWithProductionProperties(properties);
+    }
+
+    private void mergeWithProductionProperties(Properties properties) {
+        String environment = System.getenv("env"); // I am in production and port should be overriden
+        if ("production".equalsIgnoreCase(environment)) {
+            properties.setProperty("server.port", System.getenv("PORT"));
+            properties.setProperty("jdbc.url", System.getenv("JDBC_DATABASE_URL"));
+            properties.setProperty("jdbc.user", System.getenv("JDBC_DATABASE_USERNAME"));
+            properties.setProperty("jdbc.password", System.getenv("JDBC_DATABASE_PASSWORD"));
+        }
     }
 
     public Properties getProperties() {
-        return new Properties(properties); // TODO объясни, пожалуйста, почему return properties было плохо и зачем каждый раз создавать новый объект
+        return new Properties(properties);
     }
 
     public Integer getPropertyInt(String propertyName) {
