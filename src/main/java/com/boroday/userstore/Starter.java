@@ -25,12 +25,14 @@ import java.util.Properties;
 public class Starter {
     public static void main(String[] args) throws Exception {
 
-        ApplicationContext applicationContext = new ClassPathApplicationContext(new String[]{"dao-context.xml", "service-context.xml", "servlet-context.xml"});
+        ApplicationContext applicationContext = new ClassPathApplicationContext(new String[]{"src/main/resources/context/context.xml"});
 
         //printSystemVariables();
         //printEnvironmentVariables();
 
+        /* replaced with ioc
         PropertiesReader propertiesReader = new PropertiesReader("application.properties");
+
         Properties properties = propertiesReader.getProperties();
         DataSource dataSource = DataSourceFactory.getDataSource(properties);
 
@@ -45,7 +47,16 @@ public class Starter {
         SearchUserServlet searchUserServlet = new SearchUserServlet(userService);
         RemoveUserServlet removeUserServlet = new RemoveUserServlet(userService);
         DefaultServlet defaultServlet = new DefaultServlet();
+        */
 
+        AllUsersServlet allUsersServlet = (AllUsersServlet) applicationContext.getBean("allUsersServlet");
+        SignInServlet signInServlet = (SignInServlet) applicationContext.getBean("signInServlet");
+        SignOutServlet signOutServlet = (SignOutServlet) applicationContext.getBean("signOutServlet");
+        AddNewUserServlet addNewUserServlet = (AddNewUserServlet) applicationContext.getBean("addNewUserServlet");
+        EditUserServlet editUserServlet = (EditUserServlet) applicationContext.getBean("editUserServlet");
+        SearchUserServlet searchUserServlet = (SearchUserServlet) applicationContext.getBean("searchUserServlet");
+        RemoveUserServlet removeUserServlet = (RemoveUserServlet) applicationContext.getBean("removeUserServlet");
+        DefaultServlet defaultServlet = (DefaultServlet) applicationContext.getBean("defaultServlet");
 
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.addServlet(new ServletHolder(allUsersServlet), "/users");
@@ -64,6 +75,7 @@ public class Starter {
         //context.addServlet(new ServletHolder(new GetStaticResourcesServlet()), "/");
 
         //PropertiesReader propertiesReader = ServiceLocator.getService(PropertiesReader.class);
+        PropertiesReader propertiesReader = new PropertiesReader("application.properties"); // -- is here because of ioc
         int port = propertiesReader.getPropertyInt("server.port");
 
         Server server = new Server(port);

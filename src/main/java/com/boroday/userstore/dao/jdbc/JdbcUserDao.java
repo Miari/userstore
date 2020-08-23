@@ -4,6 +4,7 @@ import com.boroday.userstore.dao.UserDao;
 import com.boroday.userstore.dao.jdbc.mapper.UserRowMapper;
 import com.boroday.userstore.entity.User;
 import lombok.extern.slf4j.Slf4j;
+import org.apache.commons.dbcp.BasicDataSource;
 
 import javax.sql.DataSource;
 import java.sql.*;
@@ -25,9 +26,15 @@ public class JdbcUserDao implements UserDao {
 
     private DataSource dataSource;
 
+    public void setDataSource(BasicDataSource dataSource) {
+        this.dataSource = dataSource;
+    }
+
+    /* commented because of ioc
     public JdbcUserDao(DataSource dataSource) {
         this.dataSource = dataSource;
     }
+    */
 
     public List<User> getAll() {
         log.info("Start to get all users from DB");

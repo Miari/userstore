@@ -9,15 +9,23 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.*;
+import com.boroday.userstore.service.impl.DefaultUserService;
 
 @Slf4j
 public class AllUsersServlet extends HttpServlet {
 
     private UserService userService;
 
+    public void setUserService(DefaultUserService userService) {
+        this.userService = userService;
+    }
+
+    /*
     public AllUsersServlet(UserService userService) {
         this.userService = userService;
     }
+
+ */
 
     @Override
     public void doGet(HttpServletRequest request,

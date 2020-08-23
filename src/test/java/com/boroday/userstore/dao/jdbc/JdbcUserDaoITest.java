@@ -1,4 +1,4 @@
-package com.boroday.userstore.dao.jdbc;
+/*package com.boroday.userstore.dao.jdbc;
 
 import com.boroday.userstore.dao.UserDao;
 import com.boroday.userstore.entity.User;
@@ -176,4 +176,4 @@ public class JdbcUserDaoITest {
         assertEquals(1, users.size());
         assertEquals(userDao.getUserById(1), users.get(0));
     }
-}
+}*/

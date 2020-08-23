@@ -3,6 +3,7 @@ package com.boroday.userstore.service.impl;
 import com.boroday.userstore.dao.UserDao;
 import com.boroday.userstore.entity.User;
 import com.boroday.userstore.service.UserService;
+import com.boroday.userstore.dao.jdbc.JdbcUserDao;
 
 import java.util.List;
 
@@ -10,9 +11,14 @@ public class DefaultUserService implements UserService {
 
     private UserDao userDao;
 
-    public DefaultUserService(UserDao userDao) {
+    public void setUserDao(JdbcUserDao userDao) {
         this.userDao = userDao;
     }
+
+    /* commented because of ioc
+    public DefaultUserService(UserDao userDao) {
+        this.userDao = userDao;
+    }*/
 
     public List<User> getAll() {
         return userDao.getAll();

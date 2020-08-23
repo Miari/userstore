@@ -2,6 +2,7 @@ package com.boroday.userstore.web.servlet;
 
 import com.boroday.userstore.entity.User;
 import com.boroday.userstore.service.UserService;
+import com.boroday.userstore.service.impl.DefaultUserService;
 import com.boroday.userstore.web.templater.PageGenerator;
 import lombok.extern.slf4j.Slf4j;
 
@@ -18,9 +19,15 @@ public class AddNewUserServlet extends HttpServlet {
     private static final String USERS_PAGE = "/users";
     private UserService userService;
 
+    public void setUserService(DefaultUserService userService) {
+        this.userService = userService;
+    }
+
+    /*
     public AddNewUserServlet(UserService userService) {
         this.userService = userService;
     }
+     */
 
     @Override
     public void doGet(HttpServletRequest request,
