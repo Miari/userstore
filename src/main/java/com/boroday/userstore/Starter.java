@@ -4,8 +4,8 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.Map;
 import java.util.Set;
 
-//import com.boroday.ioc.context.ApplicationContext;
-//import com.boroday.ioc.context.ClassPathApplicationContext;
+import com.boroday.ioc.context.ApplicationContext;
+import com.boroday.ioc.context.ClassPathApplicationContext;
 import com.boroday.userstore.dao.DataSourceFactory;
 import com.boroday.userstore.dao.UserDao;
 import com.boroday.userstore.dao.jdbc.JdbcUserDao;
@@ -24,8 +24,11 @@ import java.util.Properties;
 @Slf4j
 public class Starter {
     public static void main(String[] args) throws Exception {
-        printSystemVariables();
-        printEnvironmentVariables();
+
+        ApplicationContext applicationContext = new ClassPathApplicationContext(new String[]{"dao-context.xml", "service-context.xml", "servlet-context.xml"});
+
+        //printSystemVariables();
+        //printEnvironmentVariables();
 
         PropertiesReader propertiesReader = new PropertiesReader("application.properties");
         Properties properties = propertiesReader.getProperties();
