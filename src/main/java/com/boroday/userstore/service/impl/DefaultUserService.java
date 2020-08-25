@@ -11,7 +11,7 @@ public class DefaultUserService implements UserService {
 
     private UserDao userDao;
 
-    public void setUserDao(JdbcUserDao userDao) {
+    public void setUserDao(UserDao userDao) {
         this.userDao = userDao;
     }
 

@@ -19,15 +19,14 @@ public class SearchUserServlet extends HttpServlet {
 
     private UserService userService;
 
-    public void setUserService(DefaultUserService userService) {
+    /*public void setUserService(DefaultUserService userService) {
         this.userService = userService;
-    }
+    } */
 
-    /*
+
     public SearchUserServlet(UserService userService) {
         this.userService = userService;
     }
-     */
 
     @Override
     public void doGet(HttpServletRequest request,

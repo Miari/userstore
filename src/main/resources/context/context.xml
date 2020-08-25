@@ -12,29 +12,4 @@
     <bean id="userService" class="com.boroday.userstore.service.impl.DefaultUserService">
         <property name="userDao" ref="userDao"/>
     </bean>
-
-    <bean id="allUsersServlet" class="com.boroday.userstore.web.servlet.AllUsersServlet">
-        <property name="userService" ref="userService"/>
-    </bean>
-    <bean id="signInServlet" class="com.boroday.userstore.web.servlet.SignInServlet">
-        <property name="userService" ref="userService"/>
-    </bean>
-    <bean id="signOutServlet" class="com.boroday.userstore.web.servlet.SignOutServlet">
-        <property name="userService" ref="userService"/>
-    </bean>
-    <bean id="addNewUserServlet" class="com.boroday.userstore.web.servlet.AddNewUserServlet">
-        <property name="userService" ref="userService"/>
-    </bean>
-    <bean id="editUserServlet" class="com.boroday.userstore.web.servlet.EditUserServlet">
-        <property name="userService" ref="userService"/>
-    </bean>
-    <bean id="searchUserServlet" class="com.boroday.userstore.web.servlet.SearchUserServlet">
-        <property name="userService" ref="userService"/>
-    </bean>
-    <bean id="removeUserServlet" class="com.boroday.userstore.web.servlet.RemoveUserServlet">
-        <property name="userService" ref="userService"/>
-    </bean>
-    <bean id="defaultServlet" class="org.eclipse.jetty.servlet.DefaultServlet">
-    </bean>
-
 </beans>

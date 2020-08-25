@@ -16,16 +16,15 @@ public class AllUsersServlet extends HttpServlet {
 
     private UserService userService;
 
-    public void setUserService(DefaultUserService userService) {
+    /*public void setUserService(DefaultUserService userService) {
         this.userService = userService;
-    }
+    } */
 
-    /*
+
     public AllUsersServlet(UserService userService) {
         this.userService = userService;
     }
 
- */
 
     @Override
     public void doGet(HttpServletRequest request,

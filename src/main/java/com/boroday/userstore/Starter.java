@@ -31,13 +31,15 @@ public class Starter {
         //printEnvironmentVariables();
 
         /* replaced with ioc
-        PropertiesReader propertiesReader = new PropertiesReader("application.properties");
+        PropertiesReader propertiesReader = ngit sew PropertiesReader("application.properties");
 
         Properties properties = propertiesReader.getProperties();
         DataSource dataSource = DataSourceFactory.getDataSource(properties);
 
         UserDao userDao = new JdbcUserDao(dataSource);
         UserService userService = new DefaultUserService(userDao);
+*/
+        UserService userService = (UserService) applicationContext.getBean("userService");
 
         AllUsersServlet allUsersServlet = new AllUsersServlet(userService);
         SignInServlet signInServlet = new SignInServlet(userService);
@@ -47,16 +49,16 @@ public class Starter {
         SearchUserServlet searchUserServlet = new SearchUserServlet(userService);
         RemoveUserServlet removeUserServlet = new RemoveUserServlet(userService);
         DefaultServlet defaultServlet = new DefaultServlet();
-        */
 
-        AllUsersServlet allUsersServlet = (AllUsersServlet) applicationContext.getBean("allUsersServlet");
+
+        /*AllUsersServlet allUsersServlet = (AllUsersServlet) applicationContext.getBean("allUsersServlet");
         SignInServlet signInServlet = (SignInServlet) applicationContext.getBean("signInServlet");
         SignOutServlet signOutServlet = (SignOutServlet) applicationContext.getBean("signOutServlet");
         AddNewUserServlet addNewUserServlet = (AddNewUserServlet) applicationContext.getBean("addNewUserServlet");
         EditUserServlet editUserServlet = (EditUserServlet) applicationContext.getBean("editUserServlet");
         SearchUserServlet searchUserServlet = (SearchUserServlet) applicationContext.getBean("searchUserServlet");
         RemoveUserServlet removeUserServlet = (RemoveUserServlet) applicationContext.getBean("removeUserServlet");
-        DefaultServlet defaultServlet = (DefaultServlet) applicationContext.getBean("defaultServlet");
+        DefaultServlet defaultServlet = (DefaultServlet) applicationContext.getBean("defaultServlet");*/
 
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
         context.addServlet(new ServletHolder(allUsersServlet), "/users");

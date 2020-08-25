@@ -17,15 +17,14 @@ public class RemoveUserServlet extends HttpServlet {
     private static final String USERS_PAGE = "/users";
     private UserService userService;
 
-    public void setUserService(DefaultUserService userService) {
+    /*public void setUserService(DefaultUserService userService) {
         this.userService = userService;
-    }
+    } */
 
-    /*
     public RemoveUserServlet(UserService userService) {
         this.userService = userService;
     }
-     */
+
 
     @Override
     public void doPost(HttpServletRequest request,

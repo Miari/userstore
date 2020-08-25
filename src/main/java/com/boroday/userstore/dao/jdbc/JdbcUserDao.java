@@ -26,7 +26,7 @@ public class JdbcUserDao implements UserDao {
 
     private DataSource dataSource;
 
-    public void setDataSource(BasicDataSource dataSource) {
+    public void setDataSource(DataSource dataSource) {
         this.dataSource = dataSource;
     }
 

@@ -19,15 +19,14 @@ public class AddNewUserServlet extends HttpServlet {
     private static final String USERS_PAGE = "/users";
     private UserService userService;
 
-    public void setUserService(DefaultUserService userService) {
+    /*public void setUserService(DefaultUserService userService) {
         this.userService = userService;
-    }
+    }*/
 
-    /*
     public AddNewUserServlet(UserService userService) {
         this.userService = userService;
     }
-     */
+
 
     @Override
     public void doGet(HttpServletRequest request,

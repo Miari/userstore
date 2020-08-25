@@ -15,15 +15,13 @@ public class SignOutServlet extends HttpServlet {
     private UserService userService;
     private static final String SIGNIN_PAGE = "/signin";
 
-    public void setUserService(DefaultUserService userService) {
+    /*public void setUserService(DefaultUserService userService) {
         this.userService = userService;
-    }
+    } */
 
-    /*
     public SignOutServlet(UserService userService) {
         this.userService = userService;
     }
-     */
 
     @Override
     public void doGet(HttpServletRequest request,
