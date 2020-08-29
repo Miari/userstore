@@ -30,6 +30,10 @@ public class JdbcUserDao implements UserDao {
         this.dataSource = dataSource;
     }
 
+    public DataSource getDataSource() {
+        return dataSource;
+    }
+
     /* commented because of ioc
     public JdbcUserDao(DataSource dataSource) {
         this.dataSource = dataSource;

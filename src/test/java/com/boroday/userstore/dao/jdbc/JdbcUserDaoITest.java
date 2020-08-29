@@ -1,5 +1,7 @@
 /*package com.boroday.userstore.dao.jdbc;
 
+import com.boroday.ioc.context.ApplicationContext;
+import com.boroday.ioc.context.ClassPathApplicationContext;
 import com.boroday.userstore.dao.UserDao;
 import com.boroday.userstore.entity.User;
 import com.boroday.userstore.util.TestDataSource;
@@ -59,7 +61,8 @@ public class JdbcUserDaoITest {
     @Test
     public void testGetAll() {
         //prepare
-        UserDao userDao = new JdbcUserDao(jdbcDataSource);
+        ApplicationContext applicationContextUserDao = new ClassPathApplicationContext(new String[]{"src/test/resources/test-context-user-dao.xml"});
+        UserDao userDao = (UserDao) applicationContextUserDao.getBean("dataSource");
 
         //when
         List<User> users = userDao.getAll();
@@ -74,7 +77,9 @@ public class JdbcUserDaoITest {
     @Test
     public void testAddNewUser() {
         //prepare
-        UserDao userDao = new JdbcUserDao(jdbcDataSource);
+        ApplicationContext applicationContextUserDao = new ClassPathApplicationContext(new String[]{"src/test/resources/test-context-user-dao.xml"});
+        UserDao userDao = (UserDao) applicationContextUserDao.getBean("dataSource");
+
         User newUser = new User();
         newUser.setId(3);
         newUser.setLogin("eve");
@@ -95,10 +100,12 @@ public class JdbcUserDaoITest {
     @Test
     public void testRemoveUser() {
         //prepare
-        UserDao userDao = new JdbcUserDao(jdbcDataSource);
+        ApplicationContext applicationContextUserDao = new ClassPathApplicationContext(new String[]{"src/test/resources/test-context-user-dao.xml"});
+        UserDao userDao = (UserDao) applicationContextUserDao.getBean("userDao");
+
         User savedUser = userDao.getUserById(2);
 
-        //when
+       /* //when
         userDao.removeUser(2);
 
         //then
@@ -110,7 +117,8 @@ public class JdbcUserDaoITest {
     @Test
     public void testGetUserById() {
         //when
-        UserDao userDao = new JdbcUserDao(jdbcDataSource);
+        ApplicationContext applicationContextUserDao = new ClassPathApplicationContext(new String[]{"src/test/resources/test-context-user-dao.xml"});
+        UserDao userDao = (UserDao) applicationContextUserDao.getBean("dataSource");
 
         //then
         assertEquals(secondUser, userDao.getUserById(2));
@@ -119,7 +127,9 @@ public class JdbcUserDaoITest {
     @Test
     public void testGetUserByLogin() {
         //when
-        UserDao userDao = new JdbcUserDao(jdbcDataSource);
+        //UserDao userDao = new JdbcUserDao(jdbcDataSource);
+        ApplicationContext applicationContextUserDao = new ClassPathApplicationContext(new String[]{"src/test/resources/test-context-user-dao.xml"});
+        UserDao userDao = (UserDao) applicationContextUserDao.getBean("dataSource");
 
         //then
         assertEquals(secondUser, userDao.getUserByLogin("pav", "456"));
@@ -128,7 +138,9 @@ public class JdbcUserDaoITest {
     @Test
     public void testGetUserByLoginIncorrectLogin() {
         //when
-        UserDao userDao = new JdbcUserDao(jdbcDataSource);
+        //UserDao userDao = new JdbcUserDao(jdbcDataSource);
+        ApplicationContext applicationContextUserDao = new ClassPathApplicationContext(new String[]{"src/test/resources/test-context-user-dao.xml"});
+        UserDao userDao = (UserDao) applicationContextUserDao.getBean("dataSource");
 
         //then
         assertNull(userDao.getUserByLogin("pav1", "456"));
@@ -137,7 +149,9 @@ public class JdbcUserDaoITest {
     @Test
     public void testGetUserByLoginIncorrectPassword() {
         //when
-        UserDao userDao = new JdbcUserDao(jdbcDataSource);
+        ApplicationContext applicationContextUserDao = new ClassPathApplicationContext(new String[]{"src/test/resources/test-context-user-dao.xml"});
+        UserDao userDao = (UserDao) applicationContextUserDao.getBean("dataSource");
+       // UserDao userDao = new JdbcUserDao(jdbcDataSource);
 
         //then
         assertNull(userDao.getUserByLogin("pav", "457"));
@@ -146,7 +160,11 @@ public class JdbcUserDaoITest {
     @Test
     public void testUpdateUser() {
         //prepare
-        UserDao userDao = new JdbcUserDao(jdbcDataSource);
+        //UserDao userDao = new JdbcUserDao(jdbcDataSource);
+
+        ApplicationContext applicationContextUserDao = new ClassPathApplicationContext(new String[]{"src/test/resources/test-context-user-dao.xml"});
+        UserDao userDao = (UserDao) applicationContextUserDao.getBean("dataSource");
+
         User updatedUser = new User();
         updatedUser.setId(1);
         updatedUser.setLogin("mar");
@@ -167,7 +185,9 @@ public class JdbcUserDaoITest {
     @Test
     public void testSearchUser() {
         //prepare
-        UserDao userDao = new JdbcUserDao(jdbcDataSource);
+        //UserDao userDao = new JdbcUserDao(jdbcDataSource);
+        ApplicationContext applicationContextUserDao = new ClassPathApplicationContext(new String[]{"src/test/resources/test-context-user-dao.xml"});
+        UserDao userDao = (UserDao) applicationContextUserDao.getBean("dataSource");
 
         //when
         List<User> users = userDao.searchUser("ma");

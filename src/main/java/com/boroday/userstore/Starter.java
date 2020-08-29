@@ -31,7 +31,7 @@ public class Starter {
         //printEnvironmentVariables();
 
         /* replaced with ioc
-        PropertiesReader propertiesReader = ngit sew PropertiesReader("application.properties");
+        PropertiesReader propertiesReader = new PropertiesReader("application.properties");
 
         Properties properties = propertiesReader.getProperties();
         DataSource dataSource = DataSourceFactory.getDataSource(properties);
