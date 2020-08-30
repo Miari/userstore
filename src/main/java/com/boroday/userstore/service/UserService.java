@@ -1,39 +1,21 @@
 package com.boroday.userstore.service;
 
-import com.boroday.userstore.dao.jdbc.JdbcUserDao;
 import com.boroday.userstore.entity.User;
 
 import java.util.List;
 
-public class UserService {
+public interface UserService {
+    List<User> getAll();
 
-    private JdbcUserDao jdbcUserDao;
+    void add(User user);
 
-    public UserService(JdbcUserDao jdbcUserDao) {
-        this.jdbcUserDao = jdbcUserDao;
-    }
+    void remove(long userId); //todo change to long
 
-    public List<User> getAll() {
-        return jdbcUserDao.getAll();
-    }
+    User getById(long userId);
 
-    public void add(User user) {
-        jdbcUserDao.addNewUser(user);
-    }
+    User getByLogin(String userLogin, String userPassword);
 
-    public void remove(String userId) {
-        jdbcUserDao.removeUser(Integer.parseInt(userId));
-    }
+    void update(User user);
 
-    public User getById(String userId) {
-        return jdbcUserDao.getUserById(Integer.parseInt(userId));
-    }
-
-    public void update(User user) {
-        jdbcUserDao.updateUser(user);
-    }
-
-    public List<User> search(String text) {
-        return jdbcUserDao.searchUser(text);
-    }
+    List<User> search(String text);
 }
