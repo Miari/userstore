@@ -2,16 +2,11 @@ package com.boroday.userstore.context;
 
 import com.boroday.ioc.context.ApplicationContext;
 import com.boroday.ioc.context.ClassPathApplicationContext;
-import com.boroday.ioc.entity.Bean;
 import com.boroday.userstore.dao.jdbc.JdbcUserDao;
 import org.apache.commons.dbcp.BasicDataSource;
 import org.junit.jupiter.api.*;
 
-import javax.sql.DataSource;
-
 import static org.junit.Assert.assertEquals;
-import static org.junit.Assert.assertTrue;
-
 
 public class BeanCreationITest {
 
