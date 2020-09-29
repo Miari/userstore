@@ -2,19 +2,57 @@
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
     <title>Edit User</title>
 </head>
 <body>
-<h2>Edit user:</h2>
-<form action="/users/edit" method="POST">
-    <#if user?has_content>
-    <p>ID: <input type="number" name="id" value="${user.id}" readonly/></p>
-    <p>First Name: <input type="text" required name="firstName" value="${user.firstName}"/></p>
-    <p>Last Name: <input type="text" required name="lastName" value="${user.lastName}"/></p>
-    <p>Salary: <input type="text" required name="salary" <#if (user.salary)??> value="${user.salary}"</#if>/></p>
-    <p>Birthday: <input type="date" required name="dateOfBirth" <#if (user.dateOfBirth)??> value="${user.dateOfBirth}"</#if>/></p>
-    <p><input type="submit" value="Edit"></p>
-</#if>
-</form>
+    <div class="wrapper">
+    <#include "header.html">
+        <div class="content">
+            <div class="header">
+                Edit user
+            </div>
+            <#if user?has_content>
+            <div class="edit_form">
+                <form action="/users/edit" method="POST">
+                    <div class="edit_form__content form__content">
+                        <div class="edit_field field">
+                            <label for="id">ID:</label>
+                            <input type="number" name="id" id="id" value="${user.id}" readonly/>
+                        </div>
+                        <div class="edit_field field">
+                            <label for="login">Login:</label>
+                            <input type="text" name="login" id="login" required value="${user.login}"/>
+                        </div>
+                        <div class="edit_field field">
+                            <label for="password">Password:</label>
+                            <input type="password" name="password" id="password" required value="${user.password}"/>
+                        </div>
+                        <div class="edit_field field">
+                            <label for="firstName">First Name:</label>
+                            <input type="text" required name="firstName" id="firstName" value="${user.firstName}"/>
+                        </div>
+                        <div class="edit_field field">
+                            <label for="lastName">Last Name:</label>
+                            <input type="text" required name="lastName" id="lastName" value="${user.lastName}"/>
+                        </div>
+                        <div class="edit_field field">
+                            <label for="salary">Salary:</label>
+                            <input type="text" required name="salary" id="salary" <#if (user.salary)??> value="${user.salary}"</#if>/>
+                        </div>
+                        <div class="edit_field field">
+                            <label for="dateOfBirth">Birthday:</label>
+                            <input class="general-input" type="date" required name="dateOfBirth" id="dateOfBirth" <#if (user.dateOfBirth)??> value="${user.dateOfBirth}"</#if>/>
+                        </div>
+                        <div class="button">
+                            <input class="submit" type="submit" value="Edit">
+                        </div>
+                    </div>
+                </form>
+            </div>
+            </#if>
+        </div>
+    <#include "footer.html">
+    </div>
 </body>
 </html>

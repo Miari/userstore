@@ -1,0 +1,7 @@
+<beans>
+    <bean id="dataSource" class="org.apache.commons.dbcp.BasicDataSource">
+        <property name="url" value="jdbc:postgresql://localhost:5432/userstore"/>
+        <property name="username" value="postgres"/>
+        <property name="password" value="root"/>
+    </bean>
+</beans>

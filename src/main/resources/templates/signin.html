@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8"/>
+    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <title>Sign in</title>
+</head>
+<body>
+<div class="wrapper">
+    <div class="content">
+        <div class="header">
+            Welcome to User Store!
+        </div>
+        <div class="form">
+            <form action="/signin" method="POST">
+                <div class="form__content">
+                    <div class="form__field field">
+                        <input type="text" required name="login" placeholder="Login"/>
+                    </div>
+                    <div class="form__field field">
+                        <input type="password" required name="password" placeholder="Password"/>
+                    </div>
+                    <div class="button">
+                        <input type="submit" value="Signin">
+                    </div>
+                </div>
+            </form>
+        </div>
+        <#if message?has_content><div class="error"><p>${message}</p></div></#if>
+    </div>
+    <#include "/src/main/webapp/WEB-INF/templates/footer.html">
+</div>
+</body>
+</html>
