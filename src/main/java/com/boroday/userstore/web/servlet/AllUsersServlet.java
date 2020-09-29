@@ -4,26 +4,37 @@ import com.boroday.userstore.service.UserService;
 import com.boroday.userstore.web.templater.PageGenerator;
 import lombok.extern.slf4j.Slf4j;
 
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.util.*;
 import com.boroday.userstore.service.impl.DefaultUserService;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 @Slf4j
+@WebServlet(urlPatterns = "/users")
 public class AllUsersServlet extends HttpServlet {
 
     private UserService userService;
+
 
     /*public void setUserService(DefaultUserService userService) {
         this.userService = userService;
     } */
 
-
-    public AllUsersServlet(UserService userService) {
-        this.userService = userService;
+    public void init(){
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(new String[]{"/context/context.xml"});
+        this.userService = (UserService) applicationContext.getBean("userService");;
     }
+
+    //init () OR
+    /*public AllUsersServlet() {
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(new String[]{"/context/context.xml"});
+        this.userService = (UserService) applicationContext.getBean("userService");;
+    }*/
 
 
     @Override

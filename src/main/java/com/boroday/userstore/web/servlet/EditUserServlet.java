@@ -5,7 +5,10 @@ import com.boroday.userstore.service.UserService;
 import com.boroday.userstore.service.impl.DefaultUserService;
 import com.boroday.userstore.web.templater.PageGenerator;
 import lombok.extern.slf4j.Slf4j;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
+import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
