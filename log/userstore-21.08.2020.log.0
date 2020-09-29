@@ -1,0 +1,2 @@
+02:52:05.287 [qtp585324508-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+02:52:05.291 [qtp585324508-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB

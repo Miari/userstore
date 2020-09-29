@@ -1,0 +1,281 @@
+22:38:32.878 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:39:03.370 [qtp1621002296-21] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:39:03.371 [qtp1621002296-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:39:03.829 [qtp1621002296-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:41:27.049 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:41:31.627 [qtp724608044-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:41:31.628 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:41:32.005 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:41:34.898 [qtp724608044-17] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+22:41:44.647 [qtp724608044-16] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+22:41:50.108 [qtp724608044-22] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+22:41:50.117 [qtp724608044-22] WARN  org.eclipse.jetty.server.HttpChannel - /users/edit
+java.lang.NullPointerException: null
+	at com.boroday.userstore.web.servlet.EditUserServlet.doGet(EditUserServlet.java:32)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:755)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:547)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+22:41:58.177 [qtp724608044-30] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+22:41:58.178 [qtp724608044-30] WARN  org.eclipse.jetty.server.HttpChannel - /users/edit
+java.lang.NullPointerException: null
+	at com.boroday.userstore.web.servlet.EditUserServlet.doGet(EditUserServlet.java:32)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:755)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:547)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+22:42:13.077 [qtp724608044-21] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+22:42:13.077 [qtp724608044-21] WARN  org.eclipse.jetty.server.HttpChannel - /users/edit
+java.lang.NullPointerException: null
+	at com.boroday.userstore.web.servlet.EditUserServlet.doGet(EditUserServlet.java:32)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:755)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:547)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+22:43:45.462 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:43:47.204 [qtp724608044-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:43:47.205 [qtp724608044-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:43:47.574 [qtp724608044-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:43:48.696 [qtp724608044-20] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+22:43:48.699 [qtp724608044-20] WARN  org.eclipse.jetty.server.HttpChannel - /users/edit
+java.lang.NullPointerException: null
+	at com.boroday.userstore.web.servlet.EditUserServlet.doGet(EditUserServlet.java:33)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:755)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:547)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+22:44:14.331 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:44:22.232 [qtp724608044-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:44:22.233 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:44:22.597 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:44:24.884 [qtp724608044-22] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+22:44:24.888 [qtp724608044-22] WARN  org.eclipse.jetty.server.HttpChannel - /users/edit
+java.lang.NullPointerException: null
+	at com.boroday.userstore.web.servlet.EditUserServlet.doGet(EditUserServlet.java:33)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:755)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:547)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:135)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+22:46:41.524 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:46:49.571 [qtp724608044-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:46:49.572 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:46:49.965 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:46:50.780 [qtp724608044-20] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+22:46:50.781 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:46:50.787 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+22:58:12.224 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:58:22.597 [qtp724608044-22] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:58:22.598 [qtp724608044-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:58:22.991 [qtp724608044-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:58:26.274 [qtp724608044-21] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+22:58:29.680 [qtp724608044-18] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+22:58:29.682 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:58:29.684 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+23:02:22.460 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:02:26.915 [qtp724608044-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:02:26.915 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:02:27.305 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:02:29.028 [qtp724608044-21] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+23:02:29.029 [qtp724608044-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:02:29.031 [qtp724608044-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+23:02:35.353 [qtp724608044-28] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: ol
+23:02:35.353 [qtp724608044-28] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+23:02:35.355 [qtp724608044-28] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Search of users completed
+23:12:34.084 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:12:38.338 [qtp724608044-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:12:38.339 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:12:43.432 [qtp724608044-21] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: gvjhgvkh
+23:12:43.432 [qtp724608044-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+23:24:41.432 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:24:45.505 [qtp724608044-22] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:24:45.506 [qtp724608044-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:24:48.727 [qtp724608044-17] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+23:25:12.666 [qtp724608044-17] INFO  c.b.u.web.servlet.AddNewUserServlet - Request to add new user with name "Ada" "April"
+23:25:12.666 [qtp724608044-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+23:25:12.686 [qtp724608044-22] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:25:12.687 [qtp724608044-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:38:59.287 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:39:14.967 [qtp724608044-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:39:14.968 [qtp724608044-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:39:17.506 [qtp724608044-18] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+23:39:56.106 [qtp724608044-19] INFO  c.b.u.web.servlet.AddNewUserServlet - Request to add new user with name "Vasilis" "Mandel"
+23:39:56.107 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+23:39:56.109 [qtp724608044-19] ERROR c.b.u.web.servlet.AddNewUserServlet - New user was nor added
+23:39:56.114 [qtp724608044-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:39:56.115 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:42:02.194 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:42:06.695 [qtp724608044-17] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+23:42:29.169 [qtp724608044-21] INFO  c.b.u.web.servlet.AddNewUserServlet - Request to add new user with name "Vasilis" "Mandel"
+23:42:29.172 [qtp724608044-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+23:42:29.553 [qtp724608044-21] ERROR c.b.u.web.servlet.AddNewUserServlet - New user was nor added
+23:42:29.558 [qtp724608044-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:42:29.558 [qtp724608044-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:45:49.136 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:47:07.020 [qtp724608044-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:47:07.021 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:47:09.173 [qtp724608044-16] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+23:47:25.789 [qtp724608044-16] INFO  c.b.u.web.servlet.AddNewUserServlet - Request to add new user with name "Vasilis" "Mandel"
+23:47:25.789 [qtp724608044-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+23:47:25.791 [qtp724608044-16] ERROR c.b.u.web.servlet.AddNewUserServlet - New user was nor added
+23:47:25.797 [qtp724608044-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:47:25.797 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:48:23.752 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:48:30.169 [qtp968113504-21] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:48:30.170 [qtp968113504-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:48:31.654 [qtp968113504-20] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+23:49:07.302 [qtp968113504-24] INFO  c.b.u.web.servlet.AddNewUserServlet - Request to add new user with name "Vasilis" "Mandel"
+23:49:07.303 [qtp968113504-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+23:50:01.559 [qtp968113504-24] ERROR c.b.u.web.servlet.AddNewUserServlet - New user was nor added
+23:50:01.566 [qtp968113504-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:50:01.566 [qtp968113504-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:50:13.849 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:50:17.805 [qtp724608044-21] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:50:17.806 [qtp724608044-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:50:18.977 [qtp724608044-20] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+23:50:38.754 [qtp724608044-20] INFO  c.b.u.web.servlet.AddNewUserServlet - Request to add new user with name "Vasilis" "Mandel"
+23:50:38.756 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+23:50:38.771 [qtp724608044-21] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:50:38.772 [qtp724608044-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:52:39.288 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:52:39.707 [qtp724608044-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:52:39.707 [qtp724608044-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:52:51.629 [qtp724608044-21] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+23:52:51.631 [qtp724608044-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:53:06.830 [qtp724608044-21] INFO  c.b.u.web.servlet.EditUserServlet - Request to edit user with id 5
+23:53:06.830 [qtp724608044-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+23:53:06.843 [qtp724608044-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:53:06.844 [qtp724608044-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB

@@ -1,0 +1,77 @@
+21:57:45.272 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+21:57:45.464 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @933ms to org.eclipse.jetty.util.log.Slf4jLog
+21:57:45.657 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+21:57:45.693 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+21:57:45.693 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+21:57:45.697 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+21:57:45.725 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3de8f619{/,null,AVAILABLE}
+21:57:45.865 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@209da20d{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+21:57:45.865 [main] INFO  org.eclipse.jetty.server.Server - Started @1335ms
+21:57:47.227 [qtp1881901842-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+21:59:08.414 [qtp1881901842-15] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+21:59:52.382 [qtp1881901842-18] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:00:35.657 [qtp1881901842-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:00:38.441 [qtp1881901842-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:00:39.319 [qtp1881901842-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:00:58.731 [qtp1881901842-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:01:41.993 [qtp1881901842-15] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:02:33.236 [qtp1881901842-21] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:03:03.487 [qtp1881901842-15] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:03:05.950 [qtp1881901842-15] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:03:32.823 [qtp1881901842-15] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:03:44.870 [qtp1881901842-15] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:04:07.833 [qtp1881901842-15] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:05:02.900 [qtp1881901842-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:05:32.783 [qtp1881901842-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:06:03.325 [qtp1881901842-21] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:06:22.472 [qtp1881901842-21] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:06:23.758 [qtp1881901842-21] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:06:39.094 [qtp1881901842-21] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:06:40.068 [qtp1881901842-21] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:07:03.218 [qtp1881901842-21] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:07:17.957 [qtp1881901842-26] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:07:35.198 [qtp1881901842-26] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:07:51.048 [qtp1881901842-26] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:08:01.378 [qtp1881901842-26] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:08:24.151 [qtp1881901842-14] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:09:19.025 [qtp1881901842-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:09:28.290 [qtp1881901842-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:09:43.445 [qtp1881901842-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:09:54.809 [qtp1881901842-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:10:24.547 [qtp1881901842-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:11:41.165 [qtp1881901842-21] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:13:04.591 [qtp1881901842-15] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:14:17.383 [qtp1881901842-36] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:14:18.508 [qtp1881901842-36] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:14:27.076 [qtp1881901842-36] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:15:02.515 [qtp1881901842-15] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:15:34.497 [qtp1881901842-34] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:15:54.473 [qtp1881901842-34] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:16:09.560 [qtp1881901842-34] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:34:25.380 [qtp1881901842-39] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:34:38.349 [qtp1881901842-40] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:34:52.202 [qtp1881901842-40] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:35:06.460 [qtp1881901842-40] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:35:31.341 [qtp1881901842-38] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:36:13.342 [qtp1881901842-26] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:36:37.843 [qtp1881901842-26] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:37:00.169 [qtp1881901842-26] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:37:41.949 [qtp1881901842-40] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:37:43.258 [qtp1881901842-40] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:37:44.067 [qtp1881901842-40] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:38:02.082 [qtp1881901842-40] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:39:25.072 [qtp1881901842-39] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:39:50.433 [qtp1881901842-41] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:40:57.989 [qtp1881901842-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:41:14.148 [qtp1881901842-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:41:28.604 [qtp1881901842-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:42:01.417 [qtp1881901842-39] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:43:30.792 [qtp1881901842-41] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:43:41.201 [qtp1881901842-41] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:43:53.631 [qtp1881901842-41] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:44:50.018 [qtp1881901842-41] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:46:21.253 [qtp1881901842-37] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:46:37.582 [qtp1881901842-37] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:47:55.242 [qtp1881901842-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:48:22.956 [qtp1881901842-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:48:52.990 [qtp1881901842-46] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested

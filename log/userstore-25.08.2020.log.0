@@ -1,0 +1,36 @@
+10:27:21.648 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @574ms to org.eclipse.jetty.util.log.Slf4jLog
+10:27:21.728 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+10:27:21.777 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+10:27:21.817 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+10:27:21.817 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+10:27:21.821 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+10:27:21.852 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@47caedad{/,null,AVAILABLE}
+10:27:21.932 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3f6f6701{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+10:27:21.932 [main] INFO  org.eclipse.jetty.server.Server - Started @865ms
+22:40:59.972 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @609ms to org.eclipse.jetty.util.log.Slf4jLog
+22:41:00.034 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:41:00.072 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+22:41:00.109 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+22:41:00.109 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+22:41:00.112 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+22:41:00.139 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5340477f{/,null,AVAILABLE}
+22:41:00.211 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@242b836{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+22:41:00.212 [main] INFO  org.eclipse.jetty.server.Server - Started @854ms
+23:07:24.941 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @548ms to org.eclipse.jetty.util.log.Slf4jLog
+23:07:25.004 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:07:25.042 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:07:25.080 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:07:25.080 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:07:25.083 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+23:07:25.110 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2657d4dd{/,null,AVAILABLE}
+23:07:25.181 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@2d52216b{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:07:25.182 [main] INFO  org.eclipse.jetty.server.Server - Started @792ms
+23:07:49.393 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @553ms to org.eclipse.jetty.util.log.Slf4jLog
+23:07:49.452 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:07:49.483 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:07:49.513 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:07:49.513 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:07:49.516 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+23:07:49.540 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5340477f{/,null,AVAILABLE}
+23:07:49.614 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@242b836{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:07:49.614 [main] INFO  org.eclipse.jetty.server.Server - Started @779ms

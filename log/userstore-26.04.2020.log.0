@@ -1,0 +1,23 @@
+22:55:08.227 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:55:08.299 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @803ms to org.eclipse.jetty.util.log.Slf4jLog
+22:55:08.433 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+22:55:08.496 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+22:55:08.497 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+22:55:08.501 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+22:55:08.530 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2ab4bc72{/,null,AVAILABLE}
+22:55:08.650 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@e15b7e8{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+22:55:08.651 [main] INFO  org.eclipse.jetty.server.Server - Started @1159ms
+22:55:29.678 [qtp585324508-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:55:29.679 [qtp585324508-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:35:20.847 [qtp585324508-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:46:12.082 [qtp585324508-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:47:07.672 [qtp585324508-18] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:47:45.299 [qtp585324508-29] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:49:03.207 [qtp585324508-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:49:23.848 [qtp585324508-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:50:13.694 [qtp585324508-14] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:50:53.628 [qtp585324508-15] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:53:18.767 [qtp585324508-14] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:53:19.521 [qtp585324508-35] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:53:20.163 [qtp585324508-18] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:54:36.687 [qtp585324508-15] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested

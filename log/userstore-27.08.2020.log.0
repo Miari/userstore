@@ -1,0 +1,9 @@
+21:26:54.621 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1056ms to org.eclipse.jetty.util.log.Slf4jLog
+21:26:54.717 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+21:26:54.789 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+21:26:54.854 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+21:26:54.855 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+21:26:54.859 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+21:26:54.891 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5340477f{/,null,AVAILABLE}
+21:26:54.955 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@242b836{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+21:26:54.956 [main] INFO  org.eclipse.jetty.server.Server - Started @1397ms

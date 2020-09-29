@@ -1,0 +1,420 @@
+01:19:14.240 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:19:14.254 [main] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get all users
+01:20:14.813 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+01:20:14.852 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:20:14.892 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+01:20:14.895 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:20:14.906 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+01:20:14.911 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:20:14.921 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:20:14.923 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+01:20:14.924 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:23:21.784 [main] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get all users
+01:23:21.823 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:23:21.837 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:23:21.839 [main] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get all users
+01:23:26.209 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+01:23:26.368 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @649ms to org.eclipse.jetty.util.log.Slf4jLog
+01:23:26.473 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+01:23:26.528 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+01:23:26.529 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+01:23:26.532 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+01:23:26.563 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@11bb571c{/,null,AVAILABLE}
+01:23:26.643 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@700fb871{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+01:23:26.644 [main] INFO  org.eclipse.jetty.server.Server - Started @927ms
+01:23:35.994 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+01:23:36.077 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:23:36.111 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+01:23:36.114 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:23:36.127 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+01:23:36.131 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:23:36.144 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:23:36.146 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+01:23:36.148 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:23:36.149 [main] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get all users
+01:23:36.172 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:23:36.181 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:23:36.182 [main] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get all users
+01:24:59.662 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+01:24:59.729 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:24:59.755 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+01:24:59.759 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:24:59.774 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+01:24:59.778 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:24:59.790 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:24:59.797 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+01:24:59.805 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:24:59.807 [main] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get all users
+01:24:59.832 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:24:59.843 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:24:59.844 [main] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get all users
+01:26:02.628 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+01:26:02.677 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:26:02.712 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+01:26:02.715 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:26:02.727 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+01:26:02.731 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:26:02.744 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:26:02.746 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+01:26:02.749 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:26:02.750 [main] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get all users
+01:26:02.773 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:26:02.793 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:26:02.795 [main] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get all users
+01:32:27.138 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+01:32:27.191 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:32:27.213 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+01:32:27.216 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:32:27.226 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+01:32:27.230 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:32:27.243 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:32:27.245 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+01:32:27.247 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:32:27.263 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:32:27.284 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:29:57.063 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+21:29:57.722 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @2028ms to org.eclipse.jetty.util.log.Slf4jLog
+21:29:57.811 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+21:29:57.859 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+21:29:57.859 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+21:29:57.863 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+21:29:57.885 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@46271dd6{/,null,AVAILABLE}
+21:29:57.952 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@29f7cefd{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+21:29:57.953 [main] INFO  org.eclipse.jetty.server.Server - Started @2262ms
+21:31:36.204 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+21:31:36.361 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @721ms to org.eclipse.jetty.util.log.Slf4jLog
+21:31:36.454 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+21:31:36.498 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+21:31:36.498 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+21:31:36.501 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+21:31:36.538 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+21:31:36.626 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@700fb871{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+21:31:36.627 [main] INFO  org.eclipse.jetty.server.Server - Started @992ms
+21:31:41.627 [qtp1020154737-15] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+21:31:43.734 [qtp1020154737-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+21:31:47.901 [qtp1020154737-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:31:47.901 [qtp1020154737-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:31:48.323 [qtp1020154737-17] WARN  org.eclipse.jetty.server.HttpChannel - /users
+java.lang.RuntimeException: freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> user.login  [in template "src\\main\\webapp\\WEB-INF\\templates\\users.html" at line 27, column 11]
+
+Tip: If the failing expression is known to be legally null/missing, either specify a default value with myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthessis: (myOptionVar.foo)!myDefault, (myOptionVar.foo)??
+
+The failing instruction (print stack trace for 1 more):
+==> ${user.login}  [in template "src\\main\\webapp\\WEB-INF\\templates\\users.html" at line 27, column 9]
+	at com.boroday.userstore.web.templater.PageGenerator.getPage(PageGenerator.java:33)
+	at com.boroday.userstore.web.servlet.AllUsersServlet.doGet(AllUsersServlet.java:30)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:755)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:547)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:388)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: freemarker.core.InvalidReferenceException: The following has evaluated to null or missing:
+==> user.login  [in template "src\\main\\webapp\\WEB-INF\\templates\\users.html" at line 27, column 11]
+
+Tip: If the failing expression is known to be legally null/missing, either specify a default value with myOptionalVar!myDefault, or use <#if myOptionalVar??>when-present<#else>when-missing</#if>. (These only cover the last step of the expression; to cover the whole expression, use parenthessis: (myOptionVar.foo)!myDefault, (myOptionVar.foo)??
+
+The failing instruction (print stack trace for 1 more):
+==> ${user.login}  [in template "src\\main\\webapp\\WEB-INF\\templates\\users.html" at line 27, column 9]
+	at freemarker.core.InvalidReferenceException.getInstance(InvalidReferenceException.java:98)
+	at freemarker.core.EvalUtil.coerceModelToString(EvalUtil.java:382)
+	at freemarker.core.Expression.evalAndCoerceToString(Expression.java:115)
+	at freemarker.core.DollarVariable.accept(DollarVariable.java:76)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visitByHiddingParent(Environment.java:286)
+	at freemarker.core.IteratorBlock$Context.runLoop(IteratorBlock.java:193)
+	at freemarker.core.Environment.visitIteratorBlock(Environment.java:509)
+	at freemarker.core.IteratorBlock.accept(IteratorBlock.java:103)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.IfBlock.accept(IfBlock.java:84)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.MixedContent.accept(MixedContent.java:93)
+	at freemarker.core.Environment.visit(Environment.java:265)
+	at freemarker.core.Environment.process(Environment.java:243)
+	at freemarker.template.Template.process(Template.java:277)
+	at com.boroday.userstore.web.templater.PageGenerator.getPage(PageGenerator.java:31)
+	... 32 common frames omitted
+21:34:51.905 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+21:34:52.058 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @642ms to org.eclipse.jetty.util.log.Slf4jLog
+21:34:52.154 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+21:34:52.204 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+21:34:52.204 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+21:34:52.207 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+21:34:52.228 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@11bb571c{/,null,AVAILABLE}
+21:34:52.302 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@700fb871{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+21:34:52.303 [main] INFO  org.eclipse.jetty.server.Server - Started @890ms
+21:34:55.904 [qtp1020154737-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:34:55.905 [qtp1020154737-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:48:30.457 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:48:53.745 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+21:48:53.950 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @700ms to org.eclipse.jetty.util.log.Slf4jLog
+21:48:54.061 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+21:48:54.108 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+21:48:54.109 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+21:48:54.128 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+21:48:54.154 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@11bb571c{/,null,AVAILABLE}
+21:48:54.241 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@700fb871{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+21:48:54.242 [main] INFO  org.eclipse.jetty.server.Server - Started @996ms
+21:48:58.253 [qtp1020154737-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:48:58.254 [qtp1020154737-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:49:09.311 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:57:16.742 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+21:57:16.760 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+21:57:16.779 [main] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get user by id 3
+21:57:59.532 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+21:57:59.542 [main] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get user by id 2
+21:58:57.636 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+21:59:16.313 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+21:59:16.349 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+21:59:59.492 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+21:59:59.522 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:00:10.101 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:00:10.141 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+22:00:10.144 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:02:16.449 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:02:16.470 [main] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to search users by text: ma
+22:03:25.478 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:03:25.532 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:03:54.926 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:03:54.969 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:03:55.030 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+22:03:55.033 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:03:55.061 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+22:03:55.063 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:03:55.082 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:03:55.083 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+22:03:55.084 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:03:55.103 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:03:55.125 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:04:38.912 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:04:39.078 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @728ms to org.eclipse.jetty.util.log.Slf4jLog
+22:04:39.172 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+22:04:39.224 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+22:04:39.225 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+22:04:39.228 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+22:04:39.253 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+22:04:39.335 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@700fb871{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+22:04:39.336 [main] INFO  org.eclipse.jetty.server.Server - Started @990ms
+22:04:45.408 [qtp1020154737-22] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:04:45.409 [qtp1020154737-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:04:57.089 [qtp1020154737-19] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: pa
+22:04:57.089 [qtp1020154737-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:05:00.349 [qtp1020154737-16] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+22:05:57.214 [qtp1020154737-15] INFO  c.b.u.web.servlet.AddNewUserServlet - Request to add new user with name "Kornelia" "Lamm"
+22:05:57.215 [qtp1020154737-15] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+22:05:57.227 [qtp1020154737-22] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:05:57.228 [qtp1020154737-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:06:05.214 [qtp1020154737-28] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: ki
+22:06:05.215 [qtp1020154737-28] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:06:09.121 [qtp1020154737-22] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: ne
+22:06:09.121 [qtp1020154737-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:06:13.379 [qtp1020154737-19] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: ma
+22:06:13.379 [qtp1020154737-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:06:16.791 [qtp1020154737-22] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: ko
+22:06:16.791 [qtp1020154737-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:06:20.826 [qtp1020154737-19] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: ia
+22:06:20.826 [qtp1020154737-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:06:22.844 [qtp1020154737-16] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+22:06:22.845 [qtp1020154737-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:06:26.210 [qtp1020154737-19] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+22:06:26.211 [qtp1020154737-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:06:36.470 [qtp1020154737-16] INFO  c.b.u.web.servlet.EditUserServlet - Request to edit user with id 3
+22:06:36.471 [qtp1020154737-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+22:06:36.485 [qtp1020154737-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:06:36.485 [qtp1020154737-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:06:40.716 [qtp1020154737-16] INFO  c.b.u.web.servlet.RemoveUserServlet - Request to remove user with id 3
+22:06:40.716 [qtp1020154737-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+22:06:40.725 [qtp1020154737-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:06:40.725 [qtp1020154737-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:34:37.478 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:34:37.720 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:34:37.751 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+22:34:37.752 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:34:37.771 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+22:34:37.773 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:34:37.789 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:34:37.790 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+22:34:37.792 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:34:37.807 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:34:37.824 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:34:59.524 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:34:59.571 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:34:59.608 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+22:34:59.610 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:34:59.638 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+22:34:59.640 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:34:59.664 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:34:59.665 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+22:34:59.667 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:34:59.688 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:34:59.704 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:35:24.899 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:35:24.939 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:35:24.972 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+22:35:24.974 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:35:24.995 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+22:35:24.998 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:35:25.015 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:35:25.017 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+22:35:25.018 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:35:25.035 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:35:25.052 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:35:55.018 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:35:55.199 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @718ms to org.eclipse.jetty.util.log.Slf4jLog
+22:35:55.363 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+22:35:55.431 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+22:35:55.431 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+22:35:55.438 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+22:35:55.469 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@11bb571c{/,null,AVAILABLE}
+22:35:55.562 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@700fb871{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+22:35:55.563 [main] INFO  org.eclipse.jetty.server.Server - Started @1090ms
+22:35:56.140 [qtp1020154737-22] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:35:56.141 [qtp1020154737-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:37:25.959 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:37:25.998 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:37:26.030 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+22:37:26.031 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:37:26.053 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+22:37:26.054 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:37:26.070 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:37:26.071 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+22:37:26.072 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:37:26.087 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:37:26.103 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:48:48.606 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:48:48.653 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:48:48.656 [main] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get user by id 1
+22:48:48.701 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+22:48:48.703 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:48:48.726 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+22:48:48.727 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:48:48.746 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:48:48.747 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+22:48:48.749 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:48:48.766 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:48:48.785 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:49:21.392 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:49:21.427 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:49:21.455 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+22:49:21.457 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:49:21.475 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+22:49:21.477 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:49:21.493 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:49:21.494 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+22:49:21.495 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:49:21.510 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:49:21.526 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:49:41.382 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:49:41.548 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @752ms to org.eclipse.jetty.util.log.Slf4jLog
+22:49:41.638 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+22:49:41.685 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+22:49:41.685 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+22:49:41.688 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+22:49:41.710 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@11bb571c{/,null,AVAILABLE}
+22:49:41.786 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@700fb871{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+22:49:41.786 [main] INFO  org.eclipse.jetty.server.Server - Started @994ms
+22:50:03.301 [qtp1020154737-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:50:03.302 [qtp1020154737-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:50:09.405 [qtp1020154737-21] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:50:09.405 [qtp1020154737-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:50:13.112 [qtp1020154737-16] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: r
+22:50:13.112 [qtp1020154737-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:54:36.618 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:54:36.664 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:54:36.695 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+22:54:36.697 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:54:36.722 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+22:54:36.724 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:54:36.745 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:54:36.746 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+22:54:36.748 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:54:36.768 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:54:36.788 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:54:57.739 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:54:57.773 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:54:57.804 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+22:54:57.806 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:54:57.826 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+22:54:57.828 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:54:57.850 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:54:57.851 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+22:54:57.852 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:54:57.869 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+22:54:57.887 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:03:49.455 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:03:59.235 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+23:03:59.289 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:03:59.330 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+23:03:59.333 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:03:59.354 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+23:03:59.356 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:03:59.372 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:03:59.373 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+23:03:59.374 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:03:59.392 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:03:59.412 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:04:44.911 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:09:35.991 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+23:09:36.038 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:25:32.672 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+23:25:32.733 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:25:32.773 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+23:25:32.775 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:25:32.797 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+23:25:32.798 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:25:32.815 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:25:32.816 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+23:25:32.818 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:25:32.847 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:25:32.874 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:25:57.391 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+23:25:57.445 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:25:57.499 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+23:25:57.502 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:25:57.529 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+23:25:57.531 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:25:57.551 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:25:57.553 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+23:25:57.554 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:25:57.573 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:25:57.594 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:26:25.179 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+23:26:25.249 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:26:25.308 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+23:26:25.311 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:26:25.350 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+23:26:25.352 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:26:25.373 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:26:25.375 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+23:26:25.377 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:26:25.409 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:26:25.433 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB

@@ -1,0 +1,142 @@
+00:41:51.073 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:43:09.863 [qtp1621002296-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:43:09.864 [qtp1621002296-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:43:13.017 [qtp1621002296-18] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+00:43:13.018 [qtp1621002296-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:43:24.432 [qtp1621002296-18] INFO  c.b.u.web.servlet.EditUserServlet - Request to edit user with id 5
+00:43:24.432 [qtp1621002296-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+00:43:24.447 [qtp1621002296-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:43:24.447 [qtp1621002296-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:33:56.386 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+01:34:06.921 [qtp724608044-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+01:34:06.921 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:34:11.678 [qtp724608044-19] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+01:34:11.679 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:34:20.334 [qtp724608044-21] ERROR c.b.u.web.servlet.EditUserServlet - User was nor edited
+01:34:20.354 [qtp724608044-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+01:34:20.355 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:34:39.327 [qtp724608044-19] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+01:34:39.327 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:34:46.306 [qtp724608044-19] INFO  c.b.u.web.servlet.EditUserServlet - Request to edit user with id 5
+01:34:46.306 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+01:34:46.317 [qtp724608044-29] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+01:34:46.318 [qtp724608044-29] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:35:01.858 [qtp724608044-29] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+22:12:22.414 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:12:34.542 [qtp402405659-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:12:34.542 [qtp402405659-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:12:39.185 [qtp402405659-22] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: is
+22:12:39.185 [qtp402405659-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:12:42.570 [qtp402405659-22] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+22:12:42.570 [qtp402405659-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+22:12:56.851 [qtp402405659-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:12:56.851 [qtp402405659-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:14:34.220 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:14:34.593 [qtp724608044-19] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+22:15:02.284 [qtp724608044-21] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:15:02.284 [qtp724608044-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:15:46.854 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:15:50.440 [qtp724608044-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:15:50.497 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:17:23.225 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:17:23.561 [qtp724608044-21] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:17:23.561 [qtp724608044-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:17:39.048 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:17:41.161 [qtp724608044-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:17:41.162 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:18:07.688 [qtp724608044-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:18:07.689 [qtp724608044-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:19:00.169 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:19:00.590 [qtp724608044-22] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:19:00.591 [qtp724608044-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:19:50.313 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:19:50.648 [qtp724608044-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:19:50.648 [qtp724608044-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:19:59.614 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:20:01.507 [qtp724608044-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:20:01.508 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:21:17.809 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:21:18.258 [qtp724608044-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:21:18.258 [qtp724608044-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:21:41.299 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:21:42.938 [qtp724608044-22] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:21:42.938 [qtp724608044-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:24:37.816 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:24:38.725 [qtp914507705-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:24:38.725 [qtp914507705-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:28:17.478 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:28:20.392 [qtp724608044-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:28:20.393 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:28:32.078 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:28:34.183 [qtp724608044-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:28:34.183 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:40:59.126 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:41:03.692 [qtp402405659-21] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:41:03.692 [qtp402405659-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:41:36.129 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:41:39.885 [qtp724608044-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:41:39.886 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:41:53.348 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:41:55.666 [qtp724608044-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:41:55.667 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:42:25.751 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:42:32.386 [qtp724608044-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:42:32.387 [qtp724608044-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:42:44.638 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:42:46.750 [qtp724608044-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:42:46.751 [qtp724608044-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:43:21.181 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:43:22.924 [qtp724608044-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:43:22.925 [qtp724608044-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:43:33.110 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:43:33.958 [qtp724608044-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:43:33.959 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:43:53.274 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:43:55.426 [qtp724608044-15] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:43:55.427 [qtp724608044-15] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:44:45.794 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:44:48.215 [qtp724608044-22] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:44:48.215 [qtp724608044-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:46:03.426 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:46:05.130 [qtp724608044-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:46:05.131 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:46:10.774 [qtp724608044-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:46:10.774 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:46:24.691 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:46:25.889 [qtp724608044-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:46:25.889 [qtp724608044-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:46:35.105 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:46:36.142 [qtp724608044-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:46:36.143 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:46:47.276 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:46:48.137 [qtp724608044-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:46:48.137 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:20:57.208 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:21:07.034 [qtp724608044-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:21:07.035 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:21:15.310 [qtp724608044-15] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: er
+23:21:15.310 [qtp724608044-15] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+23:21:17.357 [qtp724608044-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:21:17.358 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:21:23.633 [qtp724608044-18] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: ma
+23:21:23.633 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+23:21:29.401 [qtp724608044-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:21:29.401 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:40:13.687 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:40:23.657 [qtp724608044-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:40:23.658 [qtp724608044-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:40:27.205 [qtp724608044-20] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+23:40:43.353 [qtp724608044-19] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+23:42:17.430 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:42:24.026 [qtp724608044-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:42:24.027 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:42:43.550 [qtp724608044-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:42:43.550 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:42:48.451 [qtp724608044-20] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+23:43:01.667 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:43:03.809 [qtp724608044-22] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:43:03.810 [qtp724608044-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:43:06.465 [qtp724608044-17] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+23:51:00.716 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:51:03.178 [qtp724608044-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:51:03.178 [qtp724608044-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB

@@ -1,0 +1,112 @@
+01:24:42.528 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+01:24:58.232 [qtp1810458830-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+01:24:58.233 [qtp1810458830-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+01:24:58.458 [qtp1810458830-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+11:42:10.133 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+11:42:20.988 [qtp2083999882-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+11:42:20.989 [qtp2083999882-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+11:42:21.174 [qtp2083999882-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+11:42:26.863 [qtp2083999882-18] INFO  c.b.u.web.servlet.RemoveUserServlet - Request to remove user with id 62
+11:42:26.863 [qtp2083999882-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to remove user from DB
+11:42:26.877 [qtp2083999882-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - User was removed
+11:42:26.880 [qtp2083999882-22] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+11:42:26.881 [qtp2083999882-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+11:42:26.884 [qtp2083999882-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+11:42:33.395 [qtp2083999882-17] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: Li
+11:42:33.395 [qtp2083999882-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to search user in DB
+11:42:33.410 [qtp2083999882-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Search of users completed
+11:42:36.607 [qtp2083999882-20] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+11:42:59.655 [qtp2083999882-17] INFO  c.b.u.web.servlet.AddNewUserServlet - Request to add new user with name "Liza" "Knoder"
+11:42:59.656 [qtp2083999882-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get new user to DB
+11:42:59.667 [qtp2083999882-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - New user was added to DB
+11:42:59.675 [qtp2083999882-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+11:42:59.676 [qtp2083999882-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+11:42:59.684 [qtp2083999882-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:04:21.699 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:04:35.005 [qtp899543194-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:04:35.006 [qtp899543194-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:04:35.384 [qtp899543194-19] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get all users
+23:04:35.387 [qtp899543194-19] WARN  org.eclipse.jetty.server.HttpChannel - /users
+java.lang.RuntimeException: Connection to database is not available. It is not possible to show all users
+	at com.boroday.userstore.dao.jdbc.JdbcUserDao.getAll(JdbcUserDao.java:47)
+	at com.boroday.userstore.service.impl.DefaultUserService.getAll(DefaultUserService.java:19)
+	at com.boroday.userstore.web.servlet.AllUsersServlet.doGet(AllUsersServlet.java:28)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:755)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:547)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:135)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+Caused by: org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (The server time zone value 'Mitteleurop�ische Zeit' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1225)
+	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880)
+	at com.boroday.userstore.dao.jdbc.JdbcUserDao.getAll(JdbcUserDao.java:35)
+	... 32 common frames omitted
+Caused by: java.sql.SQLException: The server time zone value 'Mitteleurop�ische Zeit' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:97)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:89)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:63)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:73)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:76)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:836)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:456)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:246)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:199)
+	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
+	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:294)
+	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1247)
+	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1221)
+	... 34 common frames omitted
+Caused by: com.mysql.cj.exceptions.InvalidConnectionAttributeException: The server time zone value 'Mitteleurop�ische Zeit' is unrecognized or represents more than one time zone. You must configure either the server or JDBC driver (via the serverTimezone configuration property) to use a more specifc time zone value if you want to utilize time zone support.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:85)
+	at com.mysql.cj.util.TimeUtil.getCanonicalTimezone(TimeUtil.java:132)
+	at com.mysql.cj.protocol.a.NativeProtocol.configureTimezone(NativeProtocol.java:2121)
+	at com.mysql.cj.protocol.a.NativeProtocol.initServerSession(NativeProtocol.java:2145)
+	at com.mysql.cj.jdbc.ConnectionImpl.initializePropsFromServer(ConnectionImpl.java:1310)
+	at com.mysql.cj.jdbc.ConnectionImpl.connectOneTryOnly(ConnectionImpl.java:967)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:826)
+	... 41 common frames omitted
+23:05:57.031 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:06:03.591 [qtp899543194-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:06:03.592 [qtp899543194-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:06:03.954 [qtp899543194-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:06:13.762 [qtp899543194-20] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: ve
+23:06:13.763 [qtp899543194-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to search user in DB
+23:06:13.775 [qtp899543194-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Search of users completed
+23:06:16.996 [qtp899543194-17] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+23:06:38.996 [qtp899543194-16] INFO  c.b.u.web.servlet.AddNewUserServlet - Request to add new user with name "Linda" "Spatz"
+23:06:38.996 [qtp899543194-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get new user to DB
+23:06:39.004 [qtp899543194-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - New user was added to DB
+23:06:39.009 [qtp899543194-21] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:06:39.009 [qtp899543194-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:06:39.010 [qtp899543194-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB

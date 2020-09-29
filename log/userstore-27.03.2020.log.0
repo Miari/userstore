@@ -1,0 +1,24 @@
+22:20:29.831 [main] INFO  c.b.userstore.util.PropertiesReader - Trying get properties
+22:21:02.569 [main] INFO  c.b.userstore.util.PropertiesReader - Trying get properties
+22:30:08.428 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:30:17.528 [qtp1904783235-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:30:17.703 [qtp1904783235-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get
+22:38:51.990 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:38:56.884 [qtp1904783235-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:38:57.050 [qtp1904783235-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get
+22:39:15.862 [qtp1904783235-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:39:15.866 [qtp1904783235-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get
+22:39:57.284 [qtp1904783235-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:39:57.287 [qtp1904783235-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get
+22:41:04.063 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:41:46.697 [qtp1904783235-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get new user to DB
+22:41:46.852 [qtp1904783235-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - New user was added to DB
+22:41:46.856 [qtp1904783235-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:41:46.869 [qtp1904783235-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:50:46.603 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:50:48.999 [qtp1904783235-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:50:48.999 [qtp1904783235-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:50:49.185 [qtp1904783235-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:51:01.658 [qtp1904783235-21] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: nnnnn
+23:51:01.659 [qtp1904783235-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to search user in DB
+23:51:01.665 [qtp1904783235-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users were found

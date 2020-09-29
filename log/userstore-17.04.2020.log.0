@@ -1,0 +1,862 @@
+00:07:31.529 [qtp398457879-21] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:07:31.553 [qtp398457879-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:08:28.633 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:08:28.852 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @919ms to org.eclipse.jetty.util.log.Slf4jLog
+00:08:28.940 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:08:28.977 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:08:28.978 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:08:28.982 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+00:08:29.005 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:08:29.085 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:08:29.085 [main] INFO  org.eclipse.jetty.server.Server - Started @1156ms
+00:08:30.663 [qtp398457879-17] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:08:30.664 [qtp398457879-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:08:38.739 [qtp398457879-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:08:38.739 [qtp398457879-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:08:41.188 [qtp398457879-18] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:08:41.189 [qtp398457879-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:09:05.868 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:09:06.059 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @814ms to org.eclipse.jetty.util.log.Slf4jLog
+00:09:06.151 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:09:06.203 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:09:06.203 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:09:06.206 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+00:09:06.230 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:09:06.317 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:09:06.318 [main] INFO  org.eclipse.jetty.server.Server - Started @1076ms
+00:09:07.374 [qtp398457879-21] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:09:07.375 [qtp398457879-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:11:33.584 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:11:33.862 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @873ms to org.eclipse.jetty.util.log.Slf4jLog
+00:11:33.969 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:11:34.037 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:11:34.037 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:11:34.042 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+00:11:34.076 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:11:34.173 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:11:34.174 [main] INFO  org.eclipse.jetty.server.Server - Started @1190ms
+00:11:35.267 [qtp398457879-21] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:11:35.268 [qtp398457879-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:12:15.564 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:12:15.799 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @840ms to org.eclipse.jetty.util.log.Slf4jLog
+00:12:15.899 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:12:15.957 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:12:15.958 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:12:15.962 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+00:12:16.005 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:12:16.088 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:12:16.089 [main] INFO  org.eclipse.jetty.server.Server - Started @1136ms
+00:12:16.488 [qtp398457879-17] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:12:16.489 [qtp398457879-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:12:50.902 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:12:51.082 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @820ms to org.eclipse.jetty.util.log.Slf4jLog
+00:12:51.185 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:12:51.231 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:12:51.231 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:12:51.236 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+00:12:51.262 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:12:51.360 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:12:51.360 [main] INFO  org.eclipse.jetty.server.Server - Started @1102ms
+00:12:51.701 [qtp398457879-20] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:12:51.702 [qtp398457879-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:13:34.976 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:13:35.197 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @864ms to org.eclipse.jetty.util.log.Slf4jLog
+00:13:35.291 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:13:35.341 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:13:35.341 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:13:35.346 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+00:13:35.375 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:13:35.473 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:13:35.474 [main] INFO  org.eclipse.jetty.server.Server - Started @1145ms
+00:13:35.698 [qtp398457879-17] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:13:35.698 [qtp398457879-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:15:01.245 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:15:01.447 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @800ms to org.eclipse.jetty.util.log.Slf4jLog
+00:15:01.562 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:15:01.619 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:15:01.619 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:15:01.623 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+00:15:01.653 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:15:01.745 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:15:01.745 [main] INFO  org.eclipse.jetty.server.Server - Started @1102ms
+00:15:02.221 [qtp398457879-22] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:15:02.221 [qtp398457879-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:16:20.686 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:16:20.894 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @762ms to org.eclipse.jetty.util.log.Slf4jLog
+00:16:21.003 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:16:21.047 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:16:21.047 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:16:21.051 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+00:16:21.078 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:16:21.170 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:16:21.171 [main] INFO  org.eclipse.jetty.server.Server - Started @1044ms
+00:16:29.193 [qtp398457879-20] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:16:29.193 [qtp398457879-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:16:32.250 [qtp398457879-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:16:32.250 [qtp398457879-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:17:04.797 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:17:05.011 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @759ms to org.eclipse.jetty.util.log.Slf4jLog
+00:17:05.102 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:17:05.154 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:17:05.154 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:17:05.158 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+00:17:05.187 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:17:05.269 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:17:05.269 [main] INFO  org.eclipse.jetty.server.Server - Started @1020ms
+00:17:07.114 [qtp398457879-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:17:07.115 [qtp398457879-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:17:42.332 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:17:42.581 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @773ms to org.eclipse.jetty.util.log.Slf4jLog
+00:17:42.692 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:17:42.754 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:17:42.754 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:17:42.758 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+00:17:42.786 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:17:42.889 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:17:42.889 [main] INFO  org.eclipse.jetty.server.Server - Started @1084ms
+00:17:43.311 [qtp398457879-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:17:43.312 [qtp398457879-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:17:47.465 [qtp398457879-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:17:47.465 [qtp398457879-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:20:04.386 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:20:04.655 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @819ms to org.eclipse.jetty.util.log.Slf4jLog
+00:20:04.766 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:20:04.821 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:20:04.821 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:20:04.834 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+00:20:04.870 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5495333e{/,null,AVAILABLE}
+00:20:04.982 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:20:04.983 [main] INFO  org.eclipse.jetty.server.Server - Started @1149ms
+00:20:06.939 [qtp398457879-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:20:06.939 [qtp398457879-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:20:08.606 [qtp398457879-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:20:08.607 [qtp398457879-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:20:10.097 [qtp398457879-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:20:10.098 [qtp398457879-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:20:37.206 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:20:37.380 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @727ms to org.eclipse.jetty.util.log.Slf4jLog
+00:20:37.476 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:20:37.532 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:20:37.533 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:20:37.537 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+00:20:37.561 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:20:37.661 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:20:37.661 [main] INFO  org.eclipse.jetty.server.Server - Started @1011ms
+00:20:39.353 [qtp398457879-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:20:39.355 [qtp398457879-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:20:45.266 [qtp398457879-18] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+00:22:22.310 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+00:22:26.258 [qtp398457879-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:22:26.259 [qtp398457879-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:24:01.520 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:24:01.760 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @854ms to org.eclipse.jetty.util.log.Slf4jLog
+00:24:01.864 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:24:01.913 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:24:01.914 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:24:01.918 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+00:24:01.945 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:24:02.034 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:24:02.034 [main] INFO  org.eclipse.jetty.server.Server - Started @1131ms
+00:24:03.350 [qtp398457879-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:24:03.351 [qtp398457879-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:24:26.848 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:24:27.026 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @769ms to org.eclipse.jetty.util.log.Slf4jLog
+00:24:27.160 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:24:27.203 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:24:27.203 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:24:27.207 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+00:24:27.228 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:24:27.347 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:24:27.347 [main] INFO  org.eclipse.jetty.server.Server - Started @1094ms
+00:24:28.637 [qtp398457879-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:24:28.638 [qtp398457879-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:24:37.564 [qtp398457879-18] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+00:26:16.502 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:26:16.676 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @757ms to org.eclipse.jetty.util.log.Slf4jLog
+00:26:16.766 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:26:16.804 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:26:16.804 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:26:16.808 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+00:26:16.856 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:26:16.948 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:26:16.949 [main] INFO  org.eclipse.jetty.server.Server - Started @1033ms
+00:26:21.513 [qtp398457879-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:26:21.513 [qtp398457879-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:26:45.653 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:26:45.933 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @832ms to org.eclipse.jetty.util.log.Slf4jLog
+00:26:46.033 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:26:46.097 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:26:46.098 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:26:46.102 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+00:26:46.139 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5495333e{/,null,AVAILABLE}
+00:26:46.219 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:26:46.220 [main] INFO  org.eclipse.jetty.server.Server - Started @1123ms
+00:26:47.248 [qtp398457879-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:26:47.249 [qtp398457879-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:26:52.379 [qtp398457879-18] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:26:52.380 [qtp398457879-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:27:25.156 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:27:25.371 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @737ms to org.eclipse.jetty.util.log.Slf4jLog
+00:27:25.482 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:27:25.562 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:27:25.566 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:27:25.570 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+00:27:25.612 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:27:25.699 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:27:25.699 [main] INFO  org.eclipse.jetty.server.Server - Started @1070ms
+00:27:27.603 [qtp398457879-21] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:27:27.603 [qtp398457879-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:27:34.598 [qtp398457879-15] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+00:28:12.669 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:28:12.882 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @775ms to org.eclipse.jetty.util.log.Slf4jLog
+00:28:12.972 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:28:13.038 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:28:13.039 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:28:13.043 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+00:28:13.081 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:28:13.173 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:28:13.173 [main] INFO  org.eclipse.jetty.server.Server - Started @1070ms
+00:28:15.334 [qtp398457879-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+00:28:19.330 [qtp398457879-18] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:28:19.330 [qtp398457879-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:30:46.313 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:30:46.515 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @815ms to org.eclipse.jetty.util.log.Slf4jLog
+00:30:46.603 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:30:46.645 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:30:46.646 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:30:46.648 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+00:30:46.672 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:30:46.762 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:30:46.762 [main] INFO  org.eclipse.jetty.server.Server - Started @1065ms
+00:30:48.525 [qtp398457879-19] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:30:48.526 [qtp398457879-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:31:08.538 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:31:08.723 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @728ms to org.eclipse.jetty.util.log.Slf4jLog
+00:31:08.832 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:31:08.909 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:31:08.909 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:31:08.913 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+00:31:08.939 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5495333e{/,null,AVAILABLE}
+00:31:09.036 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:31:09.037 [main] INFO  org.eclipse.jetty.server.Server - Started @1044ms
+00:31:10.659 [qtp398457879-18] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:31:10.660 [qtp398457879-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:31:36.632 [qtp398457879-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+00:32:17.840 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:32:18.065 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @819ms to org.eclipse.jetty.util.log.Slf4jLog
+00:32:18.159 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:32:18.245 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:32:18.245 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:32:18.248 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+00:32:18.286 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:32:18.376 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:32:18.376 [main] INFO  org.eclipse.jetty.server.Server - Started @1134ms
+00:32:18.777 [qtp398457879-20] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:32:18.777 [qtp398457879-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:33:15.346 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:33:15.536 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @914ms to org.eclipse.jetty.util.log.Slf4jLog
+00:33:15.634 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:33:15.691 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:33:15.691 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:33:15.695 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+00:33:15.735 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:33:15.854 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:33:15.854 [main] INFO  org.eclipse.jetty.server.Server - Started @1236ms
+00:33:18.528 [qtp398457879-22] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:33:18.529 [qtp398457879-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:33:28.048 [qtp398457879-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+00:34:37.297 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:34:37.471 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @849ms to org.eclipse.jetty.util.log.Slf4jLog
+00:34:37.566 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:34:37.607 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:34:37.608 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:34:37.612 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+00:34:37.641 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:34:37.757 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:34:37.757 [main] INFO  org.eclipse.jetty.server.Server - Started @1138ms
+00:34:39.769 [qtp398457879-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+00:34:45.526 [qtp398457879-16] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:34:45.527 [qtp398457879-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:34:51.410 [qtp398457879-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:34:51.411 [qtp398457879-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:35:30.106 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:35:30.299 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @822ms to org.eclipse.jetty.util.log.Slf4jLog
+00:35:30.422 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:35:30.488 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:35:30.488 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:35:30.492 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+00:35:30.560 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:35:30.662 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:35:30.663 [main] INFO  org.eclipse.jetty.server.Server - Started @1190ms
+00:35:32.448 [qtp398457879-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:35:32.449 [qtp398457879-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:36:56.660 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:36:56.875 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @747ms to org.eclipse.jetty.util.log.Slf4jLog
+00:36:56.989 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:36:57.041 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:36:57.041 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:36:57.044 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+00:36:57.078 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:36:57.169 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:36:57.171 [main] INFO  org.eclipse.jetty.server.Server - Started @1048ms
+00:37:01.201 [qtp398457879-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:37:01.202 [qtp398457879-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:37:07.955 [qtp398457879-22] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+00:44:10.089 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:44:10.360 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1324ms to org.eclipse.jetty.util.log.Slf4jLog
+00:44:10.452 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:44:10.530 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:44:10.531 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:44:10.544 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+00:44:10.610 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5495333e{/,null,AVAILABLE}
+00:44:10.740 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:44:10.740 [main] INFO  org.eclipse.jetty.server.Server - Started @1706ms
+00:44:16.265 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:44:16.408 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:44:16.457 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+00:44:16.460 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:44:16.489 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+00:44:16.490 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:44:16.511 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:44:16.513 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+00:44:16.514 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:44:16.537 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:44:16.561 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:44:44.003 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:44:44.251 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @893ms to org.eclipse.jetty.util.log.Slf4jLog
+00:44:44.471 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:44:44.553 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:44:44.554 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:44:44.560 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+00:44:44.609 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5495333e{/,null,AVAILABLE}
+00:44:44.727 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:44:44.728 [main] INFO  org.eclipse.jetty.server.Server - Started @1375ms
+00:44:49.257 [qtp398457879-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:44:49.259 [qtp398457879-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:44:53.423 [qtp398457879-20] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: ol
+00:44:53.425 [qtp398457879-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:44:56.890 [qtp398457879-17] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+00:45:35.234 [qtp398457879-21] INFO  c.b.u.web.servlet.AddNewUserServlet - Request to add new user with name "Evangelina" "Rosarin"
+00:45:35.236 [qtp398457879-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+00:45:35.261 [qtp398457879-21] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:45:35.262 [qtp398457879-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:47:43.861 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:47:44.239 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1161ms to org.eclipse.jetty.util.log.Slf4jLog
+00:47:44.353 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:47:44.411 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:47:44.415 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:47:44.425 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+00:47:44.488 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+00:47:44.605 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:47:44.606 [main] INFO  org.eclipse.jetty.server.Server - Started @1532ms
+11:58:25.658 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+11:58:26.067 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1339ms to org.eclipse.jetty.util.log.Slf4jLog
+11:58:26.148 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+11:58:26.186 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+11:58:26.186 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+11:58:26.189 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+11:58:26.210 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@11bb571c{/,null,AVAILABLE}
+11:58:26.275 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@700fb871{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+11:58:26.275 [main] INFO  org.eclipse.jetty.server.Server - Started @1550ms
+11:58:43.877 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+11:58:43.935 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+11:58:43.984 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+11:58:43.986 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+11:58:44.006 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+11:58:44.007 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+11:58:44.022 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+11:58:44.023 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+11:58:44.024 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+11:58:44.041 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+11:58:44.058 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+11:59:13.196 [qtp1020154737-21] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+11:59:13.196 [qtp1020154737-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+11:59:18.635 [qtp1020154737-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+11:59:18.636 [qtp1020154737-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+11:59:19.787 [qtp1020154737-22] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+11:59:21.723 [qtp1020154737-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+11:59:21.723 [qtp1020154737-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+11:59:26.353 [qtp1020154737-22] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+11:59:32.820 [qtp1020154737-21] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+11:59:38.015 [qtp1020154737-22] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+11:59:38.015 [qtp1020154737-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+11:59:41.515 [qtp1020154737-20] INFO  c.b.u.web.servlet.RemoveUserServlet - Request to remove user with id 4
+11:59:41.515 [qtp1020154737-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+11:59:41.528 [qtp1020154737-22] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+11:59:41.528 [qtp1020154737-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+11:59:45.514 [qtp1020154737-20] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+12:01:03.719 [qtp1020154737-22] INFO  c.b.u.web.servlet.AddNewUserServlet - Request to add new user with name "Kassandra" "Small"
+12:01:03.720 [qtp1020154737-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+12:01:03.732 [qtp1020154737-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+12:01:03.732 [qtp1020154737-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+12:04:16.847 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+12:04:17.129 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @819ms to org.eclipse.jetty.util.log.Slf4jLog
+12:04:17.238 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+12:04:17.304 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+12:04:17.305 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+12:04:17.309 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+12:04:17.341 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+12:04:17.428 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+12:04:17.428 [main] INFO  org.eclipse.jetty.server.Server - Started @1124ms
+12:04:21.214 [qtp398457879-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+12:04:21.215 [qtp398457879-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+12:04:23.908 [qtp398457879-16] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+12:04:28.538 [qtp398457879-22] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+12:04:28.539 [qtp398457879-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+12:10:51.667 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+12:10:52.027 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1137ms to org.eclipse.jetty.util.log.Slf4jLog
+12:10:52.167 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+12:10:52.240 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+12:10:52.240 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+12:10:52.247 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+12:10:52.286 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+12:10:52.385 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+12:10:52.385 [main] INFO  org.eclipse.jetty.server.Server - Started @1500ms
+12:10:53.095 [qtp398457879-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+12:10:53.096 [qtp398457879-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+12:11:48.186 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+12:11:48.481 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1105ms to org.eclipse.jetty.util.log.Slf4jLog
+12:11:48.621 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+12:11:48.685 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+12:11:48.685 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+12:11:48.691 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+12:11:48.733 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+12:11:48.866 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+12:11:48.866 [main] INFO  org.eclipse.jetty.server.Server - Started @1498ms
+12:11:49.004 [qtp398457879-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+12:11:49.004 [qtp398457879-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+12:11:51.817 [qtp398457879-22] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+12:11:57.414 [qtp398457879-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+12:11:57.415 [qtp398457879-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+12:12:16.797 [qtp398457879-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:14:44.758 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+12:14:45.091 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1222ms to org.eclipse.jetty.util.log.Slf4jLog
+12:14:45.269 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+12:14:45.356 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+12:14:45.357 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+12:14:45.363 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+12:14:45.425 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+12:14:45.578 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+12:14:45.578 [main] INFO  org.eclipse.jetty.server.Server - Started @1714ms
+12:14:45.969 [qtp398457879-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+12:14:45.969 [qtp398457879-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+12:14:48.510 [qtp398457879-22] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+12:14:48.511 [qtp398457879-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+12:14:48.974 [qtp398457879-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+12:14:48.974 [qtp398457879-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+12:18:22.438 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+12:18:22.751 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1012ms to org.eclipse.jetty.util.log.Slf4jLog
+12:18:22.982 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+12:18:23.038 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+12:18:23.040 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+12:18:23.051 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+12:18:23.088 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+12:18:23.204 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+12:18:23.205 [main] INFO  org.eclipse.jetty.server.Server - Started @1469ms
+12:18:26.744 [qtp398457879-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+12:18:26.745 [qtp398457879-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+12:18:29.517 [qtp398457879-22] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:19:09.428 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+12:19:09.736 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1130ms to org.eclipse.jetty.util.log.Slf4jLog
+12:19:09.964 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+12:19:10.048 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+12:19:10.048 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+12:19:10.052 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+12:19:10.096 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+12:19:10.232 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+12:19:10.232 [main] INFO  org.eclipse.jetty.server.Server - Started @1631ms
+12:19:10.335 [qtp398457879-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:19:10.950 [qtp398457879-18] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:19:11.860 [qtp398457879-22] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:19:12.955 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:19:14.384 [qtp398457879-22] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:19:55.701 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+12:19:56.021 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1230ms to org.eclipse.jetty.util.log.Slf4jLog
+12:19:56.171 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+12:19:56.243 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+12:19:56.244 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+12:19:56.249 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+12:19:56.282 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+12:19:56.400 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+12:19:56.400 [main] INFO  org.eclipse.jetty.server.Server - Started @1614ms
+12:19:56.540 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:19:57.274 [qtp398457879-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:21:04.876 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+12:21:05.293 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1425ms to org.eclipse.jetty.util.log.Slf4jLog
+12:21:05.502 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+12:21:05.613 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+12:21:05.614 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+12:21:05.619 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+12:21:05.660 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+12:21:05.777 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+12:21:05.777 [main] INFO  org.eclipse.jetty.server.Server - Started @1920ms
+12:21:05.892 [qtp398457879-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:21:06.547 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:22:16.799 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+12:22:17.054 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1049ms to org.eclipse.jetty.util.log.Slf4jLog
+12:22:17.206 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+12:22:17.278 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+12:22:17.278 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+12:22:17.284 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+12:22:17.320 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+12:22:17.438 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+12:22:17.439 [main] INFO  org.eclipse.jetty.server.Server - Started @1438ms
+12:22:17.583 [qtp398457879-22] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:22:20.289 [qtp398457879-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+12:22:20.290 [qtp398457879-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+12:22:58.280 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+12:22:58.582 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1026ms to org.eclipse.jetty.util.log.Slf4jLog
+12:22:58.705 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+12:22:58.772 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+12:22:58.772 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+12:22:58.777 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+12:22:58.818 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+12:22:58.969 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+12:22:58.970 [main] INFO  org.eclipse.jetty.server.Server - Started @1419ms
+12:23:44.874 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:23:45.545 [qtp398457879-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:23:56.548 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+12:23:56.897 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1119ms to org.eclipse.jetty.util.log.Slf4jLog
+12:23:57.075 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+12:23:57.141 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+12:23:57.142 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+12:23:57.150 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+12:23:57.187 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+12:23:57.307 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+12:23:57.308 [main] INFO  org.eclipse.jetty.server.Server - Started @1537ms
+12:23:59.590 [qtp398457879-21] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:24:00.045 [qtp398457879-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:25:13.792 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+12:25:14.118 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1035ms to org.eclipse.jetty.util.log.Slf4jLog
+12:25:14.251 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+12:25:14.325 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+12:25:14.325 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+12:25:14.328 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+12:25:14.364 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+12:25:14.486 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+12:25:14.487 [main] INFO  org.eclipse.jetty.server.Server - Started @1411ms
+12:25:26.170 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:25:26.632 [qtp398457879-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:25:26.954 [qtp398457879-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:25:27.218 [qtp398457879-18] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:25:27.439 [qtp398457879-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:25:27.650 [qtp398457879-18] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:25:48.225 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+12:25:48.511 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1040ms to org.eclipse.jetty.util.log.Slf4jLog
+12:25:48.644 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+12:25:48.711 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+12:25:48.711 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+12:25:48.715 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+12:25:48.747 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+12:25:48.863 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+12:25:48.863 [main] INFO  org.eclipse.jetty.server.Server - Started @1401ms
+12:25:48.965 [qtp398457879-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:25:49.059 [qtp398457879-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:25:49.347 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:25:49.563 [qtp398457879-18] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+12:25:49.744 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+18:43:34.319 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+18:43:34.510 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1423ms to org.eclipse.jetty.util.log.Slf4jLog
+18:43:34.621 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+18:43:34.666 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+18:43:34.666 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+18:43:34.673 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+18:43:34.706 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7f284218{/,null,AVAILABLE}
+18:43:34.799 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@239a307b{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+18:43:34.800 [main] INFO  org.eclipse.jetty.server.Server - Started @1716ms
+18:43:34.901 [qtp352598575-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+18:44:15.563 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+18:44:15.828 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1025ms to org.eclipse.jetty.util.log.Slf4jLog
+18:44:15.997 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+18:44:16.056 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+18:44:16.057 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+18:44:16.061 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+18:44:16.094 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+18:44:16.182 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+18:44:16.183 [main] INFO  org.eclipse.jetty.server.Server - Started @1386ms
+18:44:17.381 [qtp398457879-22] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+18:44:20.262 [qtp398457879-18] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+18:51:10.788 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+18:51:11.006 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @890ms to org.eclipse.jetty.util.log.Slf4jLog
+18:51:11.182 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+18:51:11.245 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+18:51:11.246 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+18:51:11.252 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+18:51:11.292 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+18:51:11.402 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+18:51:11.402 [main] INFO  org.eclipse.jetty.server.Server - Started @1289ms
+18:51:12.042 [qtp398457879-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+18:51:17.320 [qtp398457879-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+18:51:17.320 [qtp398457879-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+18:51:21.438 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:14:35.558 [qtp398457879-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:15:28.800 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:15:29.508 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @1271ms to org.eclipse.jetty.util.log.Slf4jLog
+23:15:29.588 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:15:29.626 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:15:29.626 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:15:29.629 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+23:15:29.650 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@11bb571c{/,null,AVAILABLE}
+23:15:29.796 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@700fb871{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:15:29.797 [main] INFO  org.eclipse.jetty.server.Server - Started @1563ms
+23:15:40.388 [qtp1020154737-22] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:15:59.204 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:15:59.360 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @745ms to org.eclipse.jetty.util.log.Slf4jLog
+23:15:59.463 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:15:59.500 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:15:59.500 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:15:59.503 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+23:15:59.528 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+23:15:59.616 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:15:59.616 [main] INFO  org.eclipse.jetty.server.Server - Started @1004ms
+23:16:01.453 [qtp398457879-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:16:02.062 [qtp398457879-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:16:02.473 [qtp398457879-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:16:02.723 [qtp398457879-18] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:16:02.950 [qtp398457879-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:16:35.598 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:16:35.815 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @842ms to org.eclipse.jetty.util.log.Slf4jLog
+23:16:35.922 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:16:35.966 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:16:35.966 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:16:35.970 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+23:16:35.993 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+23:16:36.059 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:16:36.059 [main] INFO  org.eclipse.jetty.server.Server - Started @1089ms
+23:16:36.269 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:17:29.758 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:17:29.948 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @665ms to org.eclipse.jetty.util.log.Slf4jLog
+23:17:30.063 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:17:30.118 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:17:30.118 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:17:30.122 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+23:17:30.149 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+23:17:30.237 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:17:30.237 [main] INFO  org.eclipse.jetty.server.Server - Started @958ms
+23:17:34.308 [qtp398457879-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:18:25.291 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:18:25.476 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @671ms to org.eclipse.jetty.util.log.Slf4jLog
+23:18:25.557 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:18:25.598 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:18:25.598 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:18:25.602 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+23:18:25.631 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+23:18:25.719 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:18:25.720 [main] INFO  org.eclipse.jetty.server.Server - Started @918ms
+23:18:26.454 [qtp398457879-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:18:27.101 [qtp398457879-21] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:18:28.341 [qtp398457879-18] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:18:49.464 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:18:49.653 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @650ms to org.eclipse.jetty.util.log.Slf4jLog
+23:18:49.756 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:18:49.816 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:18:49.816 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:18:49.820 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+23:18:49.849 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+23:18:49.923 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:18:49.924 [main] INFO  org.eclipse.jetty.server.Server - Started @924ms
+23:18:57.841 [qtp398457879-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:18:58.374 [qtp398457879-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:18:58.726 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:18:59.012 [qtp398457879-18] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:18:59.582 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:19:02.307 [qtp398457879-22] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:19:03.100 [qtp398457879-18] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:20:37.676 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:20:37.847 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @664ms to org.eclipse.jetty.util.log.Slf4jLog
+23:20:37.946 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:20:37.990 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:20:37.990 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:20:37.994 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+23:20:38.027 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5495333e{/,null,AVAILABLE}
+23:20:38.126 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:20:38.127 [main] INFO  org.eclipse.jetty.server.Server - Started @947ms
+23:20:40.250 [qtp398457879-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:22:43.773 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:22:44.014 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @779ms to org.eclipse.jetty.util.log.Slf4jLog
+23:22:44.107 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:22:44.153 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:22:44.154 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:22:44.160 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+23:22:44.181 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+23:22:44.261 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:22:44.261 [main] INFO  org.eclipse.jetty.server.Server - Started @1031ms
+23:22:46.432 [qtp398457879-18] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:23:21.076 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:23:21.234 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @687ms to org.eclipse.jetty.util.log.Slf4jLog
+23:23:21.333 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:23:21.391 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:23:21.391 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:23:21.395 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+23:23:21.421 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+23:23:21.541 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:23:21.542 [main] INFO  org.eclipse.jetty.server.Server - Started @998ms
+23:23:22.258 [qtp398457879-21] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:23:23.207 [qtp398457879-22] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:23:24.295 [qtp398457879-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:23:38.573 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:23:38.763 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @708ms to org.eclipse.jetty.util.log.Slf4jLog
+23:23:38.878 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:23:38.923 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:23:38.923 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:23:38.927 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+23:23:38.953 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+23:23:39.034 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:23:39.034 [main] INFO  org.eclipse.jetty.server.Server - Started @982ms
+23:23:43.133 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:23:43.634 [qtp398457879-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:23:43.980 [qtp398457879-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:24:16.787 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:24:16.994 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @749ms to org.eclipse.jetty.util.log.Slf4jLog
+23:24:17.107 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:24:17.154 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:24:17.154 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:24:17.160 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+23:24:17.182 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+23:24:17.265 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:24:17.266 [main] INFO  org.eclipse.jetty.server.Server - Started @1025ms
+23:24:20.359 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:24:20.936 [qtp398457879-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:24:21.278 [qtp398457879-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:24:21.886 [qtp398457879-18] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:24:22.472 [qtp398457879-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:24:51.045 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+23:24:51.079 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:24:51.108 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+23:24:51.110 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:24:51.129 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+23:24:51.131 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:24:51.148 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:24:51.149 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+23:24:51.150 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:24:51.166 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:24:51.182 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:24:56.076 [qtp398457879-22] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:24:56.797 [qtp398457879-18] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:25:10.495 [qtp398457879-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:25:41.234 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:25:41.402 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @743ms to org.eclipse.jetty.util.log.Slf4jLog
+23:25:41.497 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:25:41.546 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:25:41.547 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:25:41.549 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+23:25:41.571 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+23:25:41.642 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:25:41.642 [main] INFO  org.eclipse.jetty.server.Server - Started @986ms
+23:25:41.833 [qtp398457879-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:25:42.056 [qtp398457879-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:25:42.497 [qtp398457879-21] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:25:42.724 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:25:43.137 [qtp398457879-21] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:25:43.404 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:25:43.651 [qtp398457879-21] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:25:43.883 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:26:41.936 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:26:42.145 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @753ms to org.eclipse.jetty.util.log.Slf4jLog
+23:26:42.242 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:26:42.292 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:26:42.292 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:26:42.295 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+23:26:42.327 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+23:26:42.403 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:26:42.403 [main] INFO  org.eclipse.jetty.server.Server - Started @1014ms
+23:26:44.151 [qtp398457879-21] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:26:44.650 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:26:45.043 [qtp398457879-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:26:45.334 [qtp398457879-15] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:26:45.590 [qtp398457879-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:26:45.841 [qtp398457879-15] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:26:46.079 [qtp398457879-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:26:46.318 [qtp398457879-15] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:26:46.550 [qtp398457879-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:31:11.066 [qtp398457879-21] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:31:28.386 [qtp398457879-18] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:33:13.467 [qtp398457879-22] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:33:29.883 [qtp398457879-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:34:00.552 [qtp398457879-15] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:35:58.862 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:35:59.044 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @721ms to org.eclipse.jetty.util.log.Slf4jLog
+23:35:59.134 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:35:59.178 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:35:59.179 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:35:59.181 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+23:35:59.204 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+23:35:59.277 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:35:59.278 [main] INFO  org.eclipse.jetty.server.Server - Started @959ms
+23:36:03.096 [qtp398457879-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:36:13.718 [qtp398457879-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:36:13.719 [qtp398457879-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:37:07.817 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:37:08.026 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @758ms to org.eclipse.jetty.util.log.Slf4jLog
+23:37:08.128 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:37:08.167 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:37:08.168 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:37:08.177 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+23:37:08.197 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+23:37:08.284 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:37:08.284 [main] INFO  org.eclipse.jetty.server.Server - Started @1022ms
+23:37:12.247 [qtp398457879-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:37:12.247 [qtp398457879-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:37:17.352 [qtp398457879-21] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:38:21.336 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:38:21.525 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @712ms to org.eclipse.jetty.util.log.Slf4jLog
+23:38:21.629 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:38:21.673 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:38:21.673 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:38:21.678 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+23:38:21.698 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+23:38:21.783 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:38:21.784 [main] INFO  org.eclipse.jetty.server.Server - Started @974ms
+23:38:23.227 [qtp398457879-16] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:38:47.028 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:38:47.196 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @711ms to org.eclipse.jetty.util.log.Slf4jLog
+23:38:47.297 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:38:47.336 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:38:47.336 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:38:47.339 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+23:38:47.365 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+23:38:47.456 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:38:47.457 [main] INFO  org.eclipse.jetty.server.Server - Started @974ms
+23:38:49.326 [qtp398457879-20] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:39:05.603 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:39:05.794 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @713ms to org.eclipse.jetty.util.log.Slf4jLog
+23:39:05.905 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:39:05.956 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:39:05.957 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:39:05.959 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+23:39:05.984 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5495333e{/,null,AVAILABLE}
+23:39:06.067 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:39:06.068 [main] INFO  org.eclipse.jetty.server.Server - Started @992ms
+23:39:07.547 [qtp398457879-22] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+23:40:22.276 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:40:22.453 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @747ms to org.eclipse.jetty.util.log.Slf4jLog
+23:40:22.543 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:40:22.582 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:40:22.583 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:40:22.587 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+23:40:22.623 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+23:40:22.704 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:40:22.705 [main] INFO  org.eclipse.jetty.server.Server - Started @1000ms
+23:40:24.234 [qtp398457879-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:40:24.235 [qtp398457879-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:42:21.448 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:42:21.687 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @946ms to org.eclipse.jetty.util.log.Slf4jLog
+23:42:21.784 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:42:21.839 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:42:21.839 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:42:21.843 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+23:42:21.871 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+23:42:22.002 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:42:22.003 [main] INFO  org.eclipse.jetty.server.Server - Started @1265ms
+23:42:24.861 [qtp398457879-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:42:24.862 [qtp398457879-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:43:57.567 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:43:57.730 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @695ms to org.eclipse.jetty.util.log.Slf4jLog
+23:43:57.833 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:43:57.877 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:43:57.877 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:43:57.881 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+23:43:57.903 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@7c51f34b{/,null,AVAILABLE}
+23:43:57.983 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3b35a229{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:43:57.983 [main] INFO  org.eclipse.jetty.server.Server - Started @951ms
+23:44:01.690 [qtp398457879-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested

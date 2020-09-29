@@ -1,0 +1,265 @@
+21:33:09.063 [qtp585324508-32] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:33:09.068 [qtp585324508-32] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:33:09.081 [qtp585324508-32] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get all users
+com.mysql.cj.jdbc.exceptions.CommunicationsException: The last packet successfully received from the server was 85 547 005 milliseconds ago. The last packet sent successfully to the server was 85 547 005 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at com.mysql.cj.jdbc.exceptions.SQLError.createCommunicationsException(SQLError.java:174)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:64)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:953)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeQuery(ClientPreparedStatement.java:1003)
+	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeQuery(DelegatingPreparedStatement.java:93)
+	at com.boroday.userstore.dao.jdbc.JdbcUserDao.getAll(JdbcUserDao.java:35)
+	at com.boroday.userstore.service.impl.DefaultUserService.getAll(DefaultUserService.java:18)
+	at com.boroday.userstore.web.servlet.AllUsersServlet.doGet(AllUsersServlet.java:29)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:755)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:547)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1607)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1297)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:485)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1577)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1212)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:500)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:547)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:270)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:103)
+	at org.eclipse.jetty.io.ChannelEndPoint$2.run(ChannelEndPoint.java:117)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:806)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:938)
+	at java.base/java.lang.Thread.run(Thread.java:844)
+	Suppressed: java.sql.SQLException: Already closed.
+		at org.apache.commons.dbcp.PoolableConnection.close(PoolableConnection.java:84)
+		at org.apache.commons.dbcp.PoolingDataSource$PoolGuardConnectionWrapper.close(PoolingDataSource.java:181)
+		at com.boroday.userstore.dao.jdbc.JdbcUserDao.$closeResource(JdbcUserDao.java:45)
+		at com.boroday.userstore.dao.jdbc.JdbcUserDao.getAll(JdbcUserDao.java:45)
+		... 28 common frames omitted
+Caused by: com.mysql.cj.exceptions.CJCommunicationsException: The last packet successfully received from the server was 85 547 005 milliseconds ago. The last packet sent successfully to the server was 85 547 005 milliseconds ago. is longer than the server configured value of 'wait_timeout'. You should consider either expiring and/or testing connection validity before use in your application, increasing the server configured values for client timeouts, or using the Connector/J connection property 'autoReconnect=true' to avoid this problem.
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:488)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:61)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:105)
+	at com.mysql.cj.exceptions.ExceptionFactory.createException(ExceptionFactory.java:151)
+	at com.mysql.cj.exceptions.ExceptionFactory.createCommunicationsException(ExceptionFactory.java:167)
+	at com.mysql.cj.protocol.a.NativeProtocol.send(NativeProtocol.java:570)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendCommand(NativeProtocol.java:625)
+	at com.mysql.cj.protocol.a.NativeProtocol.sendQueryPacket(NativeProtocol.java:941)
+	at com.mysql.cj.NativeSession.execSQL(NativeSession.java:1075)
+	at com.mysql.cj.jdbc.ClientPreparedStatement.executeInternal(ClientPreparedStatement.java:930)
+	... 31 common frames omitted
+Caused by: javax.net.ssl.SSLException: java.net.SocketException: Software caused connection abort: socket write error
+	at java.base/sun.security.ssl.Alerts.getSSLException(Alerts.java:214)
+	at java.base/sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1974)
+	at java.base/sun.security.ssl.SSLSocketImpl.fatal(SSLSocketImpl.java:1926)
+	at java.base/sun.security.ssl.SSLSocketImpl.writeRecord(SSLSocketImpl.java:794)
+	at java.base/sun.security.ssl.AppOutputStream.write(AppOutputStream.java:67)
+	at java.base/java.io.BufferedOutputStream.flushBuffer(BufferedOutputStream.java:81)
+	at java.base/java.io.BufferedOutputStream.flush(BufferedOutputStream.java:142)
+	at com.mysql.cj.protocol.a.SimplePacketSender.send(SimplePacketSender.java:55)
+	at com.mysql.cj.protocol.a.TimeTrackingPacketSender.send(TimeTrackingPacketSender.java:50)
+	at com.mysql.cj.protocol.a.NativeProtocol.send(NativeProtocol.java:561)
+	... 35 common frames omitted
+Caused by: java.net.SocketException: Software caused connection abort: socket write error
+	at java.base/java.net.SocketOutputStream.socketWrite0(Native Method)
+	at java.base/java.net.SocketOutputStream.socketWrite(SocketOutputStream.java:111)
+	at java.base/java.net.SocketOutputStream.write(SocketOutputStream.java:155)
+	at java.base/sun.security.ssl.SSLSocketOutputRecord.deliver(SSLSocketOutputRecord.java:307)
+	at java.base/sun.security.ssl.SSLSocketImpl.writeRecord(SSLSocketImpl.java:779)
+	... 41 common frames omitted
+21:33:09.082 [qtp585324508-32] WARN  org.eclipse.jetty.server.HttpChannel - handleException /users javax.net.ssl.SSLException: java.net.SocketException: Software caused connection abort: socket write error
+21:33:26.558 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+21:33:26.604 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @694ms to org.eclipse.jetty.util.log.Slf4jLog
+21:33:26.686 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+21:33:26.718 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+21:33:26.718 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+21:33:26.721 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+21:33:26.747 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@3de8f619{/,null,AVAILABLE}
+21:33:26.829 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@209da20d{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+21:33:26.830 [main] INFO  org.eclipse.jetty.server.Server - Started @922ms
+21:33:34.313 [qtp1881901842-14] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:33:34.315 [qtp1881901842-14] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:34:13.174 [qtp1881901842-21] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:34:13.174 [qtp1881901842-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:34:32.677 [qtp1881901842-14] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:34:32.678 [qtp1881901842-14] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:34:59.833 [qtp1881901842-14] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:34:59.834 [qtp1881901842-14] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:35:20.577 [qtp1881901842-14] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:35:20.578 [qtp1881901842-14] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:36:28.729 [qtp1881901842-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:36:28.730 [qtp1881901842-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:37:04.896 [qtp1881901842-14] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:37:04.896 [qtp1881901842-14] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:37:07.759 [qtp1881901842-14] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:37:07.759 [qtp1881901842-14] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:37:25.725 [qtp1881901842-14] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:37:25.725 [qtp1881901842-14] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:37:38.675 [qtp1881901842-14] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:37:38.676 [qtp1881901842-14] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:38:18.461 [qtp1881901842-31] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:38:18.463 [qtp1881901842-31] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:38:57.249 [qtp1881901842-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:38:57.250 [qtp1881901842-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:40:22.400 [qtp1881901842-32] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:40:22.401 [qtp1881901842-32] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:40:46.863 [qtp1881901842-32] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:40:46.864 [qtp1881901842-32] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:41:22.363 [qtp1881901842-31] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:41:22.363 [qtp1881901842-31] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:41:35.700 [qtp1881901842-31] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:41:35.700 [qtp1881901842-31] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:41:54.424 [qtp1881901842-31] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:41:54.424 [qtp1881901842-31] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:42:09.634 [qtp1881901842-31] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:42:09.635 [qtp1881901842-31] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:42:30.120 [qtp1881901842-31] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:42:30.121 [qtp1881901842-31] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:42:53.913 [qtp1881901842-31] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:42:53.913 [qtp1881901842-31] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:43:19.758 [qtp1881901842-31] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:43:19.759 [qtp1881901842-31] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:43:39.827 [qtp1881901842-31] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:43:39.827 [qtp1881901842-31] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:43:41.911 [qtp1881901842-31] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:43:41.912 [qtp1881901842-31] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:43:42.780 [qtp1881901842-31] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:43:42.781 [qtp1881901842-31] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:43:43.439 [qtp1881901842-31] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:43:43.440 [qtp1881901842-31] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:44:17.744 [qtp1881901842-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:44:17.745 [qtp1881901842-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:45:01.871 [qtp1881901842-34] INFO  c.b.u.web.servlet.SignOutServlet - Sign out is requested
+21:45:01.885 [qtp1881901842-17] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+21:45:04.093 [qtp1881901842-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:45:04.094 [qtp1881901842-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:45:39.803 [qtp1881901842-28] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+21:46:10.474 [qtp1881901842-37] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:46:10.474 [qtp1881901842-37] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:46:12.130 [qtp1881901842-37] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:46:12.130 [qtp1881901842-37] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:46:50.715 [qtp1881901842-35] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:46:50.716 [qtp1881901842-35] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:46:53.038 [qtp1881901842-35] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:46:53.038 [qtp1881901842-35] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:46:55.828 [qtp1881901842-35] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:46:55.828 [qtp1881901842-35] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:46:58.624 [qtp1881901842-35] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:46:58.624 [qtp1881901842-35] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:47:40.341 [qtp1881901842-37] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:47:40.342 [qtp1881901842-37] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:48:03.229 [qtp1881901842-37] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:48:03.229 [qtp1881901842-37] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:48:04.228 [qtp1881901842-37] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:48:04.228 [qtp1881901842-37] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:48:23.357 [qtp1881901842-37] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:48:23.357 [qtp1881901842-37] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:48:24.344 [qtp1881901842-37] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:48:24.344 [qtp1881901842-37] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:48:37.569 [qtp1881901842-37] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:48:37.570 [qtp1881901842-37] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:49:01.276 [qtp1881901842-30] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:49:01.277 [qtp1881901842-30] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:49:02.919 [qtp1881901842-30] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:49:02.919 [qtp1881901842-30] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:49:40.401 [qtp1881901842-29] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:49:40.402 [qtp1881901842-29] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:49:53.464 [qtp1881901842-29] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:49:53.465 [qtp1881901842-29] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:50:39.945 [qtp1881901842-38] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:50:39.946 [qtp1881901842-38] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:50:56.713 [qtp1881901842-38] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:50:56.714 [qtp1881901842-38] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:51:07.817 [qtp1881901842-38] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:51:07.817 [qtp1881901842-38] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:51:17.589 [qtp1881901842-38] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:51:17.589 [qtp1881901842-38] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:52:29.383 [qtp1881901842-38] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:52:29.383 [qtp1881901842-38] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:53:01.020 [qtp1881901842-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:53:01.020 [qtp1881901842-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:56:20.513 [qtp1881901842-38] INFO  c.b.u.web.servlet.SignOutServlet - Sign out is requested
+22:56:20.516 [qtp1881901842-37] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+22:57:56.275 [qtp1881901842-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:57:56.275 [qtp1881901842-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:57:58.130 [qtp1881901842-29] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:57:58.130 [qtp1881901842-29] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:57:59.965 [qtp1881901842-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:57:59.965 [qtp1881901842-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+22:58:55.441 [qtp1881901842-37] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:58:55.441 [qtp1881901842-37] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:01:09.685 [qtp1881901842-43] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:01:09.685 [qtp1881901842-43] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:01:11.212 [qtp1881901842-41] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:01:11.212 [qtp1881901842-41] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:01:17.014 [qtp1881901842-42] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:01:17.015 [qtp1881901842-42] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:02:32.625 [qtp1881901842-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:02:32.625 [qtp1881901842-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:02:33.655 [qtp1881901842-44] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:02:33.655 [qtp1881901842-44] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:02:38.485 [qtp1881901842-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:02:38.485 [qtp1881901842-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:02:41.020 [qtp1881901842-44] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:02:41.020 [qtp1881901842-44] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:06:35.032 [qtp1881901842-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:06:35.032 [qtp1881901842-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:08:47.499 [qtp1881901842-45] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:08:47.500 [qtp1881901842-45] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:11:28.218 [qtp1881901842-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:11:28.218 [qtp1881901842-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:11:45.770 [qtp1881901842-45] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:11:45.770 [qtp1881901842-45] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:14:27.867 [qtp1881901842-45] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:14:27.867 [qtp1881901842-45] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:14:45.180 [qtp1881901842-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:14:45.180 [qtp1881901842-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:15:03.886 [qtp1881901842-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:15:03.887 [qtp1881901842-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:15:32.674 [qtp1881901842-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:15:32.674 [qtp1881901842-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:15:51.100 [qtp1881901842-41] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:15:51.100 [qtp1881901842-41] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:16:22.028 [qtp1881901842-46] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:16:22.028 [qtp1881901842-46] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:19:08.609 [qtp1881901842-49] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:19:08.610 [qtp1881901842-49] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:19:39.198 [qtp1881901842-46] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:19:39.198 [qtp1881901842-46] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:47:59.233 [qtp1881901842-41] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:47:59.234 [qtp1881901842-41] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:48:13.161 [qtp1881901842-50] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:48:13.161 [qtp1881901842-50] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:48:26.634 [qtp1881901842-50] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:48:26.634 [qtp1881901842-50] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:48:57.380 [qtp1881901842-37] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:48:57.380 [qtp1881901842-37] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:49:11.558 [qtp1881901842-37] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:49:11.559 [qtp1881901842-37] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:49:29.533 [qtp1881901842-37] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:49:29.533 [qtp1881901842-37] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:49:42.013 [qtp1881901842-37] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:49:42.013 [qtp1881901842-37] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:51:32.159 [qtp1881901842-41] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:51:32.159 [qtp1881901842-41] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:51:35.233 [qtp1881901842-46] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:51:35.233 [qtp1881901842-46] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:51:40.698 [qtp1881901842-46] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:51:40.698 [qtp1881901842-46] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:51:51.197 [qtp1881901842-46] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:51:51.198 [qtp1881901842-46] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:52:07.479 [qtp1881901842-46] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:52:07.479 [qtp1881901842-46] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:52:31.216 [qtp1881901842-46] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:52:31.216 [qtp1881901842-46] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:57:11.954 [qtp1881901842-55] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:57:11.955 [qtp1881901842-55] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB

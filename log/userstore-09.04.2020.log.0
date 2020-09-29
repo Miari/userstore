@@ -1,0 +1,226 @@
+21:56:55.406 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+21:57:13.254 [qtp402405659-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:57:13.255 [qtp402405659-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+21:57:13.770 [qtp402405659-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:01:42.634 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:01:51.898 [qtp724608044-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:01:51.968 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:01:52.328 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:01:52.430 [qtp724608044-20] WARN  org.eclipse.jetty.server.HttpChannel - handleException /users java.io.FileNotFoundException: Template "footer.html" not found.
+22:02:42.676 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:02:48.485 [qtp724608044-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:02:48.486 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:02:48.868 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:02:48.966 [qtp724608044-18] WARN  org.eclipse.jetty.server.HttpChannel - handleException /users java.io.FileNotFoundException: Template "*/footer.html" not found.
+22:03:24.771 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to search user in DB
+22:03:24.808 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Search of users completed
+22:03:24.813 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+22:03:24.816 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+22:03:24.836 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get new user to DB
+22:03:24.838 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - New user was added to DB
+22:03:24.839 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+22:03:24.840 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+22:03:24.850 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to update user in DB
+22:03:24.854 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - User was updated
+22:03:24.854 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+22:03:24.856 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+22:03:24.862 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+22:03:24.864 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+22:03:24.864 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to remove user from DB
+22:03:24.865 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - User was removed
+22:03:24.866 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:03:24.867 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:03:24.873 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+22:03:24.874 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+22:03:24.881 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:03:24.882 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:03:40.700 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:03:57.840 [qtp724608044-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:03:57.841 [qtp724608044-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:03:58.234 [qtp724608044-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:03:58.330 [qtp724608044-17] WARN  org.eclipse.jetty.server.HttpChannel - handleException /users java.io.FileNotFoundException: Template "*/footer.html" not found.
+22:06:47.441 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:06:51.694 [qtp724608044-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:06:51.695 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:06:52.039 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:06:52.142 [qtp724608044-19] WARN  org.eclipse.jetty.server.HttpChannel - handleException /users java.io.FileNotFoundException: Template "footer.html" not found.
+22:07:58.737 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:08:05.437 [qtp724608044-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:08:05.437 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:08:05.784 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:08:05.898 [qtp724608044-18] WARN  org.eclipse.jetty.server.HttpChannel - handleException /users java.io.FileNotFoundException: Template "templates/footer.html" not found.
+22:09:22.632 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:09:27.625 [qtp724608044-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:09:27.625 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:09:27.984 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:09:28.079 [qtp724608044-18] WARN  org.eclipse.jetty.server.HttpChannel - handleException /users java.io.FileNotFoundException: Template "templates/footer.html" not found.
+22:11:45.380 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:11:49.976 [qtp724608044-21] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:11:49.976 [qtp724608044-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:11:50.317 [qtp724608044-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:11:50.411 [qtp724608044-21] WARN  org.eclipse.jetty.server.HttpChannel - handleException /users java.io.FileNotFoundException: Template "*/templates/footer.html" not found.
+22:12:50.560 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:12:52.281 [qtp724608044-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:12:52.281 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:12:52.641 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:13:22.765 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:13:25.320 [qtp724608044-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:13:25.320 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:13:25.658 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:13:52.028 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:13:56.045 [qtp724608044-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:13:56.045 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:13:56.452 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:15:21.451 [qtp724608044-17] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: t
+22:15:21.451 [qtp724608044-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to search user in DB
+22:15:21.472 [qtp724608044-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Search of users completed
+22:15:29.062 [qtp724608044-18] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: ak
+22:15:29.062 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to search user in DB
+22:15:29.064 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Search of users completed
+22:17:13.420 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:17:22.462 [qtp1848125895-19] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: ak
+22:17:22.464 [qtp1848125895-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to search user in DB
+22:17:22.815 [qtp1848125895-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Search of users completed
+22:17:22.959 [qtp1848125895-19] WARN  org.eclipse.jetty.server.HttpChannel - handleException /users/search freemarker.template.TemplateNotFoundException: Template not found for name "footer.html".
+The name was interpreted by this TemplateLoader: LegacyDefaultFileTemplateLoader(baseDir="D:\JavaNew\userstore", canonicalBasePath="D:\JavaNew\userstore\").
+Warning: The "template_loader" FreeMarker setting wasn't set (Configuration.setTemplateLoader), and using the default value is most certainly not intended and dangerous, and can be the cause of this error.
+22:17:59.517 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:18:02.732 [qtp1848125895-21] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: ak
+22:18:02.734 [qtp1848125895-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to search user in DB
+22:18:03.098 [qtp1848125895-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Search of users completed
+22:18:03.235 [qtp1848125895-21] WARN  org.eclipse.jetty.server.HttpChannel - handleException /users/search freemarker.template.TemplateNotFoundException: Template not found for name "footer.html".
+The name was interpreted by this TemplateLoader: LegacyDefaultFileTemplateLoader(baseDir="D:\JavaNew\userstore", canonicalBasePath="D:\JavaNew\userstore\").
+Warning: The "template_loader" FreeMarker setting wasn't set (Configuration.setTemplateLoader), and using the default value is most certainly not intended and dangerous, and can be the cause of this error.
+22:26:43.436 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:26:49.509 [qtp2030937207-20] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: ak
+22:26:49.511 [qtp2030937207-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to search user in DB
+22:26:49.945 [qtp2030937207-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Search of users completed
+22:26:49.949 [qtp2030937207-20] WARN  org.eclipse.jetty.server.HttpChannel - handleException /users/search freemarker.template.TemplateNotFoundException: Don't know where to load template "src\\main\\webapp\\WEB-INF\\templates\\users.html" from because the "template_loader" FreeMarker setting wasn't set (Configuration.setTemplateLoader), so it's null.
+22:33:00.571 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:33:04.744 [qtp2030937207-18] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: ak
+22:33:04.746 [qtp2030937207-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to search user in DB
+22:33:05.142 [qtp2030937207-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Search of users completed
+22:33:05.146 [qtp2030937207-18] WARN  org.eclipse.jetty.server.HttpChannel - handleException /users/search freemarker.template.TemplateNotFoundException: Don't know where to load template "src\\main\\webapp\\WEB-INF\\templates\\users.html" from because the "template_loader" FreeMarker setting wasn't set (Configuration.setTemplateLoader), so it's null.
+22:33:19.885 [qtp2030937207-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:33:19.885 [qtp2030937207-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:33:19.888 [qtp2030937207-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:33:19.888 [qtp2030937207-16] WARN  org.eclipse.jetty.server.HttpChannel - handleException /users freemarker.template.TemplateNotFoundException: Don't know where to load template "src\\main\\webapp\\WEB-INF\\templates\\users.html" from because the "template_loader" FreeMarker setting wasn't set (Configuration.setTemplateLoader), so it's null.
+22:51:21.322 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:51:31.533 [qtp2030937207-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:51:31.534 [qtp2030937207-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:51:31.934 [qtp2030937207-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:51:31.938 [qtp2030937207-19] WARN  org.eclipse.jetty.server.HttpChannel - handleException /users freemarker.template.TemplateNotFoundException: Don't know where to load template "src\\main\\webapp\\WEB-INF\\templates\\users.html" from because the "template_loader" FreeMarker setting wasn't set (Configuration.setTemplateLoader), so it's null.
+22:52:03.068 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:52:06.290 [qtp724608044-22] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+22:52:06.291 [qtp724608044-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:52:06.649 [qtp724608044-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:35:42.692 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to search user in DB
+23:35:42.831 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Search of users completed
+23:35:42.837 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+23:35:42.840 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+23:35:42.859 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get new user to DB
+23:35:42.860 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - New user was added to DB
+23:35:42.861 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+23:35:42.863 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+23:35:42.870 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to update user in DB
+23:35:42.873 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - User was updated
+23:35:42.874 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+23:35:42.875 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+23:35:42.881 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+23:35:42.882 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+23:35:42.882 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to remove user from DB
+23:35:42.883 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - User was removed
+23:35:42.883 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:35:42.884 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:35:42.890 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+23:35:42.891 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+23:35:42.896 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:35:42.897 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:37:05.135 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:37:15.822 [qtp724608044-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:37:15.823 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:37:16.286 [qtp724608044-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:37:25.696 [qtp724608044-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:37:25.696 [qtp724608044-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:37:25.698 [qtp724608044-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:37:59.694 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to search user in DB
+23:37:59.731 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Search of users completed
+23:37:59.735 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+23:37:59.738 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+23:37:59.753 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get new user to DB
+23:37:59.755 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - New user was added to DB
+23:37:59.755 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+23:37:59.757 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+23:37:59.764 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to update user in DB
+23:37:59.768 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - User was updated
+23:37:59.768 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+23:37:59.769 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+23:37:59.774 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+23:37:59.775 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+23:37:59.776 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to remove user from DB
+23:37:59.777 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - User was removed
+23:37:59.777 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:37:59.778 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:37:59.784 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+23:37:59.785 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+23:37:59.790 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:37:59.791 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:38:19.975 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:38:23.359 [qtp724608044-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:38:23.360 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:38:23.709 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:39:58.738 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to search user in DB
+23:39:58.777 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Search of users completed
+23:39:58.783 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+23:39:58.786 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+23:39:58.806 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get new user to DB
+23:39:58.808 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - New user was added to DB
+23:39:58.808 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+23:39:58.810 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+23:39:58.820 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to update user in DB
+23:39:58.824 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - User was updated
+23:39:58.824 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+23:39:58.826 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+23:39:58.836 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+23:39:58.837 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+23:39:58.838 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to remove user from DB
+23:39:58.840 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - User was removed
+23:39:58.840 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:39:58.841 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:39:58.852 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get user from DB by id
+23:39:58.853 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Users was gotten
+23:39:58.863 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:39:58.864 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:40:28.574 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:40:31.721 [qtp724608044-22] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:40:31.722 [qtp724608044-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:40:32.071 [qtp724608044-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:46:17.551 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:46:24.187 [qtp724608044-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:46:24.188 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:46:24.556 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:46:24.655 [qtp724608044-20] WARN  org.eclipse.jetty.server.HttpChannel - handleException /users java.io.FileNotFoundException: Template "*/footer.ftl" not found.
+23:46:46.870 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:46:51.066 [qtp724608044-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:46:51.067 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:46:51.457 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:46:51.562 [qtp724608044-20] WARN  org.eclipse.jetty.server.HttpChannel - handleException /users java.io.FileNotFoundException: Template "footer.ftl" not found.
+23:47:22.591 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:47:25.577 [qtp724608044-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:47:25.577 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:47:25.931 [qtp724608044-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:47:26.032 [qtp724608044-18] WARN  org.eclipse.jetty.server.HttpChannel - handleException /users java.io.FileNotFoundException: Template "footer.html" not found.
+23:47:48.624 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:47:53.921 [qtp724608044-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:47:53.922 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:47:54.265 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:47:54.362 [qtp724608044-20] WARN  org.eclipse.jetty.server.HttpChannel - handleException /users java.io.FileNotFoundException: Template "footer.html" not found.
+23:49:10.295 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:49:13.480 [qtp724608044-15] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:49:13.480 [qtp724608044-15] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:49:13.843 [qtp724608044-15] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:53:26.428 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:54:22.227 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:54:46.688 [qtp724608044-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:54:46.689 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:54:47.056 [qtp724608044-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB

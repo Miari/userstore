@@ -1,0 +1,37 @@
+21:15:29.716 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+21:15:29.768 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @666ms to org.eclipse.jetty.util.log.Slf4jLog
+21:15:29.852 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+21:15:29.900 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+21:15:29.900 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+21:15:29.904 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+21:15:29.928 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2ab4bc72{/,null,AVAILABLE}
+21:15:30.004 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@e15b7e8{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+21:15:30.008 [main] INFO  org.eclipse.jetty.server.Server - Started @907ms
+21:16:16.542 [qtp585324508-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:16:16.542 [qtp585324508-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:24:31.573 [qtp585324508-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:24:31.573 [qtp585324508-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:24:38.483 [qtp585324508-21] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: am
+21:24:38.483 [qtp585324508-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+21:24:44.148 [qtp585324508-16] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:24:44.152 [qtp585324508-16] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:26:34.057 [qtp585324508-18] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+21:26:34.057 [qtp585324508-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+21:26:40.189 [qtp585324508-21] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:26:40.189 [qtp585324508-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:38:39.679 [qtp585324508-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:38:39.683 [qtp585324508-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:38:57.050 [qtp585324508-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:38:57.050 [qtp585324508-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:41:49.579 [qtp585324508-15] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:41:49.583 [qtp585324508-15] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:42:13.068 [qtp585324508-21] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:42:13.068 [qtp585324508-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:45:26.511 [qtp585324508-28] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:45:26.515 [qtp585324508-28] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:46:42.159 [qtp585324508-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:46:42.163 [qtp585324508-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:47:10.271 [qtp585324508-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:47:10.271 [qtp585324508-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+21:47:22.069 [qtp585324508-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+21:47:22.069 [qtp585324508-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB

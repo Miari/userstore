@@ -1,0 +1,18 @@
+00:29:39.380 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @620ms to org.eclipse.jetty.util.log.Slf4jLog
+00:29:39.436 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:29:39.473 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:29:39.504 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:29:39.505 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:29:39.507 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 600000ms
+00:29:39.528 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@47caedad{/,null,AVAILABLE}
+00:29:39.609 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@3f6f6701{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:29:39.609 [main] INFO  org.eclipse.jetty.server.Server - Started @853ms
+00:30:35.423 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @593ms to org.eclipse.jetty.util.log.Slf4jLog
+00:30:35.480 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+00:30:35.513 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+00:30:35.543 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+00:30:35.543 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+00:30:35.547 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+00:30:35.565 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@5340477f{/,null,AVAILABLE}
+00:30:35.640 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@242b836{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+00:30:35.640 [main] INFO  org.eclipse.jetty.server.Server - Started @813ms

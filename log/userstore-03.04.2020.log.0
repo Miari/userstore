@@ -1,0 +1,73 @@
+08:12:57.908 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+08:15:16.628 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+08:15:46.003 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+08:15:46.390 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+08:19:22.805 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+08:20:11.570 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+08:21:38.316 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+08:24:51.985 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+08:24:52.025 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:51:01.281 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:51:01.332 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+22:51:14.043 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+22:51:17.608 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+22:51:17.659 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:08:53.436 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:08:53.465 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:09:29.518 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:09:29.554 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:09:39.255 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:09:39.284 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:10:54.355 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:10:54.386 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:11:53.470 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:11:53.548 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:12:11.073 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:12:11.102 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:12:23.874 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:12:23.906 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:12:57.937 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:12:57.967 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:13:50.329 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:13:50.358 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:14:00.102 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:14:00.140 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:14:10.751 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:14:10.780 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:14:19.353 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:14:19.395 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:14:58.483 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:14:58.526 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:15:16.598 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:15:16.635 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:15:34.992 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:15:35.033 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:15:53.198 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:15:53.224 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:16:10.363 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:16:10.398 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:17:00.760 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:17:00.793 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:17:31.459 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:17:31.492 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:17:48.261 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:17:48.303 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:19:04.259 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:19:04.312 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:21:00.210 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:21:00.244 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:33:24.720 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:33:24.760 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:34:00.420 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:34:00.459 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:36:08.299 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:36:08.338 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:51:54.483 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:51:54.521 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:56:33.027 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:56:33.070 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:59:13.015 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:59:13.045 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB
+23:59:26.750 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:59:35.726 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Trying to get all users from DB
+23:59:35.760 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - All users were get from DB

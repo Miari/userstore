@@ -1,0 +1,21 @@
+23:49:35.392 [main] INFO  c.b.userstore.util.PropertiesReader - Trying to get properties
+23:49:35.466 [main] INFO  org.eclipse.jetty.util.log - Logging initialized @752ms to org.eclipse.jetty.util.log.Slf4jLog
+23:49:35.576 [main] INFO  org.eclipse.jetty.server.Server - jetty-9.4.25.v20191220; built: 2019-12-20T17:00:00.294Z; git: a9729c7e7f33a459d2616a8f9e9ba8a90f432e95; jvm 10.0.2+13
+23:49:35.619 [main] INFO  org.eclipse.jetty.server.session - DefaultSessionIdManager workerName=node0
+23:49:35.619 [main] INFO  org.eclipse.jetty.server.session - No SessionScavenger set, using defaults
+23:49:35.622 [main] INFO  org.eclipse.jetty.server.session - node0 Scavenging every 660000ms
+23:49:35.647 [main] INFO  o.e.j.server.handler.ContextHandler - Started o.e.j.s.ServletContextHandler@2ab4bc72{/,null,AVAILABLE}
+23:49:35.735 [main] INFO  o.e.jetty.server.AbstractConnector - Started ServerConnector@e15b7e8{HTTP/1.1,[http/1.1]}{0.0.0.0:8080}
+23:49:35.736 [main] INFO  org.eclipse.jetty.server.Server - Started @1024ms
+23:50:49.808 [qtp585324508-21] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:50:49.809 [qtp585324508-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:50:55.859 [qtp585324508-17] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+23:50:55.865 [qtp585324508-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:51:01.124 [qtp585324508-21] ERROR c.b.u.web.servlet.EditUserServlet - User was nor edited
+23:51:01.135 [qtp585324508-17] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:51:01.136 [qtp585324508-17] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+23:51:07.436 [qtp585324508-21] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+23:51:07.444 [qtp585324508-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+23:51:12.882 [qtp585324508-15] ERROR c.b.u.web.servlet.EditUserServlet - User was nor edited
+23:51:12.905 [qtp585324508-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+23:51:12.906 [qtp585324508-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB

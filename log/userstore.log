@@ -1,0 +1,232 @@
+00:01:01.127 [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 6.3.2 by Redgate
+00:01:01.413 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:01:01.612 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.063s)
+00:01:01.696 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:01:01.906 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:01:01.933 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:01:02.054 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:01:02.159 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:01:02.354 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.501s)
+00:01:02.383 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+00:01:02.464 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:01:02.494 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.027s)
+00:01:02.498 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.002s)
+00:01:02.532 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:01:02.601 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.056s)
+00:01:02.626 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:01:02.681 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:01:02.695 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:01:02.849 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:01:02.974 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:01:03.038 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.382s)
+00:01:03.042 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+00:01:03.057 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - There is no User with login pav1 in DB
+00:01:03.117 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:01:03.140 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.019s)
+00:01:03.142 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:01:03.157 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:01:03.187 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.018s)
+00:01:03.200 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:01:03.231 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:01:03.234 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:01:03.285 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:01:03.327 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:01:03.383 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.166s)
+00:01:03.386 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:01:03.411 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:01:03.433 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:01:03.440 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.005s)
+00:01:03.442 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:01:03.454 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:01:03.473 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.015s)
+00:01:03.486 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:01:03.505 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:01:03.515 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:01:03.604 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:01:03.665 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:01:03.754 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.251s)
+00:01:03.763 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+00:01:03.767 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:01:03.876 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:01:03.915 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.037s)
+00:01:03.915 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:01:03.928 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:01:03.958 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.013s)
+00:01:03.979 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:01:03.991 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:01:04.006 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:01:04.071 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:01:04.103 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:01:04.170 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.183s)
+00:01:04.171 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+00:01:04.174 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:01:04.206 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.001s)
+00:01:04.218 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.008s)
+00:01:04.225 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:01:04.242 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:01:04.260 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.013s)
+00:01:04.267 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:01:04.295 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:01:04.305 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:01:04.350 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:01:04.409 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:01:04.467 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.179s)
+00:01:04.480 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:01:04.482 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+00:01:04.486 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:01:04.562 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:01:04.565 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.001s)
+00:01:04.566 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:01:04.583 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:01:04.601 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.013s)
+00:01:04.617 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:01:04.646 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:01:04.649 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:01:04.681 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:01:04.713 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:01:04.767 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.127s)
+00:01:04.769 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:01:04.790 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:01:04.792 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.001s)
+00:01:04.792 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:01:04.796 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:01:04.807 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.008s)
+00:01:04.817 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:01:04.852 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:01:04.863 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:01:04.876 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:01:04.885 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:01:04.930 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.091s)
+00:01:04.932 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:01:04.942 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:01:04.944 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.001s)
+00:01:04.945 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:01:04.957 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:01:04.972 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.008s)
+00:01:04.980 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:01:04.999 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:01:05.002 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:01:05.025 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:01:05.033 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:01:05.068 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.077s)
+00:01:05.068 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+00:01:05.069 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Password for User with login pav is incorrect
+00:01:05.076 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:01:05.080 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.002s)
+00:01:05.080 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:02:44.662 [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 6.3.2 by Redgate
+00:02:44.909 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:02:45.115 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.077s)
+00:02:45.160 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:02:45.379 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:02:45.403 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:02:45.551 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:02:45.694 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:02:45.858 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.524s)
+00:02:45.887 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+00:02:45.987 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.001s)
+00:02:46.010 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.019s)
+00:02:46.014 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.001s)
+00:02:46.045 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:02:46.089 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.030s)
+00:02:46.176 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:02:46.273 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:02:46.292 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:02:46.345 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:02:46.408 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:02:46.518 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.287s)
+00:02:46.524 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+00:02:46.526 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - There is no User with login pav1 in DB
+00:02:46.564 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:02:46.578 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.011s)
+00:02:46.581 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:02:46.629 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:02:46.661 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.012s)
+00:02:46.682 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:02:46.751 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:02:46.754 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:02:46.781 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:02:46.824 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:02:46.870 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.135s)
+00:02:46.874 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:02:46.891 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:02:46.907 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:02:46.917 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.007s)
+00:02:46.918 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:02:46.934 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:02:46.957 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.007s)
+00:02:46.963 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:02:47.040 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:02:47.043 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:02:47.067 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:02:47.133 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:02:47.222 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.190s)
+00:02:47.224 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+00:02:47.227 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:02:47.314 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:02:47.327 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.012s)
+00:02:47.331 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:02:47.339 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:02:47.427 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.047s)
+00:02:47.504 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:02:47.545 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:02:47.565 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:02:47.619 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:02:47.685 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:02:47.792 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.252s)
+00:02:47.794 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+00:02:47.795 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:02:47.827 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.001s)
+00:02:47.842 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.011s)
+00:02:47.843 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:02:47.847 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:02:47.874 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.016s)
+00:02:47.891 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:02:47.921 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:02:47.924 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:02:47.942 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:02:47.957 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:02:47.977 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.062s)
+00:02:47.981 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:02:47.985 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+00:02:47.991 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:02:48.012 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:02:48.014 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.001s)
+00:02:48.014 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:02:48.020 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:02:48.047 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.007s)
+00:02:48.052 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:02:48.068 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:02:48.082 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:02:48.122 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:02:48.162 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:02:48.209 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.146s)
+00:02:48.211 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:02:48.236 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:02:48.247 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.005s)
+00:02:48.249 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:02:48.265 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:02:48.291 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.015s)
+00:02:48.294 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:02:48.314 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:02:48.317 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:02:48.365 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:02:48.384 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:02:48.431 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.128s)
+00:02:48.432 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:02:48.457 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:02:48.466 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.004s)
+00:02:48.474 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.003s)
+00:02:48.494 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:02:48.519 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.018s)
+00:02:48.524 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:02:48.535 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:02:48.549 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:02:48.574 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:02:48.634 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:02:48.677 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.145s)
+00:02:48.679 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+00:02:48.682 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Password for User with login pav is incorrect
+00:02:48.704 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:02:48.707 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.002s)
+00:02:48.707 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
