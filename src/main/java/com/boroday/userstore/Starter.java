@@ -4,8 +4,6 @@ import lombok.extern.slf4j.Slf4j;
 import java.util.Map;
 import java.util.Set;
 
-import com.boroday.ioc.context.ApplicationContext;
-import com.boroday.ioc.context.ClassPathApplicationContext;
 import com.boroday.userstore.dao.DataSourceFactory;
 import com.boroday.userstore.dao.UserDao;
 import com.boroday.userstore.dao.jdbc.JdbcUserDao;
@@ -17,6 +15,8 @@ import org.eclipse.jetty.server.Server;
 import org.eclipse.jetty.servlet.DefaultServlet;
 import org.eclipse.jetty.servlet.ServletContextHandler;
 import org.eclipse.jetty.servlet.ServletHolder;
+import org.springframework.context.ApplicationContext;
+import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 import javax.sql.DataSource;
 import java.util.Properties;
@@ -25,7 +25,7 @@ import java.util.Properties;
 public class Starter {
     public static void main(String[] args) throws Exception {
 
-        ApplicationContext applicationContext = new ClassPathApplicationContext(new String[]{"src/main/resources/context/context.xml"});
+        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(new String[]{"/context/context.xml"});
 
         //printSystemVariables();
         //printEnvironmentVariables();
@@ -41,7 +41,7 @@ public class Starter {
 */
         UserService userService = (UserService) applicationContext.getBean("userService");
 
-        AllUsersServlet allUsersServlet = new AllUsersServlet(userService);
+        //AllUsersServlet allUsersServlet = new AllUsersServlet(userService);
         SignInServlet signInServlet = new SignInServlet(userService);
         SignOutServlet signOutServlet = new SignOutServlet(userService);
         AddNewUserServlet addNewUserServlet = new AddNewUserServlet(userService);
@@ -51,17 +51,9 @@ public class Starter {
         DefaultServlet defaultServlet = new DefaultServlet();
 
 
-        /*AllUsersServlet allUsersServlet = (AllUsersServlet) applicationContext.getBean("allUsersServlet");
-        SignInServlet signInServlet = (SignInServlet) applicationContext.getBean("signInServlet");
-        SignOutServlet signOutServlet = (SignOutServlet) applicationContext.getBean("signOutServlet");
-        AddNewUserServlet addNewUserServlet = (AddNewUserServlet) applicationContext.getBean("addNewUserServlet");
-        EditUserServlet editUserServlet = (EditUserServlet) applicationContext.getBean("editUserServlet");
-        SearchUserServlet searchUserServlet = (SearchUserServlet) applicationContext.getBean("searchUserServlet");
-        RemoveUserServlet removeUserServlet = (RemoveUserServlet) applicationContext.getBean("removeUserServlet");
-        DefaultServlet defaultServlet = (DefaultServlet) applicationContext.getBean("defaultServlet");*/
-
         ServletContextHandler context = new ServletContextHandler(ServletContextHandler.SESSIONS);
-        context.addServlet(new ServletHolder(allUsersServlet), "/users");
+        //context.addServlet(new ServletHolder(allUsersServlet), "/users");
+        //context.addServlet(new ServletHolder(allUsersServlet), "");
         context.addServlet(new ServletHolder(signInServlet), "/signin");
         context.addServlet(new ServletHolder(signOutServlet), "/signout");
         context.addServlet(new ServletHolder(addNewUserServlet), "/users/add");
@@ -69,9 +61,9 @@ public class Starter {
         context.addServlet(new ServletHolder(editUserServlet), "/users/edit");
         context.addServlet(new ServletHolder(searchUserServlet), "/users/search");
 
-        ServletHolder servletHolder = new ServletHolder("default", defaultServlet);
-        servletHolder.setInitParameter("resourceBase", "./src/main/resources/");
-        context.addServlet(servletHolder, "/");
+        ServletHolder servletHolderForDefaultServlet = new ServletHolder("default", defaultServlet);
+        servletHolderForDefaultServlet.setInitParameter("resourceBase", "./src/main/resources/");
+        context.addServlet(servletHolderForDefaultServlet, "/");
 
         //changed to DefaultServlet
         //context.addServlet(new ServletHolder(new GetStaticResourcesServlet()), "/");
