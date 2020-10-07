@@ -19,7 +19,7 @@
         <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
 
         <!--Web-Server-->
-        <jetty.version>9.4.25.v20191220</jetty.version>
+        <jetty.version>9.4.32.v20200930</jetty.version>
 
         <!--DB-->
         <db.user>postgres</db.user>
@@ -110,11 +110,11 @@
                     </execution>
                 </executions>
             </plugin>
-            <!--tomcat-->
+            <!--jetty-->
             <plugin>
-                <groupId>org.apache.tomcat.maven</groupId>
-                <artifactId>tomcat6-maven-plugin</artifactId>
-                <version>2.2</version>
+                <groupId>org.eclipse.jetty</groupId>
+                <artifactId>jetty-maven-plugin</artifactId>
+                <version>${jetty.version}</version>
             </plugin>
         </plugins>
     </build>

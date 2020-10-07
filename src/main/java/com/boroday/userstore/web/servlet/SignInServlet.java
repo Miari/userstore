@@ -1,6 +1,7 @@
 package com.boroday.userstore.web.servlet;
 
 import com.boroday.userstore.entity.User;
+import com.boroday.userstore.service.ServiceLocator;
 import com.boroday.userstore.service.UserService;
 import com.boroday.userstore.service.impl.DefaultUserService;
 import com.boroday.userstore.web.templater.PageGenerator;
@@ -24,9 +25,13 @@ public class SignInServlet extends HttpServlet {
         this.userService = userService;
     } */
 
-    public SignInServlet(UserService userService) {
-        this.userService = userService;
+    public void init(){
+        this.userService = (UserService) ServiceLocator.getBean("userService");;
     }
+
+//    public SignInServlet(UserService userService) {
+//        this.userService = userService;
+//    }
 
     @Override
     public void doGet(HttpServletRequest request,

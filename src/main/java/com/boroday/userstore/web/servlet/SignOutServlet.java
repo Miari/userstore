@@ -1,5 +1,6 @@
 package com.boroday.userstore.web.servlet;
 
+import com.boroday.userstore.service.ServiceLocator;
 import com.boroday.userstore.service.UserService;
 import com.boroday.userstore.service.impl.DefaultUserService;
 import lombok.extern.slf4j.Slf4j;
@@ -19,9 +20,13 @@ public class SignOutServlet extends HttpServlet {
         this.userService = userService;
     } */
 
-    public SignOutServlet(UserService userService) {
-        this.userService = userService;
+    public void init(){
+        this.userService = (UserService) ServiceLocator.getBean("userService");;
     }
+
+//    public SignOutServlet(UserService userService) {
+//        this.userService = userService;
+//    }
 
     @Override
     public void doGet(HttpServletRequest request,

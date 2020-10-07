@@ -1,5 +1,6 @@
 package com.boroday.userstore.web.servlet;
 
+import com.boroday.userstore.service.ServiceLocator;
 import com.boroday.userstore.service.UserService;
 import com.boroday.userstore.web.templater.PageGenerator;
 import lombok.extern.slf4j.Slf4j;
@@ -15,7 +16,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 @Slf4j
-@WebServlet(urlPatterns = "/users")
 public class AllUsersServlet extends HttpServlet {
 
     private UserService userService;
@@ -26,8 +26,7 @@ public class AllUsersServlet extends HttpServlet {
     } */
 
     public void init(){
-        ApplicationContext applicationContext = new ClassPathXmlApplicationContext(new String[]{"/context/context.xml"});
-        this.userService = (UserService) applicationContext.getBean("userService");;
+        this.userService = (UserService) ServiceLocator.getBean("userService");;
     }
 
     //init () OR

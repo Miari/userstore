@@ -1,6 +1,7 @@
 package com.boroday.userstore.web.servlet;
 
 import com.boroday.userstore.entity.User;
+import com.boroday.userstore.service.ServiceLocator;
 import com.boroday.userstore.service.UserService;
 import com.boroday.userstore.service.impl.DefaultUserService;
 import com.boroday.userstore.web.templater.PageGenerator;
@@ -21,9 +22,13 @@ public class RemoveUserServlet extends HttpServlet {
         this.userService = userService;
     } */
 
-    public RemoveUserServlet(UserService userService) {
-        this.userService = userService;
+    public void init(){
+        this.userService = (UserService) ServiceLocator.getBean("userService");;
     }
+
+//    public RemoveUserServlet(UserService userService) {
+//        this.userService = userService;
+//    }
 
 
     @Override
