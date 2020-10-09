@@ -18,7 +18,6 @@ public class AssetsServlet extends HttpServlet {
                       HttpServletResponse response) throws IOException {
         log.info("Resources are requested");
 
-        System.out.println("here");
         String requestURI = request.getRequestURI().substring(1);
 
         try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream(requestURI)) {
