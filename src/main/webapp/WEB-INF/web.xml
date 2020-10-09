@@ -29,11 +29,14 @@
         <servlet-name>SignOutServlet</servlet-name>
         <servlet-class>com.boroday.userstore.web.servlet.SignOutServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>AssetsServlet</servlet-name>
+        <servlet-class>com.boroday.userstore.web.servlet.AssetsServlet</servlet-class>
+    </servlet>
 
     <servlet-mapping>
         <servlet-name>AllUsersServlet</servlet-name>
         <url-pattern>/users</url-pattern>
-        <url-pattern>/</url-pattern>
     </servlet-mapping>
     <servlet-mapping>
         <servlet-name>AddNewUserServlet</servlet-name>
@@ -58,6 +61,10 @@
     <servlet-mapping>
         <servlet-name>SignOutServlet</servlet-name>
         <url-pattern>/signout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>AssetsServlet</servlet-name>
+        <url-pattern>/</url-pattern>
     </servlet-mapping>
 
 </web-app>
