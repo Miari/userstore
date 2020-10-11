@@ -1,259 +1,348 @@
-23:01:23.049 [qtp1356228258-22] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
-23:01:23.052 [qtp1356228258-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
-23:01:23.209 [qtp1356228258-22] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get all users
-org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
-	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1225)
-	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880)
-	at com.boroday.userstore.dao.jdbc.JdbcUserDao.getAll(JdbcUserDao.java:45)
-	at com.boroday.userstore.service.impl.DefaultUserService.getAll(DefaultUserService.java:23)
-	at com.boroday.userstore.web.servlet.AllUsersServlet.doGet(AllUsersServlet.java:46)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1418)
-	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1655)
-	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
-	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1642)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:572)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.Server.handle(Server.java:516)
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
-	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
-	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:525)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:197)
-	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
-	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:211)
-	at org.postgresql.Driver.makeConnection(Driver.java:459)
-	at org.postgresql.Driver.connect(Driver.java:261)
-	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
-	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:294)
-	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1247)
-	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1221)
-	... 40 common frames omitted
-23:01:23.419 [qtp1356228258-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
-23:01:23.420 [qtp1356228258-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
-23:01:23.501 [qtp1356228258-18] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get all users
-org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
-	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1225)
-	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880)
-	at com.boroday.userstore.dao.jdbc.JdbcUserDao.getAll(JdbcUserDao.java:45)
-	at com.boroday.userstore.service.impl.DefaultUserService.getAll(DefaultUserService.java:23)
-	at com.boroday.userstore.web.servlet.AllUsersServlet.doGet(AllUsersServlet.java:46)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1418)
-	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1655)
-	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
-	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1642)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:572)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.Server.handle(Server.java:516)
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
-	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:135)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
-	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:525)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:197)
-	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
-	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:211)
-	at org.postgresql.Driver.makeConnection(Driver.java:459)
-	at org.postgresql.Driver.connect(Driver.java:261)
-	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
-	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:294)
-	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1247)
-	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1221)
-	... 44 common frames omitted
-23:01:31.620 [qtp1356228258-20] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
-23:01:31.808 [qtp1356228258-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
-23:01:31.808 [qtp1356228258-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
-23:01:31.855 [qtp1356228258-19] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get all users
-org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
-	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1225)
-	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880)
-	at com.boroday.userstore.dao.jdbc.JdbcUserDao.getAll(JdbcUserDao.java:45)
-	at com.boroday.userstore.service.impl.DefaultUserService.getAll(DefaultUserService.java:23)
-	at com.boroday.userstore.web.servlet.AllUsersServlet.doGet(AllUsersServlet.java:46)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1418)
-	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1655)
-	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
-	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1642)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:572)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.Server.handle(Server.java:516)
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
-	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
-	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:525)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:197)
-	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
-	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:211)
-	at org.postgresql.Driver.makeConnection(Driver.java:459)
-	at org.postgresql.Driver.connect(Driver.java:261)
-	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
-	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:294)
-	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1247)
-	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1221)
-	... 45 common frames omitted
-23:25:56.759 [qtp1564444257-24] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
-23:25:56.931 [qtp1564444257-22] INFO  c.b.u.web.servlet.AssetsServlet - Assets are read
-23:27:02.906 [qtp1564444257-22] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
-23:27:02.985 [qtp1564444257-20] INFO  c.b.u.web.servlet.AssetsServlet - Assets are read
-23:27:29.071 [qtp306204573-18] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
-23:27:29.274 [qtp306204573-21] INFO  c.b.u.web.servlet.AssetsServlet - Assets are read
-23:28:22.288 [qtp1619996938-17] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
-23:28:22.476 [qtp1619996938-20] INFO  c.b.u.web.servlet.AssetsServlet - Assets are read
-23:28:50.434 [qtp1619996938-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
-23:28:50.434 [qtp1619996938-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
-23:28:50.544 [qtp1619996938-20] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get all users
-org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
-	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1225)
-	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880)
-	at com.boroday.userstore.dao.jdbc.JdbcUserDao.getAll(JdbcUserDao.java:45)
-	at com.boroday.userstore.service.impl.DefaultUserService.getAll(DefaultUserService.java:23)
-	at com.boroday.userstore.web.servlet.AllUsersServlet.doGet(AllUsersServlet.java:46)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1418)
-	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1655)
-	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
-	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1642)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:572)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.Server.handle(Server.java:516)
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
-	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.produce(EatWhatYouKill.java:135)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
-	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:525)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:197)
-	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
-	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:211)
-	at org.postgresql.Driver.makeConnection(Driver.java:459)
-	at org.postgresql.Driver.connect(Driver.java:261)
-	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
-	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:294)
-	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1247)
-	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1221)
-	... 44 common frames omitted
-23:30:09.632 [qtp306204573-19] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
-23:30:09.819 [qtp306204573-21] INFO  c.b.u.web.servlet.AssetsServlet - Assets are read
-23:34:36.562 [qtp612641678-18] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
-23:34:36.734 [qtp612641678-19] INFO  c.b.u.web.servlet.AssetsServlet - Assets are read
-23:34:36.781 [qtp612641678-21] INFO  c.b.u.web.servlet.AssetsServlet - Assets are read
+00:01:19.277 [qtp1171546708-26] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:01:19.279 [qtp1171546708-26] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:01:23.928 [qtp1171546708-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:01:23.928 [qtp1171546708-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:01:24.183 [qtp1171546708-21] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:01:24.183 [qtp1171546708-21] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:01:24.200 [qtp1171546708-23] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:01:24.201 [qtp1171546708-23] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:01:30.334 [qtp1171546708-24] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:01:30.335 [qtp1171546708-24] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:02:47.439 [qtp1171546708-22] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:02:53.167 [qtp1171546708-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:02:53.169 [qtp1171546708-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:02:54.149 [qtp1171546708-18] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:02:54.208 [qtp1171546708-24] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:02:54.210 [qtp1171546708-24] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:02:54.286 [qtp1171546708-25] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:05:06.332 [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 6.3.2 by Redgate
+00:05:06.821 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:05:07.042 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.078s)
+00:05:07.098 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:05:07.283 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:05:07.311 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:05:07.457 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:05:07.571 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:05:07.724 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.484s)
+00:05:07.742 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+00:05:07.827 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.001s)
+00:05:07.848 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.016s)
+00:05:07.852 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.001s)
+00:05:07.881 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:05:07.921 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.025s)
+00:05:07.956 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:05:08.031 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:05:08.041 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:05:08.122 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:05:08.190 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:05:08.305 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.303s)
+00:05:08.312 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+00:05:08.318 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - There is no User with login pav1 in DB
+00:05:08.383 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:05:08.402 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.014s)
+00:05:08.405 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:05:08.424 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:05:08.466 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.021s)
+00:05:08.493 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:05:08.554 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:05:08.564 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:05:08.635 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:05:08.703 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:05:08.820 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.289s)
+00:05:08.823 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:05:08.840 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:05:08.877 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:05:08.893 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.011s)
+00:05:08.896 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:05:08.911 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:05:08.934 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.011s)
+00:05:08.952 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:05:09.006 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:05:09.015 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:05:09.063 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:05:09.114 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:05:09.187 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.197s)
+00:05:09.191 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+00:05:09.196 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:05:09.232 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:05:09.244 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.009s)
+00:05:09.247 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:05:09.261 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:05:09.286 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.013s)
+00:05:09.317 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:05:09.355 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:05:09.363 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:05:09.405 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:05:09.451 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:05:09.526 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.184s)
+00:05:09.530 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+00:05:09.536 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:05:09.586 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.001s)
+00:05:09.600 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.009s)
+00:05:09.604 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.001s)
+00:05:09.617 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:05:09.645 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.017s)
+00:05:09.662 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:05:09.693 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:05:09.704 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:05:09.739 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:05:09.791 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:05:09.848 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.165s)
+00:05:09.851 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:05:09.855 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+00:05:09.859 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:05:09.886 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:05:09.895 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.007s)
+00:05:09.897 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:05:09.908 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:05:09.928 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.010s)
+00:05:09.940 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:05:09.971 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:05:09.977 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:05:10.016 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:05:10.052 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:05:10.105 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.144s)
+00:05:10.107 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:05:10.133 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:05:10.143 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.007s)
+00:05:10.144 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:05:10.156 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:05:10.185 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.017s)
+00:05:10.199 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:05:10.233 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:05:10.239 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:05:10.276 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:05:10.315 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:05:10.387 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.166s)
+00:05:10.390 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:05:10.418 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:05:10.427 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.006s)
+00:05:10.428 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:05:10.439 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:05:10.458 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.010s)
+00:05:10.470 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:05:10.500 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:05:10.506 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:05:10.539 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:05:10.572 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:05:10.624 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.134s)
+00:05:10.626 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+00:05:10.629 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Password for User with login pav is incorrect
+00:05:10.650 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:05:10.660 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.006s)
+00:05:10.662 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:06:23.705 [qtp664856270-24] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:06:23.706 [qtp664856270-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:06:23.905 [qtp664856270-20] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:23.925 [qtp664856270-25] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:23.934 [qtp664856270-22] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:23.935 [qtp664856270-22] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:06:26.673 [qtp664856270-21] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:06:26.673 [qtp664856270-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:06:26.700 [qtp664856270-22] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:26.705 [qtp664856270-19] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:26.705 [qtp664856270-19] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:06:26.712 [qtp664856270-23] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:27.664 [qtp664856270-20] INFO  c.b.u.web.servlet.AddNewUserServlet - Page for adding new user is requested
+00:06:27.699 [qtp664856270-19] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:27.746 [qtp664856270-20] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:27.759 [qtp664856270-19] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:27.760 [qtp664856270-19] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:06:28.907 [qtp664856270-18] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:06:28.907 [qtp664856270-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:06:28.937 [qtp664856270-20] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:28.947 [qtp664856270-21] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:28.947 [qtp664856270-21] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:06:28.949 [qtp664856270-25] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:30.568 [qtp664856270-24] INFO  c.b.u.web.servlet.SearchUserServlet - Request to search users by text: 
+00:06:30.568 [qtp664856270-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:06:30.591 [qtp664856270-20] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:30.601 [qtp664856270-24] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:30.601 [qtp664856270-24] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:06:30.603 [qtp664856270-22] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:32.405 [qtp664856270-25] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+00:06:32.405 [qtp664856270-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:06:32.437 [qtp664856270-20] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:32.448 [qtp664856270-25] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:32.448 [qtp664856270-25] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:06:32.450 [qtp664856270-19] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:42.467 [qtp664856270-22] ERROR c.b.u.web.servlet.EditUserServlet - User was nor edited
+00:06:42.480 [qtp664856270-20] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:06:42.481 [qtp664856270-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:06:42.521 [qtp664856270-22] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:42.549 [qtp664856270-20] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:42.550 [qtp664856270-20] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:06:42.551 [qtp664856270-21] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:45.373 [qtp664856270-19] INFO  c.b.u.web.servlet.EditUserServlet - Page for editing of user is requested
+00:06:45.373 [qtp664856270-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:06:45.396 [qtp664856270-22] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:45.406 [qtp664856270-19] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:45.406 [qtp664856270-19] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:06:45.411 [qtp664856270-24] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:55.746 [qtp664856270-21] INFO  c.b.u.web.servlet.EditUserServlet - Request to edit user with id 4
+00:06:55.746 [qtp664856270-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+00:06:55.782 [qtp664856270-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:06:55.783 [qtp664856270-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:06:55.834 [qtp664856270-21] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:55.848 [qtp664856270-19] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:55.848 [qtp664856270-19] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:06:55.850 [qtp664856270-25] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:57.782 [qtp664856270-24] INFO  c.b.u.web.servlet.SignOutServlet - Sign out is requested
+00:06:57.786 [qtp664856270-19] INFO  c.b.u.web.servlet.SignInServlet - Signin page is requested
+00:06:57.819 [qtp664856270-24] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:57.827 [qtp664856270-19] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:06:57.828 [qtp664856270-19] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:06:57.830 [qtp664856270-20] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:07:03.078 [qtp664856270-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+00:07:03.092 [qtp664856270-19] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:07:03.092 [qtp664856270-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:07:03.173 [qtp664856270-25] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:07:03.177 [qtp664856270-19] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:07:03.178 [qtp664856270-19] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:07:03.179 [qtp664856270-22] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:07:24.904 [main] INFO  o.f.c.i.license.VersionPrinter - Flyway Community Edition 6.3.2 by Redgate
+00:07:25.023 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:07:25.090 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.026s)
+00:07:25.112 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:07:25.182 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:07:25.187 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:07:25.215 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:07:25.239 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:07:25.272 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.105s)
+00:07:25.277 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+00:07:25.298 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:07:25.303 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.003s)
+00:07:25.305 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:07:25.313 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:07:25.321 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.005s)
+00:07:25.328 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:07:25.344 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:07:25.348 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:07:25.364 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:07:25.380 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:07:25.404 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.065s)
+00:07:25.405 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+00:07:25.406 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - There is no User with login pav1 in DB
+00:07:25.418 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:07:25.422 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.003s)
+00:07:25.423 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:07:25.429 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:07:25.439 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.006s)
+00:07:25.453 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:07:25.467 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:07:25.469 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:07:25.481 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:07:25.494 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:07:25.519 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.056s)
+00:07:25.520 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+00:07:25.524 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:07:25.535 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:07:25.539 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.002s)
+00:07:25.539 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:07:25.543 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:07:25.550 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.003s)
+00:07:25.553 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:07:25.566 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:07:25.568 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:07:25.582 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:07:25.596 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:07:25.617 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.056s)
+00:07:25.618 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+00:07:25.620 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:07:25.629 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:07:25.632 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.002s)
+00:07:25.633 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:07:25.638 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:07:25.643 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.003s)
+00:07:25.652 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:07:25.663 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:07:25.665 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:07:25.674 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:07:25.683 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:07:25.698 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.039s)
+00:07:25.699 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+00:07:25.700 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:07:25.709 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:07:25.711 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.001s)
+00:07:25.711 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:07:25.715 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:07:25.720 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.002s)
+00:07:25.723 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:07:25.730 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:07:25.732 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:07:25.742 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:07:25.752 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:07:25.766 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.038s)
+00:07:25.767 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:07:25.768 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+00:07:25.769 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:07:25.775 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:07:25.778 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.001s)
+00:07:25.778 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:07:25.781 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:07:25.786 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.002s)
+00:07:25.789 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:07:25.797 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:07:25.798 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:07:25.808 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:07:25.817 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:07:25.830 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.036s)
+00:07:25.831 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:07:25.837 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:07:25.839 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.001s)
+00:07:25.840 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:07:25.843 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:07:25.848 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.002s)
+00:07:25.851 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:07:25.857 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:07:25.858 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:07:25.866 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:07:25.873 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:07:25.887 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.031s)
+00:07:25.887 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:07:25.893 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:07:25.895 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.001s)
+00:07:25.896 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:07:25.899 [main] INFO  o.f.c.i.database.DatabaseFactory - Database: jdbc:h2:mem:userstore (H2 1.4)
+00:07:25.904 [main] INFO  o.f.core.internal.command.DbValidate - Successfully validated 3 migrations (execution time 00:00.003s)
+00:07:25.907 [main] INFO  o.f.c.i.s.JdbcTableSchemaHistory - Creating Schema History table "PUBLIC"."flyway_schema_history" ...
+00:07:25.914 [main] INFO  o.f.core.internal.command.DbMigrate - Current version of schema "PUBLIC": << Empty Schema >>
+00:07:25.916 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.0 - initial schema
+00:07:25.925 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.1 - insert initial users
+00:07:25.933 [main] INFO  o.f.core.internal.command.DbMigrate - Migrating schema "PUBLIC" to version 1.2 - update users
+00:07:25.947 [main] INFO  o.f.core.internal.command.DbMigrate - Successfully applied 3 migrations to schema "PUBLIC" (execution time 00:00.034s)
+00:07:25.947 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+00:07:25.948 [main] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Password for User with login pav is incorrect
+00:07:25.953 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped pre-schema database level objects (execution time 00:00.000s)
+00:07:25.955 [main] INFO  o.f.core.internal.command.DbClean - Successfully cleaned schema "PUBLIC" (execution time 00:00.001s)
+00:07:25.955 [main] INFO  o.f.core.internal.command.DbClean - Successfully dropped post-schema database level objects (execution time 00:00.000s)
+00:10:50.492 [qtp1653925030-24] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:10:50.493 [qtp1653925030-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:10:50.687 [qtp1653925030-18] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:10:50.703 [qtp1653925030-21] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:10:50.703 [qtp1653925030-21] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:10:50.706 [qtp1653925030-26] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:10:56.743 [qtp1653925030-23] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:10:56.795 [qtp1653925030-21] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:10:56.795 [qtp1653925030-21] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:10:59.587 [qtp1653925030-22] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:10:59.602 [qtp1653925030-23] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:10:59.603 [qtp1653925030-23] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:11:27.579 [qtp1653925030-21] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:11:27.580 [qtp1653925030-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:11:27.823 [qtp1653925030-26] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:11:27.846 [qtp1653925030-20] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:11:27.858 [qtp1653925030-22] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:11:27.859 [qtp1653925030-22] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:11:31.512 [qtp1653925030-27] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:11:31.513 [qtp1653925030-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:11:31.544 [qtp1653925030-22] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:11:31.549 [qtp1653925030-24] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:11:31.549 [qtp1653925030-24] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:11:31.551 [qtp1653925030-23] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:11:36.698 [qtp1653925030-26] INFO  c.b.u.web.servlet.AllUsersServlet - Page for getting all users is requested
+00:11:36.699 [qtp1653925030-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:11:36.731 [qtp1653925030-24] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:11:36.736 [qtp1653925030-26] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
+00:11:36.736 [qtp1653925030-26] ERROR c.b.u.web.servlet.AssetsServlet - Resources URI is not found
+00:11:36.739 [qtp1653925030-19] INFO  c.b.u.web.servlet.AssetsServlet - Resources are requested
