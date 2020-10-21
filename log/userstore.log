@@ -1,102 +1,257 @@
-22:22:24.534 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'Dispatcher'
-22:22:24.613 [main] ERROR o.s.web.servlet.DispatcherServlet - Context initialization failed
-org.springframework.beans.factory.BeanDefinitionStoreException: IOException parsing XML document from ServletContext resource [/WEB-INF/Dispatcher-servlet.xml]; nested exception is java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/Dispatcher-servlet.xml]
-	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:342)
-	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:310)
-	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:188)
-	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:224)
-	at org.springframework.beans.factory.support.AbstractBeanDefinitionReader.loadBeanDefinitions(AbstractBeanDefinitionReader.java:195)
-	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:125)
-	at org.springframework.web.context.support.XmlWebApplicationContext.loadBeanDefinitions(XmlWebApplicationContext.java:94)
-	at org.springframework.context.support.AbstractRefreshableApplicationContext.refreshBeanFactory(AbstractRefreshableApplicationContext.java:130)
-	at org.springframework.context.support.AbstractApplicationContext.obtainFreshBeanFactory(AbstractApplicationContext.java:638)
-	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:523)
-	at org.springframework.web.servlet.FrameworkServlet.configureAndRefreshWebApplicationContext(FrameworkServlet.java:702)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:668)
-	at org.springframework.web.servlet.FrameworkServlet.createWebApplicationContext(FrameworkServlet.java:716)
-	at org.springframework.web.servlet.FrameworkServlet.initWebApplicationContext(FrameworkServlet.java:591)
-	at org.springframework.web.servlet.FrameworkServlet.initServletBean(FrameworkServlet.java:530)
-	at org.springframework.web.servlet.HttpServletBean.init(HttpServletBean.java:170)
-	at javax.servlet.GenericServlet.init(GenericServlet.java:244)
-	at org.eclipse.jetty.servlet.ServletHolder$Wrapper.init(ServletHolder.java:1313)
-	at org.eclipse.jetty.servlet.ServletHolder.initServlet(ServletHolder.java:602)
-	at org.eclipse.jetty.servlet.ServletHolder.initialize(ServletHolder.java:414)
-	at org.eclipse.jetty.servlet.ServletHandler.lambda$initialize$0(ServletHandler.java:772)
-	at java.base/java.util.stream.SortedOps$SizedRefSortingSink.end(SortedOps.java:357)
-	at java.base/java.util.stream.AbstractPipeline.copyInto(AbstractPipeline.java:485)
-	at java.base/java.util.stream.AbstractPipeline.wrapAndCopyInto(AbstractPipeline.java:474)
-	at java.base/java.util.stream.StreamSpliterators$WrappingSpliterator.forEachRemaining(StreamSpliterators.java:312)
-	at java.base/java.util.stream.Streams$ConcatSpliterator.forEachRemaining(Streams.java:735)
-	at java.base/java.util.stream.ReferencePipeline$Head.forEach(ReferencePipeline.java:658)
-	at org.eclipse.jetty.servlet.ServletHandler.initialize(ServletHandler.java:796)
-	at org.eclipse.jetty.servlet.ServletContextHandler.startContext(ServletContextHandler.java:368)
-	at org.eclipse.jetty.webapp.WebAppContext.startWebapp(WebAppContext.java:1457)
-	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.startWebapp(JettyWebAppContext.java:328)
-	at org.eclipse.jetty.webapp.WebAppContext.startContext(WebAppContext.java:1422)
-	at org.eclipse.jetty.server.handler.ContextHandler.doStart(ContextHandler.java:911)
-	at org.eclipse.jetty.servlet.ServletContextHandler.doStart(ServletContextHandler.java:277)
-	at org.eclipse.jetty.webapp.WebAppContext.doStart(WebAppContext.java:524)
-	at org.eclipse.jetty.maven.plugin.JettyWebAppContext.doStart(JettyWebAppContext.java:397)
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:72)
-	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
-	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117)
-	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:72)
-	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
-	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:117)
-	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:72)
-	at org.eclipse.jetty.util.component.ContainerLifeCycle.start(ContainerLifeCycle.java:169)
-	at org.eclipse.jetty.server.Server.start(Server.java:423)
-	at org.eclipse.jetty.util.component.ContainerLifeCycle.doStart(ContainerLifeCycle.java:110)
-	at org.eclipse.jetty.server.handler.AbstractHandler.doStart(AbstractHandler.java:97)
-	at org.eclipse.jetty.server.Server.doStart(Server.java:387)
-	at org.eclipse.jetty.util.component.AbstractLifeCycle.start(AbstractLifeCycle.java:72)
-	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.startJetty(AbstractJettyMojo.java:450)
-	at org.eclipse.jetty.maven.plugin.AbstractJettyMojo.execute(AbstractJettyMojo.java:311)
-	at org.eclipse.jetty.maven.plugin.JettyRunMojo.execute(JettyRunMojo.java:150)
-	at org.apache.maven.plugin.DefaultBuildPluginManager.executeMojo(DefaultBuildPluginManager.java:137)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:210)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:156)
-	at org.apache.maven.lifecycle.internal.MojoExecutor.execute(MojoExecutor.java:148)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:117)
-	at org.apache.maven.lifecycle.internal.LifecycleModuleBuilder.buildProject(LifecycleModuleBuilder.java:81)
-	at org.apache.maven.lifecycle.internal.builder.singlethreaded.SingleThreadedBuilder.build(SingleThreadedBuilder.java:56)
-	at org.apache.maven.lifecycle.internal.LifecycleStarter.execute(LifecycleStarter.java:128)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
-	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
-	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:956)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:192)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launchEnhanced(Launcher.java:282)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.launch(Launcher.java:225)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
-	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
-	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-Caused by: java.io.FileNotFoundException: Could not open ServletContext resource [/WEB-INF/Dispatcher-servlet.xml]
-	at org.springframework.web.context.support.ServletContextResource.getInputStream(ServletContextResource.java:159)
-	at org.springframework.beans.factory.xml.XmlBeanDefinitionReader.loadBeanDefinitions(XmlBeanDefinitionReader.java:333)
-	... 76 common frames omitted
-22:49:12.045 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:49:12.822 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 774 ms
-22:49:58.414 [qtp974320615-20] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /
-22:56:30.832 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:56:31.613 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 781 ms
-22:56:35.067 [qtp939523827-20] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-23:00:50.460 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-23:00:50.882 [main] WARN  o.s.w.c.s.XmlWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.boroday.userstore.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-23:00:50.897 [main] ERROR o.s.web.servlet.DispatcherServlet - Context initialization failed
-org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating bean with name 'userController': Unsatisfied dependency expressed through field 'userService'; nested exception is org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.boroday.userstore.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:643)
-	at org.springframework.beans.factory.annotation.InjectionMetadata.inject(InjectionMetadata.java:130)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor.postProcessProperties(AutowiredAnnotationBeanPostProcessor.java:399)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.populateBean(AbstractAutowireCapableBeanFactory.java:1420)
-	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:593)
+00:08:00.547 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+00:08:01.533 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 982 ms
+00:08:19.490 [qtp848419266-25] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+00:08:19.491 [qtp848419266-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:08:19.721 [qtp848419266-21] INFO  c.b.u.web.controller.UserController - Resources are requested
+00:08:19.732 [qtp848419266-27] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /assets/css/reset.css
+00:08:24.251 [qtp848419266-18] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+00:08:24.251 [qtp848419266-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:08:24.477 [qtp848419266-27] INFO  c.b.u.web.controller.UserController - Resources are requested
+00:08:24.482 [qtp848419266-18] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /assets/css/reset.css
+00:09:52.361 [qtp848419266-21] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+00:09:52.361 [qtp848419266-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:09:52.388 [qtp848419266-27] INFO  c.b.u.web.controller.UserController - Resources are requested
+00:09:52.398 [qtp848419266-25] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /assets/css/reset.css
+00:09:54.710 [qtp848419266-27] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+00:09:54.711 [qtp848419266-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:09:54.740 [qtp848419266-25] INFO  c.b.u.web.controller.UserController - Resources are requested
+00:09:54.744 [qtp848419266-27] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /assets/css/reset.css
+00:10:02.888 [qtp848419266-27] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+00:10:02.888 [qtp848419266-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:10:02.936 [qtp848419266-25] INFO  c.b.u.web.controller.UserController - Resources are requested
+00:10:02.945 [qtp848419266-27] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /assets/css/reset.css
+00:10:22.902 [qtp848419266-25] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+00:10:22.902 [qtp848419266-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:10:22.941 [qtp848419266-27] INFO  c.b.u.web.controller.UserController - Resources are requested
+00:10:22.949 [qtp848419266-25] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /assets/css/reset.css
+00:10:30.411 [qtp848419266-27] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+00:10:30.412 [qtp848419266-27] ERROR c.b.u.web.controller.UserController - Format of id is incorrect
+00:12:48.122 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+00:12:48.922 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 797 ms
+00:12:51.020 [qtp1855947104-19] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+00:12:51.021 [qtp1855947104-19] ERROR c.b.u.web.controller.UserController - Format of id is incorrect
+00:13:42.204 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+00:13:43.046 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 839 ms
+00:14:21.161 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+00:14:21.974 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 811 ms
+00:14:30.930 [qtp1754081885-28] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+00:14:30.931 [qtp1754081885-28] ERROR c.b.u.web.controller.UserController - Format of id is incorrect
+00:18:02.591 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+00:18:03.355 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 760 ms
+00:18:10.103 [qtp236590348-23] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+00:18:10.103 [qtp236590348-23] ERROR c.b.u.web.controller.UserController - Format of id is incorrect
+00:18:33.622 [qtp236590348-26] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+00:18:33.622 [qtp236590348-26] ERROR c.b.u.web.controller.UserController - Format of id is incorrect
+00:19:46.017 [qtp236590348-25] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+00:19:46.017 [qtp236590348-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:19:46.239 [qtp236590348-24] INFO  c.b.u.web.controller.UserController - Resources are requested
+00:19:46.255 [qtp236590348-23] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /assets/css/reset.css
+00:19:47.855 [qtp236590348-24] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
+00:19:47.877 [qtp236590348-23] INFO  c.b.u.web.controller.UserController - Resources are requested
+00:19:47.887 [qtp236590348-24] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /assets/css/reset.css
+00:32:28.404 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+00:32:29.218 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 811 ms
+00:32:51.728 [qtp1354439711-21] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+00:32:51.728 [qtp1354439711-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:32:52.022 [qtp1354439711-25] INFO  c.b.u.web.controller.UserController - Resources are requested
+00:32:52.029 [qtp1354439711-18] INFO  c.b.u.web.controller.UserController - Resources are requested
+00:33:33.858 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+00:33:34.719 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 858 ms
+00:33:37.702 [qtp959718932-25] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
+00:33:37.806 [qtp959718932-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:33:37.811 [qtp959718932-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+00:37:51.461 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+00:37:52.194 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 730 ms
+00:37:56.689 [qtp1383947848-20] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+00:37:56.689 [qtp1383947848-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:37:56.906 [qtp1383947848-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:37:56.919 [qtp1383947848-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+00:38:01.742 [qtp1383947848-22] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+00:38:01.742 [qtp1383947848-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:38:01.764 [qtp1383947848-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:38:01.773 [qtp1383947848-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+00:39:56.239 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+00:39:56.987 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 744 ms
+00:40:02.822 [qtp1232675280-24] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+00:40:02.823 [qtp1232675280-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:40:03.074 [qtp1232675280-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:40:03.084 [qtp1232675280-26] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'requestURI' for method parameter of type String]
+00:40:38.125 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+00:40:38.770 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 642 ms
+00:40:42.289 [qtp2063161693-18] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+00:40:42.289 [qtp2063161693-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:40:42.511 [qtp2063161693-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:40:42.529 [qtp2063161693-20] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'requestURI' for method parameter of type String]
+00:41:58.647 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+00:41:59.373 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 721 ms
+00:42:03.258 [qtp1940248684-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+00:42:03.258 [qtp1940248684-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:42:03.510 [qtp1940248684-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:42:03.521 [qtp1940248684-20] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'requestURI' for method parameter of type String]
+00:42:55.452 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+00:42:56.114 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 659 ms
+00:42:58.476 [qtp1859997666-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+00:42:58.477 [qtp1859997666-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:42:58.716 [qtp1859997666-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:42:58.733 [qtp1859997666-20] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingPathVariableException: Missing URI template variable 'requestURI' for method parameter of type String]
+00:46:31.421 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+00:46:32.037 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 613 ms
+00:46:34.947 [qtp476238509-20] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+00:46:34.948 [qtp476238509-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:46:35.172 [qtp476238509-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:46:35.180 [qtp476238509-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+00:50:17.875 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+00:50:18.549 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 672 ms
+00:52:04.585 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+00:52:05.298 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 710 ms
+00:52:09.790 [qtp57973803-22] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+00:52:09.790 [qtp57973803-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:52:10.032 [qtp57973803-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:52:10.045 [qtp57973803-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+00:52:11.965 [qtp57973803-21] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+00:52:11.965 [qtp57973803-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:52:12.006 [qtp57973803-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:52:12.013 [qtp57973803-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+00:52:16.977 [qtp57973803-18] INFO  c.b.u.web.controller.UserController - Request to edit user with id 8
+00:52:16.977 [qtp57973803-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+00:52:17.051 [qtp57973803-21] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+00:52:17.052 [qtp57973803-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:52:17.092 [qtp57973803-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:52:17.096 [qtp57973803-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+00:54:54.340 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+00:54:54.990 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 646 ms
+00:55:08.556 [qtp1159395201-19] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+00:55:08.556 [qtp1159395201-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:55:08.780 [qtp1159395201-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:55:08.791 [qtp1159395201-25] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+00:55:15.496 [qtp1159395201-23] INFO  c.b.u.web.controller.UserController - Request to edit user with id 8
+00:55:15.497 [qtp1159395201-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+00:55:15.554 [qtp1159395201-25] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+00:55:15.555 [qtp1159395201-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:55:15.603 [qtp1159395201-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:55:15.608 [qtp1159395201-25] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+00:56:26.809 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+00:56:27.485 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 673 ms
+00:56:29.165 [qtp1373579841-19] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+00:56:29.165 [qtp1373579841-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+00:56:29.398 [qtp1373579841-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:56:29.409 [qtp1373579841-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+00:56:33.701 [qtp1373579841-25] INFO  c.b.u.web.controller.UserController - Request to edit user with id 8
+00:56:33.702 [qtp1373579841-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+00:56:33.741 [qtp1373579841-21] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+00:56:33.742 [qtp1373579841-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:56:33.787 [qtp1373579841-25] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:56:33.791 [qtp1373579841-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+00:56:37.042 [qtp1373579841-25] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
+00:56:37.073 [qtp1373579841-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:56:37.084 [qtp1373579841-25] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+00:56:38.171 [qtp1373579841-21] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+00:56:38.171 [qtp1373579841-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:56:38.197 [qtp1373579841-25] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:56:38.205 [qtp1373579841-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+00:59:31.302 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+00:59:31.966 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 661 ms
+00:59:33.596 [qtp717874492-21] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
+00:59:33.716 [qtp717874492-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:59:33.723 [qtp717874492-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+00:59:56.205 [qtp717874492-24] INFO  c.b.u.web.controller.UserController - Request to add new user with name "qwe3f" "qwe3l"
+00:59:56.206 [qtp717874492-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+00:59:56.319 [qtp717874492-20] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+00:59:56.319 [qtp717874492-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+00:59:56.398 [qtp717874492-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+00:59:56.403 [qtp717874492-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:01:59.675 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+01:02:00.341 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 662 ms
+01:02:04.232 [qtp298424794-25] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+01:02:04.233 [qtp298424794-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:02:04.507 [qtp298424794-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:02:04.513 [qtp298424794-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:02:07.408 [qtp298424794-27] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+01:02:07.408 [qtp298424794-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:02:07.448 [qtp298424794-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:02:07.453 [qtp298424794-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:02:11.544 [qtp298424794-21] INFO  c.b.u.web.controller.UserController - Request to edit user with id 9
+01:02:11.545 [qtp298424794-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+01:02:11.601 [qtp298424794-27] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+01:02:11.601 [qtp298424794-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:02:11.643 [qtp298424794-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:02:11.648 [qtp298424794-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:02:16.845 [qtp298424794-21] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+01:02:16.845 [qtp298424794-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:02:16.878 [qtp298424794-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:02:16.882 [qtp298424794-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:32:33.394 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+01:32:34.013 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 615 ms
+01:32:38.775 [qtp88764150-24] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+01:32:38.776 [qtp88764150-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:32:39.010 [qtp88764150-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:32:39.019 [qtp88764150-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:32:42.141 [qtp88764150-22] INFO  c.b.u.web.controller.UserController - Request to remove user with id 9
+01:32:42.141 [qtp88764150-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+01:32:42.184 [qtp88764150-21] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+01:32:42.185 [qtp88764150-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:32:42.211 [qtp88764150-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:32:42.215 [qtp88764150-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:32:47.853 [qtp88764150-22] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+01:32:47.853 [qtp88764150-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+01:32:47.899 [qtp88764150-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:32:47.903 [qtp88764150-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:32:51.956 [qtp88764150-21] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+01:32:51.957 [qtp88764150-21] ERROR c.b.u.web.controller.UserController - Format of id is incorrect
+01:33:57.938 [qtp88764150-27] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+01:33:57.938 [qtp88764150-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:33:57.974 [qtp88764150-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:33:57.978 [qtp88764150-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:35:33.745 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+01:35:34.406 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 657 ms
+01:35:37.825 [qtp1454854577-24] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+01:35:37.826 [qtp1454854577-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:35:38.118 [qtp1454854577-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:35:38.127 [qtp1454854577-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:35:38.688 [qtp1454854577-26] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
+01:35:38.723 [qtp1454854577-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:35:38.727 [qtp1454854577-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:35:39.964 [qtp1454854577-18] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+01:35:39.964 [qtp1454854577-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:35:39.994 [qtp1454854577-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:35:39.999 [qtp1454854577-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:35:42.445 [qtp1454854577-23] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /users/search
+01:42:22.726 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+01:42:23.394 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 667 ms
+01:42:34.015 [qtp1735717476-18] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+01:42:34.016 [qtp1735717476-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:42:34.260 [qtp1735717476-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:42:34.267 [qtp1735717476-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:42:37.043 [qtp1735717476-22] INFO  c.b.u.web.controller.UserController - Request to search users by text: qw
+01:42:37.043 [qtp1735717476-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+01:42:37.292 [qtp1735717476-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:42:37.302 [qtp1735717476-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:42:52.223 [qtp1735717476-24] INFO  c.b.u.web.controller.UserController - Request to search users by text: &#1080;&#1084;&#1080;
+01:42:52.223 [qtp1735717476-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+01:42:52.245 [qtp1735717476-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:42:52.255 [qtp1735717476-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:44:05.370 [qtp1735717476-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+01:44:05.370 [qtp1735717476-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:44:05.398 [qtp1735717476-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:44:05.402 [qtp1735717476-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:46:58.433 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+01:46:59.134 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 698 ms
+01:47:01.885 [qtp2073830279-24] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /signout
+01:47:06.523 [qtp2073830279-23] INFO  c.b.u.web.controller.UserController - Signin page is requested
+01:47:06.645 [qtp2073830279-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:47:06.656 [qtp2073830279-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:52:33.531 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+01:52:34.024 [main] WARN  o.s.w.c.s.XmlWebApplicationContext - Exception encountered during context initialization - cancelling refresh attempt: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
+com.boroday.userstore.web.controller.UserController#editUserPost(HttpServletResponse, String, String, String, String, String, String, String)
+to {POST /users/edit}: There is already 'userController' bean method
+com.boroday.userstore.web.controller.UserController#editUserPost(HttpServletResponse, String, String) mapped.
+01:52:34.028 [main] ERROR o.s.web.servlet.DispatcherServlet - Context initialization failed
+org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping': Invocation of init method failed; nested exception is java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
+com.boroday.userstore.web.controller.UserController#editUserPost(HttpServletResponse, String, String, String, String, String, String, String)
+to {POST /users/edit}: There is already 'userController' bean method
+com.boroday.userstore.web.controller.UserController#editUserPost(HttpServletResponse, String, String) mapped.
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1794)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594)
 	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516)
 	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324)
 	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234)
@@ -160,9 +315,9 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:305)
 	at org.apache.maven.DefaultMaven.doExecute(DefaultMaven.java:192)
 	at org.apache.maven.DefaultMaven.execute(DefaultMaven.java:105)
-	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:956)
-	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:288)
-	at org.apache.maven.cli.MavenCli.main(MavenCli.java:192)
+	at org.apache.maven.cli.MavenCli.execute(MavenCli.java:957)
+	at org.apache.maven.cli.MavenCli.doMain(MavenCli.java:289)
+	at org.apache.maven.cli.MavenCli.main(MavenCli.java:193)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -172,159 +327,214 @@ org.springframework.beans.factory.UnsatisfiedDependencyException: Error creating
 	at org.codehaus.plexus.classworlds.launcher.Launcher.mainWithExitCode(Launcher.java:406)
 	at org.codehaus.plexus.classworlds.launcher.Launcher.main(Launcher.java:347)
 	at org.codehaus.classworlds.Launcher.main(Launcher.java:47)
-Caused by: org.springframework.beans.factory.NoSuchBeanDefinitionException: No qualifying bean of type 'com.boroday.userstore.service.UserService' available: expected at least 1 bean which qualifies as autowire candidate. Dependency annotations: {@org.springframework.beans.factory.annotation.Autowired(required=true)}
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.raiseNoMatchingBeanFound(DefaultListableBeanFactory.java:1717)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.doResolveDependency(DefaultListableBeanFactory.java:1273)
-	at org.springframework.beans.factory.support.DefaultListableBeanFactory.resolveDependency(DefaultListableBeanFactory.java:1227)
-	at org.springframework.beans.factory.annotation.AutowiredAnnotationBeanPostProcessor$AutowiredFieldElement.inject(AutowiredAnnotationBeanPostProcessor.java:640)
-	... 79 common frames omitted
-23:02:38.791 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-23:02:39.635 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 812 ms
-23:02:55.436 [qtp1212833245-20] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-23:02:55.436 [qtp1212833245-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
-23:02:55.546 [qtp1212833245-20] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get all users
-org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
-	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1225)
-	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880)
-	at com.boroday.userstore.dao.jdbc.JdbcUserDao.getAll(JdbcUserDao.java:45)
-	at com.boroday.userstore.service.impl.DefaultUserService.getAll(DefaultUserService.java:23)
-	at com.boroday.userstore.web.controller.UserController.allUsers(UserController.java:28)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1418)
-	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1655)
-	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
-	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1642)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:572)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.Server.handle(Server.java:516)
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
-	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
-	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:525)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:197)
-	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
-	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:211)
-	at org.postgresql.Driver.makeConnection(Driver.java:459)
-	at org.postgresql.Driver.connect(Driver.java:261)
-	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
-	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:294)
-	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1247)
-	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1221)
-	... 55 common frames omitted
-23:31:21.481 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-23:31:22.356 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 860 ms
-23:31:34.827 [qtp1476823872-22] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-23:31:34.827 [qtp1476823872-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
-23:31:34.936 [qtp1476823872-22] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to get all users
-org.apache.commons.dbcp.SQLNestedException: Cannot create PoolableConnectionFactory (FATAL: password authentication failed for user "postgres")
-	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1225)
-	at org.apache.commons.dbcp.BasicDataSource.getConnection(BasicDataSource.java:880)
-	at com.boroday.userstore.dao.jdbc.JdbcUserDao.getAll(JdbcUserDao.java:45)
-	at com.boroday.userstore.service.impl.DefaultUserService.getAll(DefaultUserService.java:23)
-	at com.boroday.userstore.web.controller.UserController.allUsers(UserController.java:28)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1418)
-	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1655)
-	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
-	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1642)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:572)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.Server.handle(Server.java:516)
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
-	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
-	at java.base/java.lang.Thread.run(Thread.java:844)
-Caused by: org.postgresql.util.PSQLException: FATAL: password authentication failed for user "postgres"
-	at org.postgresql.core.v3.ConnectionFactoryImpl.doAuthentication(ConnectionFactoryImpl.java:525)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.tryConnect(ConnectionFactoryImpl.java:146)
-	at org.postgresql.core.v3.ConnectionFactoryImpl.openConnectionImpl(ConnectionFactoryImpl.java:197)
-	at org.postgresql.core.ConnectionFactory.openConnection(ConnectionFactory.java:49)
-	at org.postgresql.jdbc.PgConnection.<init>(PgConnection.java:211)
-	at org.postgresql.Driver.makeConnection(Driver.java:459)
-	at org.postgresql.Driver.connect(Driver.java:261)
-	at org.apache.commons.dbcp.DriverConnectionFactory.createConnection(DriverConnectionFactory.java:38)
-	at org.apache.commons.dbcp.PoolableConnectionFactory.makeObject(PoolableConnectionFactory.java:294)
-	at org.apache.commons.dbcp.BasicDataSource.validateConnectionFactory(BasicDataSource.java:1247)
-	at org.apache.commons.dbcp.BasicDataSource.createDataSource(BasicDataSource.java:1221)
-	... 55 common frames omitted
+Caused by: java.lang.IllegalStateException: Ambiguous mapping. Cannot map 'userController' method 
+com.boroday.userstore.web.controller.UserController#editUserPost(HttpServletResponse, String, String, String, String, String, String, String)
+to {POST /users/edit}: There is already 'userController' bean method
+com.boroday.userstore.web.controller.UserController#editUserPost(HttpServletResponse, String, String) mapped.
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.validateMethodMapping(AbstractHandlerMethodMapping.java:636)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping$MappingRegistry.register(AbstractHandlerMethodMapping.java:603)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.registerHandlerMethod(AbstractHandlerMethodMapping.java:318)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:378)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.registerHandlerMethod(RequestMappingHandlerMapping.java:75)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.lambda$detectHandlerMethods$1(AbstractHandlerMethodMapping.java:288)
+	at java.base/java.util.LinkedHashMap.forEach(LinkedHashMap.java:723)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.detectHandlerMethods(AbstractHandlerMethodMapping.java:286)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.processCandidateBean(AbstractHandlerMethodMapping.java:258)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.initHandlerMethods(AbstractHandlerMethodMapping.java:217)
+	at org.springframework.web.servlet.handler.AbstractHandlerMethodMapping.afterPropertiesSet(AbstractHandlerMethodMapping.java:205)
+	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping.afterPropertiesSet(RequestMappingHandlerMapping.java:189)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1853)
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1790)
+	... 76 common frames omitted
+01:53:54.542 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+01:53:55.264 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 719 ms
+01:54:01.771 [qtp1776512995-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+01:54:01.916 [qtp1776512995-25] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+01:54:01.916 [qtp1776512995-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:54:02.092 [qtp1776512995-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:54:02.099 [qtp1776512995-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:54:04.635 [qtp1776512995-22] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /signout
+01:54:12.198 [qtp1776512995-21] INFO  c.b.u.web.controller.UserController - Signin page is requested
+01:54:12.231 [qtp1776512995-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:54:12.238 [qtp1776512995-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:54:17.510 [qtp1776512995-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+01:54:17.522 [qtp1776512995-21] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+01:54:17.522 [qtp1776512995-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+01:54:17.573 [qtp1776512995-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:54:17.577 [qtp1776512995-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:54:27.452 [qtp1776512995-22] INFO  c.b.u.web.controller.UserController - Signin page is requested
+01:54:27.482 [qtp1776512995-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:54:27.487 [qtp1776512995-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+01:54:31.855 [qtp1776512995-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+01:54:31.856 [qtp1776512995-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - There is no User with login ghj in DB
+01:55:25.981 [qtp1776512995-26] INFO  c.b.u.web.controller.UserController - Signin page is requested
+01:55:25.992 [qtp1776512995-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+01:55:25.996 [qtp1776512995-25] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
+01:55:25.998 [qtp1776512995-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:01:44.251 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+02:01:44.874 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 620 ms
+02:01:45.736 [qtp373158489-21] INFO  c.b.u.web.controller.UserController - Signin page is requested
+02:01:45.896 [qtp373158489-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:01:45.904 [qtp373158489-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:01:50.332 [qtp373158489-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+02:01:50.407 [qtp373158489-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - There is no User with login gf in DB
+02:01:50.451 [qtp373158489-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:01:50.455 [qtp373158489-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:02:54.417 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+02:02:55.084 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 664 ms
+02:03:02.422 [qtp912493401-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+02:03:02.499 [qtp912493401-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - There is no User with login er in DB
+02:03:02.716 [qtp912493401-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:03:02.723 [qtp912493401-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:04:23.481 [qtp912493401-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+02:04:23.488 [qtp912493401-24] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:04:23.488 [qtp912493401-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:04:23.561 [qtp912493401-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:04:23.571 [qtp912493401-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:07:27.645 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+02:07:28.258 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 608 ms
+02:07:32.004 [qtp1053273441-24] INFO  c.b.u.web.controller.UserController - Sign out is requested
+02:07:32.011 [qtp1053273441-22] INFO  c.b.u.web.controller.UserController - Signin page is requested
+02:07:32.133 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:07:32.141 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:07:37.256 [qtp1053273441-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+02:07:37.340 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:07:37.340 [qtp1053273441-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:07:37.397 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:07:37.401 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:07:40.938 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Request to search users by text: el
+02:07:40.938 [qtp1053273441-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+02:07:40.974 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:07:40.985 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:07:44.868 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Request to search users by text: qw
+02:07:44.868 [qtp1053273441-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+02:07:44.903 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:07:44.908 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:07:47.675 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:07:47.675 [qtp1053273441-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:07:47.701 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:07:47.713 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:07:51.614 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+02:07:51.614 [qtp1053273441-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+02:07:51.643 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:07:51.651 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:07:55.291 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Request to edit user with id 8
+02:07:55.291 [qtp1053273441-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+02:07:55.341 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:07:55.341 [qtp1053273441-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:07:55.377 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:07:55.381 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:08:02.286 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Request to remove user with id 8
+02:08:02.286 [qtp1053273441-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to remove user from DB
+02:08:02.325 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:08:02.325 [qtp1053273441-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:08:02.348 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:08:02.353 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:08:06.459 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
+02:08:06.505 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:08:06.510 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:08:28.433 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Request to add new user with name "qwe3f" "qwe3l"
+02:08:28.433 [qtp1053273441-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to add new user to DB
+02:08:28.483 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:08:28.483 [qtp1053273441-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:08:28.522 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:08:28.526 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:08:33.830 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+02:08:33.830 [qtp1053273441-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by id
+02:08:33.867 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:08:33.874 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:08:39.593 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Request to edit user with id 10
+02:08:39.593 [qtp1053273441-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to update user in DB
+02:08:39.655 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:08:39.655 [qtp1053273441-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:08:39.698 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:08:39.702 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:08:43.242 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Sign out is requested
+02:08:43.246 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Signin page is requested
+02:08:43.266 [qtp1053273441-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:08:43.275 [qtp1053273441-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:10:07.763 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+02:10:08.396 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 629 ms
+02:10:14.318 [qtp705801739-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get user from DB by login
+02:10:14.406 [qtp705801739-24] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:10:14.407 [qtp705801739-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:10:14.671 [qtp705801739-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:10:14.678 [qtp705801739-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:10:20.772 [qtp705801739-22] INFO  c.b.u.web.controller.UserController - Request to search users by text: el
+02:10:20.773 [qtp705801739-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+02:10:20.805 [qtp705801739-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:10:20.815 [qtp705801739-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:10:22.360 [qtp705801739-27] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:10:22.361 [qtp705801739-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:10:22.395 [qtp705801739-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:10:22.399 [qtp705801739-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:10:23.761 [qtp705801739-22] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
+02:10:23.797 [qtp705801739-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:10:23.805 [qtp705801739-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:10:24.590 [qtp705801739-27] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:10:24.590 [qtp705801739-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:10:24.621 [qtp705801739-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:10:24.625 [qtp705801739-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:11:00.470 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+02:11:01.127 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 653 ms
+02:11:05.468 [qtp1692092775-27] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:11:05.469 [qtp1692092775-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:11:05.691 [qtp1692092775-25] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:11:05.697 [qtp1692092775-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:11:25.209 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+02:11:25.947 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 734 ms
+02:11:29.557 [qtp513042872-21] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:11:29.557 [qtp513042872-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:11:29.784 [qtp513042872-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:11:29.790 [qtp513042872-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:11:31.287 [qtp513042872-22] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
+02:11:31.325 [qtp513042872-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:11:31.337 [qtp513042872-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:11:32.303 [qtp513042872-26] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:11:32.303 [qtp513042872-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:11:32.340 [qtp513042872-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:11:32.350 [qtp513042872-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:11:43.290 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+02:11:43.960 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 667 ms
+02:11:44.534 [qtp1043535321-22] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:11:44.535 [qtp1043535321-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:11:44.773 [qtp1043535321-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:11:44.782 [qtp1043535321-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:11:46.259 [qtp1043535321-26] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:11:46.259 [qtp1043535321-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:11:46.288 [qtp1043535321-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:11:46.292 [qtp1043535321-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:12:30.366 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+02:12:31.046 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 677 ms
+02:12:33.377 [qtp1043535321-19] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:12:33.378 [qtp1043535321-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:12:33.604 [qtp1043535321-25] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:12:33.613 [qtp1043535321-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:12:34.993 [qtp1043535321-20] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
+02:12:35.028 [qtp1043535321-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:12:35.033 [qtp1043535321-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:12:36.087 [qtp1043535321-18] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:12:36.087 [qtp1043535321-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:12:36.118 [qtp1043535321-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:12:36.123 [qtp1043535321-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:12:38.333 [qtp1043535321-20] INFO  c.b.u.web.controller.UserController - Request to search users by text: 
+02:12:38.333 [qtp1043535321-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+02:12:38.364 [qtp1043535321-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:12:38.368 [qtp1043535321-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:13:04.768 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+02:13:05.504 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 732 ms
+02:13:09.285 [qtp170082758-20] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:13:09.286 [qtp170082758-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:13:09.494 [qtp170082758-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:13:09.504 [qtp170082758-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:13:11.150 [qtp170082758-18] INFO  c.b.u.web.controller.UserController - Request to search users by text: 
+02:13:11.150 [qtp170082758-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to search user in DB
+02:13:11.180 [qtp170082758-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:13:11.185 [qtp170082758-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:13:12.116 [qtp170082758-19] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
+02:13:12.148 [qtp170082758-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:13:12.153 [qtp170082758-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+02:13:13.011 [qtp170082758-18] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+02:13:13.011 [qtp170082758-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Start to get all users from DB
+02:13:13.036 [qtp170082758-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+02:13:13.044 [qtp170082758-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css

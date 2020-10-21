@@ -1,6 +1,5 @@
 package com.boroday.userstore.web.templater;
 
-import freemarker.cache.ClassTemplateLoader;
 import freemarker.template.Configuration;
 import freemarker.template.Template;
 import freemarker.template.TemplateException;
