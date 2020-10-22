@@ -7,6 +7,7 @@ import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.stereotype.Controller;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 
@@ -181,7 +182,7 @@ public class UserController {
     public String signIn(HttpServletResponse response,
                          @RequestParam("login") String login,
                          @RequestParam("password") String password) throws IOException {
-            User userToLogin = userService.getByLogin(login, password);
+        User userToLogin = userService.getByLogin(login, password);
 
         if (userToLogin != null) {
             log.debug("User with login {} is authorized", login);
@@ -216,6 +217,14 @@ public class UserController {
         String requestURI = request.getRequestURI().substring(1);
         getAssets(response, requestURI);
     }
+
+
+    @RequestMapping(path = "/hello") // for thymeleaf testing, remove after migration of all templates
+    public String hello(@RequestParam(value = "name", required = false, defaultValue = "World") String name, Model model) {
+        model.addAttribute("name", name);
+        return "hello";
+    }
+
 
     public void getAssets(HttpServletResponse response, String requestURI) {
         log.info("Following resources are requested: {}", requestURI);
