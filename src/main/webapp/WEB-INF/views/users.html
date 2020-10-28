@@ -1,22 +1,22 @@
-<!--<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8"/>
-    <link rel="stylesheet" type="text/css" href="/assets/css/style.css">
+    <link th:href="@{/assets/css/style.css}" rel="stylesheet"/>
     <title>Users Store</title>
 </head>
 <body>
     <div class="wrapper">
-    <#include "header.html">
+    <div th:replace="fragments/header :: header"></div>
         <div class="content">
             <div class="header">
                 Users
             </div>
-            <#if users?has_content>
+            <div th:if="${users}">
             <div class="search__message message">
-            <#if foundUsers?has_content>
-                ${foundUsers} Users were found
-            </#if>
+                <div th:if="${foundUsers}">
+                    <p th:text = "${foundUsers} + 'Users were found'"></p>
+                </div>
             </div>
             <div class="result_table">
                 <table>
@@ -29,24 +29,22 @@
                         <th>Birthday</th>
                         <th>Actions</th>
                     </tr>
-                    <#list users as user>
-                    <tr>
-                        <td>${user.id}</td>
-                        <td>${user.login}</td>
-                        <td>${user.firstName}</td>
-                        <td>${user.lastName}</td>
-                        <td><#if (user.salary)??>${user.salary}</#if></td>
-                        <td><#if (user.dateOfBirth)??>${user.dateOfBirth}</#if></td>
+                    <tr th:each="user : ${users}">
+                        <td th:text="${user.id}">No id</td>
+                        <td th:text="${user.login}">No login</td>
+                        <td th:text="${user.firstName}">No firstname</td>
+                        <td th:text="${user.lastName}">No lastname</td>
+                        <td th:text="${user.salary}? ${user.salary}">No salary</td>
+                        <td th:text="${user.dateOfBirth}? ${user.dateOfBirth}">No DOB</td>
                         <td>
                             <div class="result_table__buttons">
-                                <a href="/users/edit?id=${user.id}">Edit</a>
+                                <a th:href="@{'/users/edit?id=' + ${user.id}}">Edit</a>
                                 <form action="/users/remove" method="POST">
-                                    <button type="submit" value="${user.id}" name="id">Delete</button>
+                                    <button type="submit" th:value="${user.id}" name="id">Delete</button>
                                 </form>
                             </div>
                         </td>
                     </tr>
-                    </#list>
                 </table>
             </div>
 
@@ -62,19 +60,19 @@
                     </div>
                 </form>
                 <div class="all_users_button button">
-                    <#if foundUsers?has_content>
-                    <a href="/users">Show all users</a>
-                    </#if>
+                    <div th:if="${foundUsers}">
+                        <a href="/users">Show all users</a>
+                    </div>
                 </div>
             </div>
-        <#else>
-            <div class="message">
-                There are no Users in database
             </div>
-        </#if>
-        </div>
-    <#include "footer.html">
+            <div th:unless="${users}">
+                <div class="message">
+                    There are no Users in database
+                </div>
+            </div>
+            </div>
+        <div th:replace="fragments/footer :: footer"></div>
     </div>
 </body>
 </html>
--->

@@ -41,25 +41,33 @@ public class JdbcUserDao implements UserDao {
         log.info("Adding a new user to DB");
         Timestamp timestamp = Timestamp.valueOf(user.getDateOfBirth().atStartOfDay());
         Object[] args = new Object[]{user.getFirstName(),
-                                     user.getLastName(),
+                user.getLastName(),
                 user.getSalary(),
                 timestamp,
                 user.getLogin(),
                 user.getPassword()};
-        jdbcTemplate.update(ADD_NEW_USER, args);
+        try {
+            jdbcTemplate.update(ADD_NEW_USER, args);
+        } catch (Exception ex) {
+            log.error("Not possible to add new user with name \"{} {}\"", user.getFirstName(), user.getLastName(), ex);
+        }
     }
 
     public void removeUser(long userId) {
         log.info("Removing user from DB");
         Object[] args = new Object[]{userId};
-        jdbcTemplate.update(REMOVE_USER, args);
+        try {
+            jdbcTemplate.update(REMOVE_USER, args);
+        } catch (Exception ex) {
+            log.error("Not possible to remove user by id {}", userId, ex);
+        }
     }
 
     public User getUserById(long userId) {
         log.info("Getting user from DB by id");
         Object[] args = new Object[]{userId};
         List<User> listOfUsers = jdbcTemplate.query(SELECT_USER_BY_ID, args, USER_ROW_MAPPER);
-        if (listOfUsers.size()>0) {
+        if (listOfUsers.size() > 0) {
             return listOfUsers.get(0);
         } else {
             log.info("User with id {} does not exist in DB", userId);
@@ -71,7 +79,7 @@ public class JdbcUserDao implements UserDao {
         log.info("Getting user from DB by login");
         Object[] args = new Object[]{userLogin};
         List<User> listOfUsers = jdbcTemplate.query(SELECT_USER_BY_LOGIN, args, USER_ROW_MAPPER);
-        if (listOfUsers.size()>0) {
+        if (listOfUsers.size() > 0) {
             User user = listOfUsers.get(0);
             if (user.getPassword().equals(userPassword)) {
                 return listOfUsers.get(0);
@@ -95,7 +103,11 @@ public class JdbcUserDao implements UserDao {
                 user.getLogin(),
                 user.getPassword(),
                 user.getId()};
-        jdbcTemplate.update(UPDATE_USER, args);
+        try {
+            jdbcTemplate.update(UPDATE_USER, args);
+        } catch (Exception ex) {
+            log.error("not possible to update user with id {}", user.getId(), ex);
+        }
     }
 
     public List<User> searchUser(String text) {

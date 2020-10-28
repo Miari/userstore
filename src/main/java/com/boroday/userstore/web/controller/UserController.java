@@ -30,7 +30,7 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-
+/*
     // all users
     @RequestMapping(path = "/users", method = RequestMethod.GET)
     @ResponseBody
@@ -42,15 +42,15 @@ public class UserController {
         String page = PageGenerator.instance().getPage("users.html", pageVariables);
         return page;
     }
-
+*/
     // add user
-    @RequestMapping(path = "/users/add", method = RequestMethod.GET)
+    /*@RequestMapping(path = "/users/add", method = RequestMethod.GET)
     @ResponseBody
     public String addUser() {
         log.info("Page for adding new user is requested");
         String page = PageGenerator.instance().getPage("adduser.html");
         return page;
-    }
+    }*/
 
     @RequestMapping(path = "/users/add", method = RequestMethod.POST)
     public void addUser(HttpServletResponse response,
@@ -223,6 +223,22 @@ public class UserController {
     public String hello(@RequestParam(value = "name", required = false, defaultValue = "World") String name, Model model) {
         model.addAttribute("name", name);
         return "hello";
+    }
+
+    // all users
+    @RequestMapping(path = "/users", method = RequestMethod.GET)
+    public String allUsers(Model model) {
+        log.info("Page for getting all users is requested");
+        model.addAttribute("users", userService.getAll());
+        return "users";
+    }
+
+    // add user
+    @RequestMapping(path = "/users/add", method = RequestMethod.GET)
+    public String addUser() {
+        log.info("Page for adding new user is requested");
+        //String page = PageGenerator.instance().getPage("adduser.html");
+        return "adduser";
     }
 
 
