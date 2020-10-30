@@ -2,7 +2,6 @@ package com.boroday.userstore.web.controller;
 
 import com.boroday.userstore.entity.User;
 import com.boroday.userstore.service.UserService;
-import com.boroday.userstore.web.templater.PageGenerator;
 import lombok.extern.slf4j.Slf4j;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
@@ -17,9 +16,7 @@ import java.io.IOException;
 import java.io.InputStream;
 import java.sql.Date;
 import java.sql.Timestamp;
-import java.util.HashMap;
 import java.util.List;
-import java.util.Map;
 
 @Controller
 @Slf4j
@@ -30,27 +27,21 @@ public class UserController {
 
     @Autowired
     private UserService userService;
-/*
+
     // all users
     @RequestMapping(path = "/users", method = RequestMethod.GET)
-    @ResponseBody
-    public String allUsers() {
+    public String allUsers(Model model) {
         log.info("Page for getting all users is requested");
-
-        Map<String, Object> pageVariables = new HashMap<>();
-        pageVariables.put("users", userService.getAll());
-        String page = PageGenerator.instance().getPage("users.html", pageVariables);
-        return page;
+        model.addAttribute("users", userService.getAll());
+        return "users";
     }
-*/
+
     // add user
-    /*@RequestMapping(path = "/users/add", method = RequestMethod.GET)
-    @ResponseBody
+    @RequestMapping(path = "/users/add", method = RequestMethod.GET)
     public String addUser() {
         log.info("Page for adding new user is requested");
-        String page = PageGenerator.instance().getPage("adduser.html");
-        return page;
-    }*/
+        return "adduser";
+    }
 
     @RequestMapping(path = "/users/add", method = RequestMethod.POST)
     public void addUser(HttpServletResponse response,
@@ -81,22 +72,15 @@ public class UserController {
         response.sendRedirect(USERS_PAGE);
     }
 
-
     // edit user
     @RequestMapping(path = "/users/edit", method = RequestMethod.GET)
-    @ResponseBody
-    public String editUserGet(@RequestParam("id") String userId) {
+    public String editUserGet(@RequestParam("id") String userId, Model model) {
         log.info("Page for editing of user is requested");
-        Map<String, Object> pageVariables = new HashMap<>();
-
         try {
             Long userIdLong = Long.parseLong(userId);
             User userForEdit = userService.getById(userIdLong);
-            pageVariables.put("user", userForEdit);
-
-            String page = PageGenerator.instance().getPage("edituser.html", pageVariables);
-            return page;
-
+            model.addAttribute("user", userForEdit);
+            return "edituser";
         } catch (NumberFormatException e) {
             log.error("Format of id is incorrect");
             e.printStackTrace();
@@ -155,33 +139,27 @@ public class UserController {
 
     // search user
     @RequestMapping(path = "/users/search", method = RequestMethod.GET)
-    @ResponseBody
-    public String searchUser(@RequestParam("searchText") String searchText) {
-        Map<String, Object> pageVariables = new HashMap<>();
+    public String searchUser(@RequestParam("searchText") String searchText, Model model) {
         log.info("Request to search users by text: {}", searchText);
 
         List<User> foundUsers = userService.search(searchText);
-        pageVariables.put("users", foundUsers);
-        pageVariables.put("foundUsers", foundUsers.size());
+        model.addAttribute("users", foundUsers);
+        model.addAttribute("foundUsers", foundUsers.size());
 
-        String page = PageGenerator.instance().getPage("users.html", pageVariables);
-        return page;
+        return "users";
     }
 
     // sign in
     @RequestMapping(path = "/signin", method = RequestMethod.GET)
-    @ResponseBody
     public String signIn() {
         log.info("Signin page is requested");
-        String page = PageGenerator.instance().getPage("signin.html");
-        return page;
+        return "signin";
     }
 
     @RequestMapping(path = "/signin", method = RequestMethod.POST)
-    @ResponseBody
     public String signIn(HttpServletResponse response,
                          @RequestParam("login") String login,
-                         @RequestParam("password") String password) throws IOException {
+                         @RequestParam("password") String password, Model model) throws IOException {
         User userToLogin = userService.getByLogin(login, password);
 
         if (userToLogin != null) {
@@ -189,11 +167,9 @@ public class UserController {
             response.sendRedirect(USERS_PAGE);
         } else {
             log.debug("User with login {} is not authorized", login);
-            Map<String, Object> pageVariables = new HashMap<>();
-            pageVariables.put("message", "User is not registered or password is incorrect");
-            String page = PageGenerator.instance().getPage("signin.html", pageVariables);
+            model.addAttribute("message", "User is not registered or password is incorrect");
             response.setStatus(HttpServletResponse.SC_UNAUTHORIZED);
-            return page;
+            return "signin";
         }
         return "";
     }
@@ -218,30 +194,6 @@ public class UserController {
         getAssets(response, requestURI);
     }
 
-
-    @RequestMapping(path = "/hello") // for thymeleaf testing, remove after migration of all templates
-    public String hello(@RequestParam(value = "name", required = false, defaultValue = "World") String name, Model model) {
-        model.addAttribute("name", name);
-        return "hello";
-    }
-
-    // all users
-    @RequestMapping(path = "/users", method = RequestMethod.GET)
-    public String allUsers(Model model) {
-        log.info("Page for getting all users is requested");
-        model.addAttribute("users", userService.getAll());
-        return "users";
-    }
-
-    // add user
-    @RequestMapping(path = "/users/add", method = RequestMethod.GET)
-    public String addUser() {
-        log.info("Page for adding new user is requested");
-        //String page = PageGenerator.instance().getPage("adduser.html");
-        return "adduser";
-    }
-
-
     public void getAssets(HttpServletResponse response, String requestURI) {
         log.info("Following resources are requested: {}", requestURI);
         try (InputStream inputStream = getClass().getClassLoader().getResourceAsStream(requestURI)) {
@@ -261,6 +213,4 @@ public class UserController {
             throw new RuntimeException("Not possible to get resource by the request: " + requestURI, e);
         }
     }
-
-
 }

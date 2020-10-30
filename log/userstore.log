@@ -1,391 +1,88 @@
-22:24:55.306 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:24:59.154 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:24:59.205 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 3896 ms
-22:25:01.297 [qtp933869191-25] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:25:01.298 [qtp933869191-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:25:03.268 [qtp933869191-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:25:03.324 [qtp933869191-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:25:03.337 [qtp933869191-24] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
-22:25:07.060 [qtp933869191-23] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
-22:25:07.061 [qtp933869191-23] ERROR c.b.u.web.controller.UserController - Format of id is incorrect
-22:27:23.053 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:27:23.858 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:27:23.914 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 857 ms
-22:27:25.437 [qtp668754554-26] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:27:25.438 [qtp668754554-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:27:25.832 [qtp668754554-26] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][qtp668754554-26] Exception processing template "users": Could not parse as expression: "/users/edit?id=${user.id}" (template: "users" - line 42, col 36)
-org.thymeleaf.exceptions.TemplateProcessingException: Could not parse as expression: "/users/edit?id=${user.id}" (template: "users" - line 42, col 36)
-	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:131)
-	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:62)
-	at org.thymeleaf.standard.expression.StandardExpressionParser.parseExpression(StandardExpressionParser.java:44)
-	at org.thymeleaf.engine.EngineEventUtils.parseAttributeExpression(EngineEventUtils.java:220)
-	at org.thymeleaf.engine.EngineEventUtils.computeAttributeExpression(EngineEventUtils.java:207)
-	at org.thymeleaf.standard.processor.AbstractStandardExpressionAttributeTagProcessor.doProcess(AbstractStandardExpressionAttributeTagProcessor.java:125)
-	at org.thymeleaf.processor.element.AbstractAttributeTagProcessor.doProcess(AbstractAttributeTagProcessor.java:74)
-	at org.thymeleaf.processor.element.AbstractElementTagProcessor.process(AbstractElementTagProcessor.java:95)
-	at org.thymeleaf.util.ProcessorConfigurationUtils$ElementTagProcessorWrapper.process(ProcessorConfigurationUtils.java:633)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleOpenElement(ProcessorTemplateHandler.java:1314)
-	at org.thymeleaf.engine.OpenElementTag.beHandled(OpenElementTag.java:205)
-	at org.thymeleaf.engine.Model.process(Model.java:282)
-	at org.thymeleaf.engine.Model.process(Model.java:290)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.processIterationModel(IteratedGatheringModelProcessable.java:367)
-	at org.thymeleaf.engine.IteratedGatheringModelProcessable.process(IteratedGatheringModelProcessable.java:221)
-	at org.thymeleaf.engine.ProcessorTemplateHandler.handleCloseElement(ProcessorTemplateHandler.java:1640)
-	at org.thymeleaf.engine.CloseElementTag.beHandled(CloseElementTag.java:139)
-	at org.thymeleaf.engine.TemplateModel.process(TemplateModel.java:136)
-	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:661)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
-	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
-	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
-	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
-	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
-	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1418)
-	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1655)
-	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
-	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1642)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:572)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.Server.handle(Server.java:516)
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
-	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-22:30:29.530 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:30:30.248 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:30:30.321 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 787 ms
-22:30:31.497 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:30:31.497 [qtp378196591-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:30:31.980 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:30:31.990 [qtp378196591-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:31:41.203 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:31:41.997 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:31:42.076 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 870 ms
-22:31:43.411 [qtp378196591-19] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:31:43.411 [qtp378196591-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:31:43.824 [qtp378196591-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:31:43.830 [qtp378196591-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:31:45.803 [qtp378196591-26] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:31:45.803 [qtp378196591-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:31:45.831 [qtp378196591-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:31:45.837 [qtp378196591-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:31:48.244 [qtp378196591-24] WARN  o.s.w.s.m.s.DefaultHandlerExceptionResolver - Resolved [org.springframework.web.bind.MissingServletRequestParameterException: Required String parameter 'id' is not present]
-22:33:18.765 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:33:19.571 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:33:19.622 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 852 ms
-22:33:22.496 [qtp848484634-21] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:33:22.497 [qtp848484634-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:33:22.912 [qtp848484634-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:33:22.919 [qtp848484634-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:33:23.861 [qtp848484634-24] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:33:23.861 [qtp848484634-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:33:23.888 [qtp848484634-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:33:23.892 [qtp848484634-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:33:25.655 [qtp848484634-19] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
-22:33:25.655 [qtp848484634-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by id
-22:33:25.978 [qtp848484634-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:33:26.027 [qtp848484634-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:33:37.266 [qtp848484634-24] INFO  c.b.u.web.controller.UserController - Request to edit user with id 12
-22:33:37.267 [qtp848484634-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Updating user in DB
-22:33:37.336 [qtp848484634-19] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:33:37.336 [qtp848484634-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:33:37.376 [qtp848484634-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:33:37.381 [qtp848484634-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:33:59.765 [qtp848484634-24] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
-22:33:59.824 [qtp848484634-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:33:59.829 [qtp848484634-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:34:21.894 [qtp848484634-19] INFO  c.b.u.web.controller.UserController - Request to add new user with name "asd" "asd"
-22:34:21.941 [qtp848484634-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Adding a new user to DB
-22:34:22.094 [qtp848484634-24] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:34:22.094 [qtp848484634-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:34:22.247 [qtp848484634-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:34:22.258 [qtp848484634-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:36:45.018 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:36:45.761 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:36:45.806 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 783 ms
-22:36:52.196 [qtp378196591-25] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:36:52.197 [qtp378196591-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:36:52.586 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:36:52.594 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:36:54.133 [qtp378196591-22] INFO  c.b.u.web.controller.UserController - Request to remove user with id 13
-22:36:54.133 [qtp378196591-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Removing user from DB
-22:36:54.187 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:36:54.188 [qtp378196591-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:36:54.212 [qtp378196591-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:36:54.216 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:36:59.665 [qtp378196591-26] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
-22:36:59.766 [qtp378196591-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:36:59.770 [qtp378196591-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:37:10.574 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Request to add new user with name "asd" "asd"
-22:37:10.574 [qtp378196591-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Adding a new user to DB
-22:37:10.595 [qtp378196591-26] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:37:10.595 [qtp378196591-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:37:10.633 [qtp378196591-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:37:10.643 [qtp378196591-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:37:13.139 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
-22:37:13.139 [qtp378196591-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by id
-22:37:13.187 [qtp378196591-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:37:13.197 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:37:19.080 [qtp378196591-26] INFO  c.b.u.web.controller.UserController - Request to edit user with id 14
-22:37:19.080 [qtp378196591-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Updating user in DB
-22:37:19.143 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:37:19.144 [qtp378196591-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:37:19.183 [qtp378196591-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:37:19.190 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:37:20.761 [qtp378196591-26] INFO  c.b.u.web.controller.UserController - Request to remove user with id 14
-22:37:20.761 [qtp378196591-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Removing user from DB
-22:37:20.812 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:37:20.813 [qtp378196591-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:37:20.836 [qtp378196591-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:37:20.845 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:41:33.305 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:41:33.992 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:41:34.053 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 745 ms
-22:41:45.137 [qtp933869191-25] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:41:45.138 [qtp933869191-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:41:45.514 [qtp933869191-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:41:45.520 [qtp933869191-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:42:18.455 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:42:19.097 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:42:19.145 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 687 ms
-22:42:24.479 [qtp683327178-18] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:42:24.480 [qtp683327178-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:42:24.907 [qtp683327178-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:42:24.913 [qtp683327178-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:42:42.343 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:42:43.022 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:42:43.073 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 727 ms
-22:42:43.393 [qtp683327178-20] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:42:43.393 [qtp683327178-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:42:43.821 [qtp683327178-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:42:43.827 [qtp683327178-25] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:42:45.645 [qtp683327178-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:42:45.645 [qtp683327178-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:42:45.668 [qtp683327178-25] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:42:45.677 [qtp683327178-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:43:01.511 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:43:02.280 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:43:02.336 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 821 ms
-22:43:02.698 [qtp683327178-26] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:43:02.698 [qtp683327178-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:43:03.094 [qtp683327178-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:43:03.105 [qtp683327178-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:43:26.630 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:43:27.333 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:43:27.386 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 752 ms
-22:43:27.895 [qtp378196591-26] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:43:27.896 [qtp378196591-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:43:28.295 [qtp378196591-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:43:28.304 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:44:51.707 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:44:52.479 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:44:52.532 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 822 ms
-22:44:56.008 [qtp378196591-27] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:44:56.008 [qtp378196591-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:44:56.396 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:44:56.401 [qtp378196591-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:46:59.116 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:46:59.735 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:46:59.782 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 663 ms
-22:47:07.363 [qtp378196591-24] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:47:07.364 [qtp378196591-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:47:07.798 [qtp378196591-25] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:47:07.804 [qtp378196591-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:47:16.437 [qtp378196591-26] INFO  c.b.u.web.controller.UserController - Request to search users by text: el
-22:47:16.438 [qtp378196591-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
-22:47:16.811 [qtp378196591-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:47:16.815 [qtp378196591-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:48:46.088 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:48:46.821 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:48:46.875 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 782 ms
-22:48:47.701 [qtp378196591-25] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:48:47.702 [qtp378196591-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:48:48.111 [qtp378196591-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:48:48.119 [qtp378196591-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:49:00.695 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Request to search users by text: we
-22:49:00.695 [qtp378196591-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
-22:49:00.838 [qtp378196591-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:49:00.843 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:49:03.686 [qtp378196591-20] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:49:03.686 [qtp378196591-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:49:03.722 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:49:03.727 [qtp378196591-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:49:07.624 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Request to search users by text: tyriytr
-22:49:07.625 [qtp378196591-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
-22:49:07.659 [qtp378196591-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:49:07.664 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:50:01.677 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:50:02.424 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:50:02.478 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 797 ms
-22:50:03.277 [qtp683327178-22] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:50:03.277 [qtp683327178-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:50:04.091 [qtp683327178-24] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:50:04.091 [qtp683327178-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:50:04.120 [qtp683327178-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:50:04.129 [qtp683327178-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:50:09.436 [qtp683327178-19] INFO  c.b.u.web.controller.UserController - Request to search users by text: 
-22:50:09.436 [qtp683327178-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
-22:50:09.589 [qtp683327178-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:50:09.596 [qtp683327178-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:50:12.279 [qtp683327178-21] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:50:12.279 [qtp683327178-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:50:12.315 [qtp683327178-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:50:12.324 [qtp683327178-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:50:18.942 [qtp683327178-19] INFO  c.b.u.web.controller.UserController - Request to search users by text: el
-22:50:18.943 [qtp683327178-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
-22:50:18.972 [qtp683327178-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:50:18.981 [qtp683327178-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:50:26.839 [qtp683327178-21] INFO  c.b.u.web.controller.UserController - Request to search users by text: 
-22:50:26.839 [qtp683327178-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
-22:50:26.872 [qtp683327178-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:50:26.876 [qtp683327178-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:50:32.966 [qtp683327178-19] INFO  c.b.u.web.controller.UserController - Request to search users by text: we
-22:50:32.966 [qtp683327178-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
-22:50:32.993 [qtp683327178-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:50:32.998 [qtp683327178-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:50:36.913 [qtp683327178-21] INFO  c.b.u.web.controller.UserController - Request to search users by text: ad
-22:50:36.914 [qtp683327178-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
-22:50:36.943 [qtp683327178-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:50:36.948 [qtp683327178-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:50:40.576 [qtp683327178-19] INFO  c.b.u.web.controller.UserController - Request to search users by text: jgfdjfhjhgfk
-22:50:40.576 [qtp683327178-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
-22:50:40.600 [qtp683327178-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:50:40.608 [qtp683327178-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:52:30.390 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:52:31.145 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:52:31.200 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 808 ms
-22:52:31.874 [qtp683327178-18] INFO  c.b.u.web.controller.UserController - Request to search users by text: jgfdjfhjhgfk
-22:52:31.875 [qtp683327178-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
-22:52:32.087 [qtp683327178-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:52:32.093 [qtp683327178-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:52:33.877 [qtp683327178-26] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:52:33.877 [qtp683327178-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:52:34.198 [qtp683327178-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:52:34.203 [qtp683327178-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:53:07.963 [qtp683327178-25] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
-22:53:07.976 [qtp683327178-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:53:08.007 [qtp683327178-27] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
-22:53:08.008 [qtp683327178-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:53:35.530 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:53:36.225 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:53:36.270 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 737 ms
-22:53:37.603 [qtp683327178-18] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:53:37.603 [qtp683327178-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:53:37.999 [qtp683327178-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:53:38.005 [qtp683327178-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:54:20.189 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:54:20.900 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:54:20.960 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 768 ms
-22:54:22.565 [qtp378196591-19] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:54:22.565 [qtp378196591-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:54:23.003 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:54:23.010 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:54:27.235 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Request to search users by text: 
-22:54:27.235 [qtp378196591-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
-22:54:27.389 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:54:27.394 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:54:29.641 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:54:29.641 [qtp378196591-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:54:29.681 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:54:29.688 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:54:33.731 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Request to search users by text: we
-22:54:33.731 [qtp378196591-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
-22:54:33.766 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:54:33.770 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:54:35.235 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:54:35.235 [qtp378196591-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:54:35.267 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:54:35.272 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:54:44.565 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Request to search users by text: tyrfiytrfiytrf
-22:54:44.565 [qtp378196591-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
-22:54:44.594 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:54:44.601 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:54:49.091 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:54:49.091 [qtp378196591-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:54:49.137 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:54:49.142 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:59:10.829 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-22:59:11.541 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-22:59:11.601 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 769 ms
-22:59:15.106 [qtp1629032994-25] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:59:15.107 [qtp1629032994-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:59:15.480 [qtp1629032994-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:59:15.486 [qtp1629032994-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:59:18.083 [qtp1629032994-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:59:18.083 [qtp1629032994-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:59:18.111 [qtp1629032994-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:59:18.117 [qtp1629032994-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:59:29.086 [qtp1629032994-20] INFO  c.b.u.web.controller.UserController - Request to search users by text: 
-22:59:29.087 [qtp1629032994-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
-22:59:38.405 [qtp1629032994-23] INFO  c.b.u.web.controller.UserController - Request to search users by text: we
-22:59:38.405 [qtp1629032994-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
-22:59:44.996 [qtp1629032994-20] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-22:59:44.996 [qtp1629032994-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-22:59:45.028 [qtp1629032994-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:59:45.033 [qtp1629032994-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-22:59:50.896 [qtp1629032994-23] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
-22:59:50.896 [qtp1629032994-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by id
-22:59:50.930 [qtp1629032994-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-22:59:50.940 [qtp1629032994-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:00:04.581 [qtp1629032994-20] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
-23:00:04.617 [qtp1629032994-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:00:04.621 [qtp1629032994-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:00:31.567 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-23:00:32.275 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-23:00:32.332 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 762 ms
-23:00:35.658 [qtp2005537360-24] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-23:00:35.658 [qtp2005537360-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-23:00:36.020 [qtp2005537360-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:00:36.026 [qtp2005537360-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:00:38.543 [qtp2005537360-26] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
-23:03:46.196 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-23:03:46.957 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-23:03:47.024 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 825 ms
-23:03:47.921 [qtp1364765175-24] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-23:03:47.922 [qtp1364765175-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-23:03:48.389 [qtp1364765175-25] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:03:48.396 [qtp1364765175-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:03:50.445 [qtp1364765175-27] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
-23:04:54.385 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-23:04:55.045 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-23:04:55.127 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 740 ms
-23:04:59.780 [qtp704205426-20] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-23:04:59.780 [qtp704205426-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-23:05:00.251 [qtp704205426-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:05:00.257 [qtp704205426-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:05:01.429 [qtp704205426-18] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
-23:05:01.433 [qtp704205426-18] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][qtp704205426-18] Exception processing template "users/add": An error happened during template parsing (template: "/WEB-INF/views/users/add.html")
-org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "/WEB-INF/views/users/add.html")
+22:46:58.832 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+22:46:59.760 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+22:46:59.806 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 971 ms
+22:47:00.031 [qtp982495267-27] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+22:47:00.032 [qtp982495267-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+22:47:00.843 [qtp982495267-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:47:00.876 [qtp982495267-21] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
+22:47:00.876 [qtp982495267-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:47:04.949 [qtp982495267-26] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+22:47:04.949 [qtp982495267-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+22:47:04.972 [qtp982495267-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:47:04.980 [qtp982495267-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:47:07.213 [qtp982495267-21] INFO  c.b.u.web.controller.UserController - Sign out is requested
+22:47:07.216 [qtp982495267-26] INFO  c.b.u.web.controller.UserController - Signin page is requested
+22:47:26.484 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+22:47:27.167 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+22:47:27.239 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 751 ms
+22:47:29.602 [qtp583896770-18] INFO  c.b.u.web.controller.UserController - Sign out is requested
+22:47:29.608 [qtp583896770-18] INFO  c.b.u.web.controller.UserController - Signin page is requested
+22:47:29.821 [qtp583896770-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:47:29.838 [qtp583896770-25] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:48:48.701 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+22:48:49.508 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+22:48:49.576 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 871 ms
+22:48:50.412 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+22:48:50.412 [qtp378196591-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+22:48:50.844 [qtp378196591-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:48:50.849 [qtp378196591-25] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:48:53.516 [qtp378196591-20] INFO  c.b.u.web.controller.UserController - Sign out is requested
+22:48:53.520 [qtp378196591-25] INFO  c.b.u.web.controller.UserController - Signin page is requested
+22:48:53.542 [qtp378196591-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:48:53.549 [qtp378196591-25] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:52:00.654 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+22:52:01.309 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+22:52:01.351 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 694 ms
+22:52:04.275 [qtp683327178-19] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+22:52:04.275 [qtp683327178-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+22:52:04.665 [qtp683327178-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:52:04.673 [qtp683327178-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:52:05.733 [qtp683327178-27] INFO  c.b.u.web.controller.UserController - Sign out is requested
+22:52:05.737 [qtp683327178-23] INFO  c.b.u.web.controller.UserController - Signin page is requested
+22:52:05.770 [qtp683327178-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:52:05.776 [qtp683327178-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:52:11.847 [qtp683327178-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by login
+22:52:12.036 [qtp683327178-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - User with login ryuytr does not exist in DB
+22:52:12.223 [qtp683327178-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:52:12.230 [qtp683327178-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:54:12.595 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+22:54:13.320 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+22:54:13.385 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 786 ms
+22:54:15.552 [qtp982495267-21] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+22:54:15.552 [qtp982495267-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+22:54:15.960 [qtp982495267-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:54:15.965 [qtp982495267-25] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:54:16.657 [qtp982495267-20] INFO  c.b.u.web.controller.UserController - Sign out is requested
+22:54:16.660 [qtp982495267-25] INFO  c.b.u.web.controller.UserController - Signin page is requested
+22:54:16.691 [qtp982495267-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:54:16.695 [qtp982495267-25] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:54:19.954 [qtp982495267-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by login
+22:54:19.963 [qtp982495267-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - User with login hgvmhg does not exist in DB
+22:54:30.665 [qtp982495267-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by login
+22:54:30.669 [qtp982495267-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+22:54:30.669 [qtp982495267-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+22:54:30.703 [qtp982495267-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:54:30.711 [qtp982495267-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:54:32.725 [qtp982495267-25] INFO  c.b.u.web.controller.UserController - Sign out is requested
+22:54:32.729 [qtp982495267-23] INFO  c.b.u.web.controller.UserController - Signin page is requested
+22:54:32.755 [qtp982495267-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:54:32.759 [qtp982495267-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:54:37.380 [qtp982495267-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by login
+22:54:37.381 [qtp982495267-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - User with login rewtrew does not exist in DB
+22:57:09.817 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+22:57:10.492 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+22:57:10.544 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 724 ms
+22:57:12.597 [qtp1499383906-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+22:57:12.598 [qtp1499383906-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+22:57:12.985 [qtp1499383906-25] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:57:12.991 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:57:13.833 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Sign out is requested
+22:57:13.837 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Signin page is requested
+22:57:13.867 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:57:13.871 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:57:17.358 [qtp1499383906-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by login
+22:57:17.372 [qtp1499383906-26] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][qtp1499383906-26] Exception processing template "": An error happened during template parsing (template: "/WEB-INF/views/.html")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "/WEB-INF/views/.html")
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
 	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
 	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:649)
@@ -396,176 +93,6 @@ org.thymeleaf.exceptions.TemplateInputException: An error happened during templa
 	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
 	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
 	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
-	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
-	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
-	at org.springframework.web.servlet.FrameworkServlet.doGet(FrameworkServlet.java:898)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:687)
-	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
-	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
-	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1418)
-	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1655)
-	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
-	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
-	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1642)
-	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:572)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
-	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
-	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
-	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
-	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
-	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
-	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
-	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
-	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
-	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
-	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
-	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
-	at org.eclipse.jetty.server.Server.handle(Server.java:516)
-	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
-	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
-	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
-	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
-	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
-	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
-	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
-	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
-	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
-	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
-	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: java.io.FileNotFoundException: ServletContext resource "/WEB-INF/views/users/add.html" does not exist
-	at org.thymeleaf.templateresource.ServletContextTemplateResource.reader(ServletContextTemplateResource.java:95)
-	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
-	... 54 common frames omitted
-23:05:54.618 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-23:05:55.250 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-23:05:55.308 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 687 ms
-23:05:55.639 [qtp2094809200-19] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-23:05:55.640 [qtp2094809200-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-23:05:56.037 [qtp2094809200-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:05:56.050 [qtp2094809200-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:05:57.709 [qtp2094809200-24] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
-23:05:57.738 [qtp2094809200-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:05:57.745 [qtp2094809200-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:08:50.807 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-23:08:51.524 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-23:08:51.573 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 762 ms
-23:08:53.186 [qtp378196591-26] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-23:08:53.187 [qtp378196591-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-23:08:53.582 [qtp378196591-22] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:08:53.587 [qtp378196591-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:08:55.294 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
-23:08:55.327 [qtp378196591-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:08:55.331 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:09:57.479 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-23:09:58.277 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-23:09:58.330 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 848 ms
-23:09:59.170 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
-23:09:59.449 [qtp378196591-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:09:59.459 [qtp378196591-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:11:44.426 [qtp378196591-19] INFO  c.b.u.web.controller.UserController - Request to add new user with name "qwe123" "123"
-23:11:44.428 [qtp378196591-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Adding a new user to DB
-23:11:44.548 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-23:11:44.548 [qtp378196591-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-23:11:44.623 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:11:44.630 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:11:53.286 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
-23:11:53.315 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:11:53.320 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:12:25.625 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Request to add new user with name "qwe" "qwe"
-23:12:25.626 [qtp378196591-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Adding a new user to DB
-23:12:25.755 [qtp378196591-23] ERROR c.b.u.web.controller.UserController - New user was nor added
-23:12:25.774 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-23:12:25.774 [qtp378196591-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-23:12:25.823 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:12:25.830 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:12:53.692 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-23:12:53.692 [qtp378196591-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-23:12:53.726 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:12:53.731 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:12:54.721 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-23:12:54.721 [qtp378196591-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-23:12:54.746 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:12:54.755 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:12:55.326 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-23:12:55.326 [qtp378196591-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-23:12:55.349 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:12:55.356 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:12:59.351 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
-23:12:59.380 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:12:59.384 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:13:00.644 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-23:13:00.644 [qtp378196591-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-23:13:00.676 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:13:00.680 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:13:01.900 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
-23:13:01.926 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:13:01.942 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:13:07.986 [qtp378196591-27] INFO  c.b.u.web.controller.UserController - Signin page is requested
-23:13:08.123 [qtp378196591-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:13:08.130 [qtp378196591-19] WARN  o.s.web.servlet.PageNotFound - No mapping for GET /favicon.ico
-23:13:08.133 [qtp378196591-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:13:19.044 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Request to add new user with name "qwe" "qwe"
-23:13:19.044 [qtp378196591-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Adding a new user to DB
-23:13:19.046 [qtp378196591-23] ERROR c.b.u.web.controller.UserController - New user was nor added
-23:13:19.057 [qtp378196591-19] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-23:13:19.057 [qtp378196591-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-23:13:19.100 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:13:19.105 [qtp378196591-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:16:05.754 [qtp378196591-21] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
-23:16:05.801 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:16:05.806 [qtp378196591-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:16:31.351 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Request to add new user with name "asd" "asd"
-23:16:31.351 [qtp378196591-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Adding a new user to DB
-23:16:31.445 [qtp378196591-27] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-23:16:31.445 [qtp378196591-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-23:16:31.493 [qtp378196591-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:16:31.497 [qtp378196591-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:20:04.103 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-23:20:04.769 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-23:20:04.837 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 730 ms
-23:20:08.455 [qtp526418510-25] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-23:20:08.456 [qtp526418510-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-23:20:08.840 [qtp526418510-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:20:08.846 [qtp526418510-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:20:12.867 [qtp526418510-23] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
-23:20:12.901 [qtp526418510-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:20:12.906 [qtp526418510-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:20:31.638 [qtp526418510-24] INFO  c.b.u.web.controller.UserController - Request to add new user with name "qwe" "qwe"
-23:20:31.638 [qtp526418510-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Adding a new user to DB
-23:20:31.687 [qtp526418510-24] ERROR c.b.userstore.dao.jdbc.JdbcUserDao - Not possible to add new user with name "qwe qwe"
-org.springframework.dao.DuplicateKeyException: PreparedStatementCallback; SQL [insert into Users (firstName, lastName, salary, dateOfBirth, login, password) values (?,?,?,?,?,?)]; ERROR: duplicate key value violates unique constraint "login_unique"
-  Подробности: Key (login)=(qwe) already exists.; nested exception is org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "login_unique"
-  Подробности: Key (login)=(qwe) already exists.
-	at org.springframework.jdbc.support.SQLErrorCodeSQLExceptionTranslator.doTranslate(SQLErrorCodeSQLExceptionTranslator.java:247)
-	at org.springframework.jdbc.support.AbstractFallbackSQLExceptionTranslator.translate(AbstractFallbackSQLExceptionTranslator.java:72)
-	at org.springframework.jdbc.core.JdbcTemplate.translateException(JdbcTemplate.java:1443)
-	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:633)
-	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:862)
-	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:917)
-	at org.springframework.jdbc.core.JdbcTemplate.update(JdbcTemplate.java:927)
-	at com.boroday.userstore.dao.jdbc.JdbcUserDao.addNewUser(JdbcUserDao.java:50)
-	at com.boroday.userstore.service.impl.DefaultUserService.add(DefaultUserService.java:27)
-	at com.boroday.userstore.web.controller.UserController.addUser(UserController.java:76)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
-	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
-	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
-	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
-	at org.springframework.web.method.support.InvocableHandlerMethod.doInvoke(InvocableHandlerMethod.java:190)
-	at org.springframework.web.method.support.InvocableHandlerMethod.invokeForRequest(InvocableHandlerMethod.java:138)
-	at org.springframework.web.servlet.mvc.method.annotation.ServletInvocableHandlerMethod.invokeAndHandle(ServletInvocableHandlerMethod.java:105)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.invokeHandlerMethod(RequestMappingHandlerAdapter.java:878)
-	at org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter.handleInternal(RequestMappingHandlerAdapter.java:792)
-	at org.springframework.web.servlet.mvc.method.AbstractHandlerMethodAdapter.handle(AbstractHandlerMethodAdapter.java:87)
-	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1040)
 	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
 	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
 	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
@@ -611,23 +138,638 @@ org.springframework.dao.DuplicateKeyException: PreparedStatementCallback; SQL [i
 	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
 	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: org.postgresql.util.PSQLException: ERROR: duplicate key value violates unique constraint "login_unique"
-  Подробности: Key (login)=(qwe) already exists.
-	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2533)
-	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2268)
-	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:313)
-	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:448)
-	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:369)
-	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:159)
-	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:125)
-	at org.apache.commons.dbcp.DelegatingPreparedStatement.executeUpdate(DelegatingPreparedStatement.java:102)
-	at org.springframework.jdbc.core.JdbcTemplate.lambda$update$0(JdbcTemplate.java:867)
-	at org.springframework.jdbc.core.JdbcTemplate.execute(JdbcTemplate.java:617)
-	... 62 common frames omitted
-23:20:31.692 [qtp526418510-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
-23:20:31.692 [qtp526418510-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
-23:20:31.734 [qtp526418510-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
-23:20:31.753 [qtp526418510-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
-23:30:44.889 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
-23:30:45.621 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
-23:30:45.680 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 787 ms
+Caused by: java.io.FileNotFoundException: ServletContext resource "/WEB-INF/views/.html" does not exist
+	at org.thymeleaf.templateresource.ServletContextTemplateResource.reader(ServletContextTemplateResource.java:95)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
+	... 54 common frames omitted
+22:57:17.377 [qtp1499383906-27] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+22:57:17.377 [qtp1499383906-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+22:57:17.421 [qtp1499383906-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:57:17.425 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:57:19.395 [qtp1499383906-20] INFO  c.b.u.web.controller.UserController - Sign out is requested
+22:57:19.398 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Signin page is requested
+22:57:19.425 [qtp1499383906-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:57:19.430 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:57:23.825 [qtp1499383906-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by login
+22:57:23.826 [qtp1499383906-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - User with login kuytuytku does not exist in DB
+22:57:23.867 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:57:23.871 [qtp1499383906-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:57:31.842 [qtp1499383906-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by login
+22:57:31.843 [qtp1499383906-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Password for User with login qwe is incorrect
+22:57:31.877 [qtp1499383906-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:57:31.888 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:57:36.145 [qtp1499383906-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by login
+22:57:36.147 [qtp1499383906-20] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][qtp1499383906-20] Exception processing template "": An error happened during template parsing (template: "/WEB-INF/views/.html")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "/WEB-INF/views/.html")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:649)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1418)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1655)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1642)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:572)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.io.FileNotFoundException: ServletContext resource "/WEB-INF/views/.html" does not exist
+	at org.thymeleaf.templateresource.ServletContextTemplateResource.reader(ServletContextTemplateResource.java:95)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
+	... 54 common frames omitted
+22:57:36.151 [qtp1499383906-21] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+22:57:36.151 [qtp1499383906-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+22:57:36.194 [qtp1499383906-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:57:36.199 [qtp1499383906-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:57:39.643 [qtp1499383906-20] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
+22:57:39.692 [qtp1499383906-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:57:39.789 [qtp1499383906-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:57:52.606 [qtp1499383906-23] INFO  c.b.u.web.controller.UserController - Request to add new user with name "vvv" "bbb"
+22:57:52.607 [qtp1499383906-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Adding a new user to DB
+22:57:52.823 [qtp1499383906-20] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+22:57:52.823 [qtp1499383906-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+22:57:52.864 [qtp1499383906-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:57:52.867 [qtp1499383906-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:57:55.868 [qtp1499383906-23] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+22:57:55.868 [qtp1499383906-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by id
+22:57:55.980 [qtp1499383906-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:57:55.984 [qtp1499383906-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:58:00.756 [qtp1499383906-20] INFO  c.b.u.web.controller.UserController - Request to edit user with id 22
+22:58:00.756 [qtp1499383906-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Updating user in DB
+22:58:00.804 [qtp1499383906-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+22:58:00.804 [qtp1499383906-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+22:58:00.840 [qtp1499383906-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:58:00.844 [qtp1499383906-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:58:06.866 [qtp1499383906-20] INFO  c.b.u.web.controller.UserController - Request to remove user with id 22
+22:58:06.866 [qtp1499383906-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Removing user from DB
+22:58:06.915 [qtp1499383906-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+22:58:06.915 [qtp1499383906-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+22:58:06.940 [qtp1499383906-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:58:06.945 [qtp1499383906-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:58:11.256 [qtp1499383906-20] INFO  c.b.u.web.controller.UserController - Request to search users by text: sd
+22:58:11.256 [qtp1499383906-20] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
+22:58:11.488 [qtp1499383906-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:58:11.493 [qtp1499383906-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:59:09.052 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+22:59:09.663 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+22:59:09.716 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 660 ms
+22:59:10.066 [qtp1296450832-24] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+22:59:10.066 [qtp1296450832-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+22:59:10.500 [qtp1296450832-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:59:10.506 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:59:16.547 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Request to search users by text: sd
+22:59:16.547 [qtp1296450832-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
+22:59:16.577 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:59:16.589 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:59:18.942 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+22:59:18.942 [qtp1296450832-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+22:59:18.967 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:59:18.975 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:59:22.274 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Request to search users by text: kutfkuygf
+22:59:22.274 [qtp1296450832-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
+22:59:22.299 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:59:22.303 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:59:24.765 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Request to search users by text: 
+22:59:24.765 [qtp1296450832-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
+22:59:24.790 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:59:24.797 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:59:33.711 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+22:59:33.711 [qtp1296450832-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+22:59:33.738 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:59:33.742 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:59:40.593 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Request to search users by text: jhv,jhbbv,nb,n
+22:59:40.593 [qtp1296450832-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
+22:59:40.615 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:59:40.619 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+22:59:42.175 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+22:59:42.175 [qtp1296450832-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+22:59:42.201 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+22:59:42.210 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:00:00.236 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
+23:00:00.259 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:00:00.272 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:00:15.411 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Request to add new user with name "zzz" "zzz"
+23:00:15.412 [qtp1296450832-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Adding a new user to DB
+23:00:15.460 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:00:15.460 [qtp1296450832-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:00:15.502 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:00:15.506 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:00:21.284 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
+23:00:21.307 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:00:21.311 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:00:39.989 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Request to add new user with name "333" "333"
+23:00:40.060 [qtp1296450832-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Adding a new user to DB
+23:00:40.103 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:00:40.103 [qtp1296450832-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:00:40.141 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:00:40.153 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:00:47.145 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+23:00:47.145 [qtp1296450832-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by id
+23:00:47.178 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:00:47.182 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:01:00.597 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Request to edit user with id 24
+23:01:00.597 [qtp1296450832-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Updating user in DB
+23:01:00.620 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:01:00.620 [qtp1296450832-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:01:00.669 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:01:00.678 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:01:05.908 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Request to remove user with id 24
+23:01:05.908 [qtp1296450832-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Removing user from DB
+23:01:05.962 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:01:05.962 [qtp1296450832-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:01:05.992 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:01:05.996 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:01:08.299 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Request to search users by text: 
+23:01:08.299 [qtp1296450832-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
+23:01:08.335 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:01:08.339 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:01:15.395 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Request to search users by text: ad
+23:01:15.396 [qtp1296450832-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
+23:01:15.417 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:01:15.426 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:01:18.599 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Request to search users by text: fkgf
+23:01:18.599 [qtp1296450832-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
+23:01:18.627 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:01:18.631 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:01:20.012 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Request to search users by text: 
+23:01:20.012 [qtp1296450832-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
+23:01:20.049 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:01:20.056 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:01:21.747 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:01:21.747 [qtp1296450832-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:01:21.777 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:01:21.781 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:01:25.782 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Sign out is requested
+23:01:25.785 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Signin page is requested
+23:01:25.812 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:01:25.816 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:01:35.671 [qtp1296450832-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by login
+23:01:35.672 [qtp1296450832-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - User with login rty does not exist in DB
+23:01:35.710 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:01:35.715 [qtp1296450832-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:01:39.432 [qtp1296450832-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by login
+23:01:39.436 [qtp1296450832-26] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][qtp1296450832-26] Exception processing template "": An error happened during template parsing (template: "/WEB-INF/views/.html")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "/WEB-INF/views/.html")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:649)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1418)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1655)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1642)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:572)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.io.FileNotFoundException: ServletContext resource "/WEB-INF/views/.html" does not exist
+	at org.thymeleaf.templateresource.ServletContextTemplateResource.reader(ServletContextTemplateResource.java:95)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
+	... 54 common frames omitted
+23:01:39.443 [qtp1296450832-25] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:01:39.444 [qtp1296450832-25] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:01:39.484 [qtp1296450832-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:01:39.491 [qtp1296450832-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:09:42.829 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+23:09:43.641 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+23:09:43.694 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 861 ms
+23:09:49.997 [qtp1499383906-19] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:09:49.997 [qtp1499383906-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:09:50.370 [qtp1499383906-27] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:09:50.379 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:09:57.670 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Request to search users by text: z
+23:09:57.670 [qtp1499383906-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
+23:09:57.705 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:09:57.712 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:09:59.790 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:09:59.790 [qtp1499383906-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:09:59.825 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:09:59.830 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:10:03.285 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Request to search users by text: .hkb.kjb.
+23:10:03.285 [qtp1499383906-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
+23:10:03.312 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:10:03.319 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:10:04.360 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:10:04.361 [qtp1499383906-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:10:04.391 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:10:04.400 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:10:05.968 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
+23:10:05.999 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:10:06.007 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:10:16.616 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Request to add new user with name "123" "123"
+23:10:16.616 [qtp1499383906-26] ERROR c.b.u.web.controller.UserController - New user was nor added
+23:10:16.626 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:10:16.626 [qtp1499383906-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:10:16.662 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:10:16.670 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:10:24.826 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
+23:10:24.860 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:10:24.864 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:10:39.423 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Request to add new user with name "bvv" "bbb"
+23:10:39.423 [qtp1499383906-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Adding a new user to DB
+23:10:39.473 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:10:39.473 [qtp1499383906-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:10:39.513 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:10:39.517 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:10:41.584 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+23:10:41.584 [qtp1499383906-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by id
+23:10:41.617 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:10:41.628 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:10:46.479 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Request to edit user with id 25
+23:10:46.479 [qtp1499383906-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Updating user in DB
+23:10:46.538 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:10:46.539 [qtp1499383906-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:10:46.578 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:10:46.582 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:10:57.550 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Request to remove user with id 6
+23:10:57.550 [qtp1499383906-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Removing user from DB
+23:10:57.597 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:10:57.597 [qtp1499383906-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:10:57.622 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:10:57.626 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:11:07.322 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Sign out is requested
+23:11:07.325 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Signin page is requested
+23:11:07.355 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:11:07.359 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:11:15.844 [qtp1499383906-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by login
+23:11:15.845 [qtp1499383906-26] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Password for User with login qwe is incorrect
+23:11:15.889 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:11:15.893 [qtp1499383906-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:11:21.138 [qtp1499383906-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by login
+23:11:21.143 [qtp1499383906-18] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][qtp1499383906-18] Exception processing template "": An error happened during template parsing (template: "/WEB-INF/views/.html")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "/WEB-INF/views/.html")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:649)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1418)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1655)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1642)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:572)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.io.FileNotFoundException: ServletContext resource "/WEB-INF/views/.html" does not exist
+	at org.thymeleaf.templateresource.ServletContextTemplateResource.reader(ServletContextTemplateResource.java:95)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
+	... 54 common frames omitted
+23:11:21.152 [qtp1499383906-21] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:11:21.153 [qtp1499383906-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:11:21.187 [qtp1499383906-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:11:21.197 [qtp1499383906-19] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:12:19.617 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+23:12:20.268 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+23:12:20.338 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 717 ms
+23:12:24.367 [qtp1165086398-22] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:12:24.367 [qtp1165086398-22] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:12:24.782 [qtp1165086398-26] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:12:24.788 [qtp1165086398-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:12:26.148 [qtp1165086398-24] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:12:26.148 [qtp1165086398-24] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:12:26.171 [qtp1165086398-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:12:26.179 [qtp1165086398-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:12:30.075 [qtp1165086398-21] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
+23:12:30.104 [qtp1165086398-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:12:30.111 [qtp1165086398-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:12:38.888 [qtp1165086398-23] INFO  c.b.u.web.controller.UserController - Request to add new user with name "q" "q"
+23:12:38.888 [qtp1165086398-23] ERROR c.b.u.web.controller.UserController - New user was nor added
+23:12:38.897 [qtp1165086398-21] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:12:38.897 [qtp1165086398-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:12:38.921 [qtp1165086398-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:12:38.929 [qtp1165086398-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:12:41.359 [qtp1165086398-23] INFO  c.b.u.web.controller.UserController - Page for adding new user is requested
+23:12:41.382 [qtp1165086398-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:12:41.387 [qtp1165086398-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:12:56.967 [qtp1165086398-21] INFO  c.b.u.web.controller.UserController - Request to add new user with name "q" "q"
+23:12:56.968 [qtp1165086398-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Adding a new user to DB
+23:12:57.026 [qtp1165086398-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:12:57.026 [qtp1165086398-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:12:57.060 [qtp1165086398-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:12:57.064 [qtp1165086398-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:12:59.558 [qtp1165086398-21] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+23:12:59.558 [qtp1165086398-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by id
+23:12:59.594 [qtp1165086398-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:12:59.600 [qtp1165086398-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:13:03.418 [qtp1165086398-23] INFO  c.b.u.web.controller.UserController - Request to edit user with id 26
+23:13:03.419 [qtp1165086398-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Updating user in DB
+23:13:03.477 [qtp1165086398-21] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:13:03.478 [qtp1165086398-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:13:03.503 [qtp1165086398-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:13:03.507 [qtp1165086398-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:13:09.827 [qtp1165086398-23] INFO  c.b.u.web.controller.UserController - Request to remove user with id 26
+23:13:09.827 [qtp1165086398-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Removing user from DB
+23:13:09.873 [qtp1165086398-21] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:13:09.873 [qtp1165086398-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:13:09.895 [qtp1165086398-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:13:09.902 [qtp1165086398-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:13:14.089 [qtp1165086398-23] INFO  c.b.u.web.controller.UserController - Request to search users by text: g
+23:13:14.089 [qtp1165086398-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
+23:13:14.113 [qtp1165086398-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:13:14.120 [qtp1165086398-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:13:17.755 [qtp1165086398-21] INFO  c.b.u.web.controller.UserController - Request to search users by text: qw
+23:13:17.755 [qtp1165086398-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
+23:13:17.785 [qtp1165086398-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:13:17.789 [qtp1165086398-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:13:19.369 [qtp1165086398-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:13:19.369 [qtp1165086398-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:13:19.398 [qtp1165086398-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:13:19.402 [qtp1165086398-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:13:20.640 [qtp1165086398-21] INFO  c.b.u.web.controller.UserController - Sign out is requested
+23:13:20.643 [qtp1165086398-23] INFO  c.b.u.web.controller.UserController - Signin page is requested
+23:13:20.665 [qtp1165086398-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:13:20.673 [qtp1165086398-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:13:24.387 [qtp1165086398-21] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by login
+23:13:24.390 [qtp1165086398-21] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][qtp1165086398-21] Exception processing template "": An error happened during template parsing (template: "/WEB-INF/views/.html")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "/WEB-INF/views/.html")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:649)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1418)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1655)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1642)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:572)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.io.FileNotFoundException: ServletContext resource "/WEB-INF/views/.html" does not exist
+	at org.thymeleaf.templateresource.ServletContextTemplateResource.reader(ServletContextTemplateResource.java:95)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
+	... 54 common frames omitted
+23:13:24.394 [qtp1165086398-18] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:13:24.394 [qtp1165086398-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:13:24.435 [qtp1165086398-21] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:13:24.439 [qtp1165086398-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:15:03.333 [main] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcher'
+23:15:04.081 [main] WARN  o.t.templatemode.TemplateMode - [THYMELEAF][main] Template Mode 'HTML5' is deprecated. Using Template Mode 'HTML' instead.
+23:15:04.125 [main] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 789 ms
+23:15:05.917 [qtp1864630663-19] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:15:05.918 [qtp1864630663-19] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:15:06.400 [qtp1864630663-24] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:15:06.410 [qtp1864630663-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:15:08.529 [qtp1864630663-18] INFO  c.b.u.web.controller.UserController - Request to search users by text: 
+23:15:08.529 [qtp1864630663-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Searching user in DB
+23:15:08.568 [qtp1864630663-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:15:08.573 [qtp1864630663-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:15:10.289 [qtp1864630663-23] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:15:10.289 [qtp1864630663-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:15:10.320 [qtp1864630663-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:15:10.325 [qtp1864630663-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:15:11.967 [qtp1864630663-18] INFO  c.b.u.web.controller.UserController - Page for editing of user is requested
+23:15:11.967 [qtp1864630663-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by id
+23:15:11.998 [qtp1864630663-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:15:12.011 [qtp1864630663-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:15:15.664 [qtp1864630663-23] INFO  c.b.u.web.controller.UserController - Request to edit user with id 21
+23:15:15.665 [qtp1864630663-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Updating user in DB
+23:15:15.727 [qtp1864630663-18] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:15:15.727 [qtp1864630663-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:15:15.767 [qtp1864630663-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:15:15.771 [qtp1864630663-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:15:18.564 [qtp1864630663-23] INFO  c.b.u.web.controller.UserController - Sign out is requested
+23:15:18.567 [qtp1864630663-18] INFO  c.b.u.web.controller.UserController - Signin page is requested
+23:15:18.594 [qtp1864630663-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:15:18.598 [qtp1864630663-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:15:24.124 [qtp1864630663-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by login
+23:15:24.126 [qtp1864630663-23] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - User with login kh does not exist in DB
+23:15:24.164 [qtp1864630663-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:15:24.171 [qtp1864630663-23] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css
+23:15:28.543 [qtp1864630663-18] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting user from DB by login
+23:15:28.548 [qtp1864630663-18] ERROR org.thymeleaf.TemplateEngine - [THYMELEAF][qtp1864630663-18] Exception processing template "": An error happened during template parsing (template: "/WEB-INF/views/.html")
+org.thymeleaf.exceptions.TemplateInputException: An error happened during template parsing (template: "/WEB-INF/views/.html")
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:235)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parseStandalone(AbstractMarkupTemplateParser.java:100)
+	at org.thymeleaf.engine.TemplateManager.parseAndProcess(TemplateManager.java:649)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1098)
+	at org.thymeleaf.TemplateEngine.process(TemplateEngine.java:1072)
+	at org.thymeleaf.spring5.view.ThymeleafView.renderFragment(ThymeleafView.java:362)
+	at org.thymeleaf.spring5.view.ThymeleafView.render(ThymeleafView.java:189)
+	at org.springframework.web.servlet.DispatcherServlet.render(DispatcherServlet.java:1373)
+	at org.springframework.web.servlet.DispatcherServlet.processDispatchResult(DispatcherServlet.java:1118)
+	at org.springframework.web.servlet.DispatcherServlet.doDispatch(DispatcherServlet.java:1057)
+	at org.springframework.web.servlet.DispatcherServlet.doService(DispatcherServlet.java:943)
+	at org.springframework.web.servlet.FrameworkServlet.processRequest(FrameworkServlet.java:1006)
+	at org.springframework.web.servlet.FrameworkServlet.doPost(FrameworkServlet.java:909)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:707)
+	at org.springframework.web.servlet.FrameworkServlet.service(FrameworkServlet.java:883)
+	at javax.servlet.http.HttpServlet.service(HttpServlet.java:790)
+	at org.eclipse.jetty.servlet.ServletHolder$NotAsync.service(ServletHolder.java:1418)
+	at org.eclipse.jetty.servlet.ServletHolder.handle(ServletHolder.java:763)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1655)
+	at org.eclipse.jetty.websocket.server.WebSocketUpgradeFilter.doFilter(WebSocketUpgradeFilter.java:228)
+	at org.eclipse.jetty.servlet.FilterHolder.doFilter(FilterHolder.java:193)
+	at org.eclipse.jetty.servlet.ServletHandler$CachedChain.doFilter(ServletHandler.java:1642)
+	at org.eclipse.jetty.servlet.ServletHandler.doHandle(ServletHandler.java:572)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:143)
+	at org.eclipse.jetty.security.SecurityHandler.handle(SecurityHandler.java:602)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:235)
+	at org.eclipse.jetty.server.session.SessionHandler.doHandle(SessionHandler.java:1612)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextHandle(ScopedHandler.java:233)
+	at org.eclipse.jetty.server.handler.ContextHandler.doHandle(ContextHandler.java:1434)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:188)
+	at org.eclipse.jetty.servlet.ServletHandler.doScope(ServletHandler.java:512)
+	at org.eclipse.jetty.server.session.SessionHandler.doScope(SessionHandler.java:1582)
+	at org.eclipse.jetty.server.handler.ScopedHandler.nextScope(ScopedHandler.java:186)
+	at org.eclipse.jetty.server.handler.ContextHandler.doScope(ContextHandler.java:1349)
+	at org.eclipse.jetty.server.handler.ScopedHandler.handle(ScopedHandler.java:141)
+	at org.eclipse.jetty.server.handler.ContextHandlerCollection.handle(ContextHandlerCollection.java:191)
+	at org.eclipse.jetty.server.handler.HandlerCollection.handle(HandlerCollection.java:146)
+	at org.eclipse.jetty.server.handler.HandlerWrapper.handle(HandlerWrapper.java:127)
+	at org.eclipse.jetty.server.Server.handle(Server.java:516)
+	at org.eclipse.jetty.server.HttpChannel.lambda$handle$1(HttpChannel.java:383)
+	at org.eclipse.jetty.server.HttpChannel.dispatch(HttpChannel.java:556)
+	at org.eclipse.jetty.server.HttpChannel.handle(HttpChannel.java:375)
+	at org.eclipse.jetty.server.HttpConnection.onFillable(HttpConnection.java:273)
+	at org.eclipse.jetty.io.AbstractConnection$ReadCallback.succeeded(AbstractConnection.java:311)
+	at org.eclipse.jetty.io.FillInterest.fillable(FillInterest.java:105)
+	at org.eclipse.jetty.io.ChannelEndPoint$1.run(ChannelEndPoint.java:104)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.runTask(EatWhatYouKill.java:336)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.doProduce(EatWhatYouKill.java:313)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.tryProduce(EatWhatYouKill.java:171)
+	at org.eclipse.jetty.util.thread.strategy.EatWhatYouKill.run(EatWhatYouKill.java:129)
+	at org.eclipse.jetty.util.thread.ReservedThreadExecutor$ReservedThread.run(ReservedThreadExecutor.java:375)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool.runJob(QueuedThreadPool.java:773)
+	at org.eclipse.jetty.util.thread.QueuedThreadPool$Runner.run(QueuedThreadPool.java:905)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.io.FileNotFoundException: ServletContext resource "/WEB-INF/views/.html" does not exist
+	at org.thymeleaf.templateresource.ServletContextTemplateResource.reader(ServletContextTemplateResource.java:95)
+	at org.thymeleaf.templateparser.markup.AbstractMarkupTemplateParser.parse(AbstractMarkupTemplateParser.java:223)
+	... 54 common frames omitted
+23:15:28.552 [qtp1864630663-27] INFO  c.b.u.web.controller.UserController - Page for getting all users is requested
+23:15:28.553 [qtp1864630663-27] INFO  c.b.userstore.dao.jdbc.JdbcUserDao - Getting all users from DB
+23:15:28.598 [qtp1864630663-20] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/style.css
+23:15:28.607 [qtp1864630663-18] INFO  c.b.u.web.controller.UserController - Following resources are requested: assets/css/reset.css

@@ -26,9 +26,13 @@
                 </div>
             </form>
         </div>
-        <#if message?has_content><div class="error"><p>${message}</p></div></#if>
+        <div th:if="${message}">
+            <div class="error">
+                <p th:text="${message}"></p>
+            </div>
+        </div>
     </div>
-    <#include "footer.html">
+    <div th:replace="fragments/footer :: footer"></div>
 </div>
 </body>
 </html>
