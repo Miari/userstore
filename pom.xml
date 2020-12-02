@@ -19,7 +19,7 @@
         <maven-jar-plugin.version>3.2.0</maven-jar-plugin.version>
 
         <!--Web-Server-->
-        <jetty.version>9.4.32.v20200930</jetty.version>
+        <jetty.version>9.4.35.v20201120</jetty.version>
 
         <!--DB-->
         <db.user>postgres</db.user>
