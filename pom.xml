@@ -30,7 +30,7 @@
         <flyway.version>6.3.2</flyway.version>
 
         <commons-dbcp.version>1.2.2</commons-dbcp.version>
-        <postgres.version>42.2.12</postgres.version>
+        <postgres.version>42.3.3</postgres.version>
         <mysql-connector-java.version>8.0.18</mysql-connector-java.version>
         <h2.version>1.4.200</h2.version>
 
